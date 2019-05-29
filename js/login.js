@@ -23,9 +23,6 @@ $( document ).ready(function() {
 	}, 1000);
 	
 })
-
-
-
 username = "Guest"
 
 
