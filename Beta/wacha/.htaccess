@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Challenge Meisters Only"
+AuthUserFile /home/u919436859/domains/wizardsrwe.com/public_html/gamesharks/wacha/.htpasswd
+Require valid-user
