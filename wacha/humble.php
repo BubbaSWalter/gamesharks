@@ -62,7 +62,7 @@ include '../meistercheck.php';
 ?>
 	<article id="article">
 	    <p>Hello <?php echo $uname;?></p>
-		<div id="admin-main">
+		<div id="adminmain">
 		<p>Community Results</p>
 		
 		<?php
