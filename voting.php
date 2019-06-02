@@ -46,9 +46,82 @@
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		    <script type="text/javascript" src="js/login.js"></script>
 			<form action="upload.php" method="get">
-  				First name: <input type="text" name="fname"><br>
-  				Last name: <input type="text" name="lname"><br>
-  				<input type="submit" value="Submit">
+				<input type="text" name="username" value="<?php echo $uname; ?>">  				Last name: <input type="text" name="lname"><br>
+				Person Voting:<span id="username"><?php echo $uname; ?></span><br>
+				<?php
+    
+                    $servername = "localhost";
+	                $username = "u919436859_admin";
+	                $password = "GjefadD~i63a";
+	                $dbname = "u919436859_shark";
+
+	                $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+	                if ($conn->connect_error) {     // Check connection
+		                die("Connection failed: " . $conn->connect_error);
+	                } 
+
+	                $sql = "SELECT * FROM voting WHERE Username = '$uname'";
+	                $result = $conn->query($sql);
+	                //time,Username,Choice
+	                if ($result->num_rows > 0) {
+		            // output data of each row
+		                while($row = $result->fetch_assoc()) {
+			                echo "<span> Current Choice:" . $row["Choice"]. "</span><br>";
+		                }
+	                } else {
+		                echo "<span> Current Choice: NONE </span><br>";
+	                }
+	                $conn->close();
+				?>
+					Pick Your Poison:<br>
+					<button type="button" onclick="list()" value="Show/Hide The List">
+					<div id="list">
+						<ul>
+						<?php
+				    		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+	                		if ($conn->connect_error) {     // Check connection
+		            	    	die("Connection failed: " . $conn->connect_error);
+	                		}
+	                		$sql = "SELECT * FROM Challenges";
+	                		$result = $conn->query($sql);
+	                		if ($result->num_rows > 0) {
+		            		// output data of each row
+		            	    	while($row = $result->fetch_assoc()) {
+			        	        	echo "<li><p>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"]. "</p>";
+			        	        	echo "<p>". $row["Description"] . "</p>";
+			        	        	if(!is_null ( $row["SaveState"] )){
+			        	        	    echo "<p>" . $row["SaveState"] . "</p>" ;
+			        	        	}
+			        	        	echo "</li>";
+		            	    	}
+	                		}
+							?>
+
+						</ul>
+					</div>
+					<br>
+					<select name="choice" id="choice">
+					<?php
+                		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+                		if ($conn->connect_error) {     // Check connection
+                    		die("Connection failed: " . $conn->connect_error);
+			
+            	    	}
+            	    	$sql = "SELECT * FROM Challenges";
+            	    	$result = $conn->query($sql);
+            	    	if ($result->num_rows > 0) {
+            	    	    // output data of each row
+            	        	while($row = $result->fetch_assoc()) {
+            	    	        echo "<option value='#" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "'>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</option>";
+            	        	}
+            	    	}
+            		?>
+					</select>
+				<br>
+			<input type="submit" value="Vote">
+
+
+				<input type="submit" value="Submit">
 			</form>
 		
 		
