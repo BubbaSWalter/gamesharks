@@ -53,7 +53,7 @@
 		    
 		    <form action="upload.php" method="get">
 				Person Voting:<span id="username">Guest</span><br>
-				<input type="text" name="username" value="<?php echo $uname; ?>"><br>
+				<input type="hidden" name="username" value="<?php echo $uname; ?>"><br>
 				Pick Your Poison:<br>
 				<button type="button" onclick="list()" >Show/Hide The List</button>
 				<div id="list">
