@@ -74,7 +74,7 @@
 	                $conn->close();
 				?>
 					Pick Your Poison:<br>
-					<button type="button" onclick="list()" value="Show/Hide The List"></button>
+					<button type="button" onclick="list()">Show/Hide The List</button>
 					<div id="list">
 						<ul>
 						<?php
