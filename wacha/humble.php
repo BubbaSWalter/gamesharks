@@ -62,7 +62,9 @@ include '../meistercheck.php';
 ?>
 	<article id="article">
 	    <p>Hello <?php echo $uname;?></p>
-	    <p>Community Results</p>
+		<div id="admin-main">
+		<p>Community Results</p>
+		
 		<?php
 			date_default_timezone_set("America/Chicago");
 			$servername = "localhost";
@@ -122,6 +124,7 @@ include '../meistercheck.php';
 			}
 			$conn->close();
 			?>
+		</div>
             <div>
                 
                 <form action="voting/full_wipe.php">
