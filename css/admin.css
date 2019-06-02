@@ -43,6 +43,7 @@ li a:hover {
 
 }
 #adminmain{
+    float:left;
     margin-top:0;
     margin-left:0;
     width:500px;
