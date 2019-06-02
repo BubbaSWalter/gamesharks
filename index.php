@@ -69,7 +69,7 @@
 	    <p>Hello, <?php echo $uname;?>:</p>
 		<p>Welcome to the Game Sharks Voting Pool</p>
 		<p>Click Login to start.  You will need a twitch account to vote</p>
-		<p>Sharks and Guppies are allowed one vote.  Challenge Meisters do not vote as the Challenge Meisters are the tie breakers.</p>
+		<p>Sharks and Guppies are allowed one vote.  Challenge Meisters will not be voting.  We are the tiebreakers</p>
 		<?php
 		    if(isset($_COOKIE["username"])) {
                 if($check == 'true'){
