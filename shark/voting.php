@@ -50,10 +50,10 @@
 	    <article id="article">
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		    
-		    <form action="upload.php" method="get">
-			<input type="hidden" name="username" value="<?php echo $uname; ?>"><br>
-				<input id="submit" type="button" value="Submit">
-			</form>
+			<form action="upload.php">
+
+  			<input type="submit" value="Vote">
+		</form>
 		
 		
 	</article>
