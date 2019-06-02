@@ -83,7 +83,7 @@ include '../meistercheck.php';
 			if ($result->num_rows > 0) {
 			// output data of each row
 				while($row = $result->fetch_assoc()) {
-					echo "<p class='stuff'>Total Score: " . $row["num"] . "</p>";
+					echo "<p class='stuff'>Total Votes: " . $row["num"] . "</p>";
 				}
 			} else {
 			echo "0 results";
