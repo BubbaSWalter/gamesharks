@@ -4,8 +4,8 @@
 
 <?php 
 	if(isset($_COOKIE["username"])) {
-		include('../uname.php')
-		include('../sharkcheck.php')
+		include('../uname.php');
+		include('../sharkcheck.php');
 		$check = false;
 		
 		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
