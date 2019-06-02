@@ -19,5 +19,5 @@
     }
 
     $conn->close();
-	
+	header("Location: https://gamesharks.wizardsrwe.com/wacha/humble.php");
 ?>
