@@ -62,17 +62,7 @@ include '../meistercheck.php';
 ?>
 	<article id="article">
 	    <p>Hello <?php echo $uname;?></p>
-		<div id="winners">
-                <form action="voting/winners.php">
-                    Winning Choices:<br>
-                    First Place: <input type="text" name="first" value="<?php echo $winners['first'] ?>"><br>
-                    Second Place: <input type="text" name="second" value="<?php echo $winners['second'] ?>"><br>
-                    Third Place: <input type="text" name="third" value="<?php echo $winners['third'] ?>"><br>
-                    Fouth Place: <input type="text" name="fourth" value="<?php echo $winners['fourth'] ?>"><br>
-                    Fifth Place: <input type="text" name="fifth" value="<?php echo $winners['fifth'] ?>"><br>
-                    <input type="submit" value="Update Winners">
-                </form>
-            </div>
+		
 		<div id="adminmain">
 		<p>Community Results</p>
 		
@@ -203,7 +193,17 @@ include '../meistercheck.php';
                     <input type="submit" value="Change Voting Mode">
                 </form>
             </div>
-
+			<div id="winners">
+                <form action="voting/winners.php">
+                    Winning Choices:<br>
+                    First Place: <input type="text" name="first" value="<?php echo $winners['first'] ?>"><br>
+                    Second Place: <input type="text" name="second" value="<?php echo $winners['second'] ?>"><br>
+                    Third Place: <input type="text" name="third" value="<?php echo $winners['third'] ?>"><br>
+                    Fouth Place: <input type="text" name="fourth" value="<?php echo $winners['fourth'] ?>"><br>
+                    Fifth Place: <input type="text" name="fifth" value="<?php echo $winners['fifth'] ?>"><br>
+                    <input type="submit" value="Update Winners">
+                </form>
+        </div>
 	</article>
 	<script type="text/javascript" src="../js/ocean.js"></script>
 </body>
