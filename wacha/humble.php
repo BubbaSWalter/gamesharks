@@ -82,7 +82,7 @@ include '../meistercheck.php';
 			$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
 			$Date = date("Y/m/d h:i:sa");
 
-			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting GROUP BY `Choice`ORDER BY num DESC";
+			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting GROUP BY `Choice`ORDER BY num DESC, Choice DESC";
 			$result = $conn->query($sql);
 			//time,Username,Choice
 			if ($result->num_rows > 0) {
@@ -112,7 +112,7 @@ include '../meistercheck.php';
 			$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
 			$Date = date("Y/m/d h:i:sa");
 
-			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM sharkvoting GROUP BY `Choice`ORDER BY num DESC";
+			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM sharkvoting GROUP BY `Choice`ORDER BY num DESC, Choice DESC";
 			$result = $conn->query($sql);
 			//time,Username,Choice
 			if ($result->num_rows > 0) {
