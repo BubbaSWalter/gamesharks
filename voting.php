@@ -46,7 +46,7 @@
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		    <script type="text/javascript" src="js/login.js"></script>
 			<form action="upload.php" method="get">
-				<input type="text" name="username" value="<?php echo $uname; ?>">  				Last name: <input type="text" name="lname"><br>
+				<input type="hidden" name="username" value="<?php echo $uname; ?>">
 				Person Voting:<span id="username"><?php echo $uname; ?></span><br>
 				<?php
     
@@ -118,9 +118,6 @@
 					</select>
 				<br>
 			<input type="submit" value="Vote">
-
-
-				<input type="submit" value="Submit">
 			</form>
 		
 		
