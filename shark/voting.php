@@ -27,7 +27,7 @@
 			header( 'Location: https://gamesharks.wizardsrwe.com/AccessError.php' );
 		}
 	} else {
-			header( 'Location: https://gamesharks.wizardsrwe.com/' );
+		header( 'Location: https://gamesharks.wizardsrwe.com/' );
 	}
 ?>
 <!DOCTYPE html>
@@ -49,82 +49,9 @@
 	    </div>
 	    <article id="article">
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
-		    <input id="login" type="button" onclick="location.href='login.html';" value="Login">
 		    
 		    <form action="upload.php" method="get">
-				Person Voting:<span id="username">Guest</span><br>
-				<input type="hidden" name="username" value="<?php echo $uname; ?>"><br>
-				Pick Your Poison:<br>
-				<button type="button" onclick="list()" >Show/Hide The List</button>
-				<div id="list">
-					<ul>
-						<?php
-                    		$conn = new mysqli($servername, $username, $password, $dbname);
-                    		if ($conn->connect_error) {     // Check connection
-	                    		die("Connection failed: " . $conn->connect_error);
-	                		}
-	                		$winners = array();
-	                		$sql = "SELECT * FROM winner";
-	                		$result = $conn->query($sql);
-	                		if ($result->num_rows > 0) {
-                        		// output data of each row
-                        		while($row = $result->fetch_assoc()) {
-                            		$winners = $row;
-                        		}} else {
-                            		echo "0 results";
-                        		}
-                    		$sql = "SELECT * FROM `Challenges` WHERE `ChallengeNum`='" . $winners['first'] . "' or `ChallengeNum`='" . $winners['second'] . "' or `ChallengeNum`='" . $winners['third'] . "' or `ChallengeNum`='" . $winners['fourth'] . "' or `ChallengeNum`='" . $winners['fifth'] . "'  ORDER BY ChallengeNum ASC";
-                    		$result = $conn->query($sql);
-                    		if ($result->num_rows > 0) {
-                        		while($row = $result->fetch_assoc()) {
-                            		echo "<li><p>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"]. "</p>";
-			                		echo "<p>". $row["Description"] . "</p>";
-			                		if(!is_null ( $row["SaveState"] )){
-			                		    echo "<p>" . $row["SaveState"] . "</p>" ;
-			                		}
-			                		echo "</li>";
-                    		}} else {
-                        		echo "0 results";
-                    		}
-                    		$conn->close();
-						?>
-					</ul>
-				</div>
-
-				<br>
-				<select name="choice" id="choice">
-					<?php
-						$conn = new mysqli($servername, $username, $password, $dbname);
-						if ($conn->connect_error) {     // Check connection
-							die("Connection failed: " . $conn->connect_error);
-						}
-
-						$winners = array();
-	                	$sql = "SELECT * FROM winner";
-	                	$result = $conn->query($sql);
-	                	if ($result->num_rows > 0) {
-                        	// output data of each row
-                        	while($row = $result->fetch_assoc()) {
-                            	$winners = $row;
-                        }} else {
-                        	echo "0 results";
-                        }
-                    	$sql = "SELECT * FROM `Challenges` WHERE `ChallengeNum`='" . $winners['first'] . "' or `ChallengeNum`='" . $winners['second'] . "' or `ChallengeNum`='" . $winners['third'] . "' or `ChallengeNum`='" . $winners['fourth'] . "' or `ChallengeNum`='" . $winners['fifth'] . "'  ORDER BY ChallengeNum ASC";
-                    	$result = $conn->query($sql);
-                    	if ($result->num_rows > 0) {
-                        	while($row = $result->fetch_assoc()) {
-                            	echo "<option value='#" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "'>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</option>";
-			                	if(!is_null ( $row["SaveState"] )){
-			                    	echo "<p>" . $row["SaveState"] . "</p>" ;
-			                	}
-			                	echo "</li>";
-                    	}} else {
-                        	echo "0 results";
-                    	}
-                    	$conn->close();
-					?>
-				</select>
-				<br>
+			<input type="hidden" name="username" value="<?php echo $uname; ?>"><br>
 				<input id="submit" type="button" value="Submit">
 			</form>
 		
