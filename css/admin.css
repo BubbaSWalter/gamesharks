@@ -59,7 +59,7 @@ li a:hover {
 #winners{
     float: left;
     margin-top:0;
-    margin-left:500px;
+    margin-left:0px;
 }
 #clearing{
     clear: left;
