@@ -137,7 +137,7 @@ include '../meistercheck.php';
                     <input type="submit" value="Update Winners">
                 </form>
         </div>
-            <div>
+            <div id="clearing">
                 
                 <form action="voting/full_wipe.php">
                     Wiping all votes in which group<br>
