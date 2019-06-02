@@ -10,8 +10,8 @@ if ($conn->connect_error) {     // Check connection
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$Username = mysqli_real_escape_string($conn, $_POST['username']);
-$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
+$Username = mysqli_real_escape_string($conn, $_GET['username']);
+$Choice = mysqli_real_escape_string($conn, $_GET['choice']);
 $Date = date("Y/m/d h:i:sa");
 
 $sql = "INSERT INTO voting (time,Username,Choice) 

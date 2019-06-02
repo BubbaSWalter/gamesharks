@@ -3,6 +3,30 @@
         header( 'Location: https://gamesharks.wizardsrwe.com/' );
     }
 ?>
+<?php
+    $uname = "Guest";
+	if(isset($_COOKIE["username"])) {
+		$uname = $_COOKIE["username"];
+		
+		$curl = curl_init();
+		curl_setopt_array($curl, array(
+			CURLOPT_URL => "https://id.twitch.tv/oauth2/validate",
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST => "GET",
+			CURLOPT_HTTPHEADER => array(
+				"Authorization: OAuth ". $uname 
+			),
+		));
+		
+		$resp = curl_exec($curl);
+		$response = json_decode($resp, true);
+		
+		$uname = $response['login'];
+		curl_close($curl);
+	}
+?>
 <!DOCTYPE html>
 <html>
 	<meta charset="UTF-8">
@@ -21,27 +45,10 @@
 	    <article id="article">
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		    <script type="text/javascript" src="js/login.js"></script>
-		    <form>
-			    Person Voting:<span id="username">Guest</span><br>
+			<form action="upload.php" method="post" >
+			<input type="text" name="username" value="<?php echo $uname; ?>">
+			    Person Voting:<span id="username"><?php echo $uname; ?></span><br>
 			    <?php
-			        $uname = $_COOKIE["username"];
-		            $curl = curl_init();
-		            curl_setopt_array($curl, array(
-			            CURLOPT_URL => "https://id.twitch.tv/oauth2/validate",
-			            CURLOPT_RETURNTRANSFER => true,
-			            CURLOPT_TIMEOUT => 30,
-			            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-			            CURLOPT_CUSTOMREQUEST => "GET",
-			            CURLOPT_HTTPHEADER => array(
-				            "Authorization: OAuth ". $uname 
-			            ),
-		            ));
-		
-		            $resp = curl_exec($curl);
-		            $response = json_decode($resp, true);
-		
-		            $uname = $response['login'];
-		            curl_close($curl);
     
                     $servername = "localhost";
 	                $username = "u919436859_admin";
@@ -110,14 +117,13 @@
             ?>
 			</select>
 			<br>
-			<input id="submit" type="button" onclick="vote()" value="Submit">
+			<input id="submit" type="button" value="Submit">
 			
 		</form>
 		
 		
 	</article>
 	<script type="text/javascript" src="js/list.js"></script>
-	<script type="text/javascript" src="js/vote.js"></script>
 	<script type="text/javascript" src="js/ocean.js"></script>
     
 
