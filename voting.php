@@ -74,7 +74,7 @@
 	                $conn->close();
 				?>
 					Pick Your Poison:<br>
-					<button type="button" onclick="list()" value="Show/Hide The List">
+					<button type="button" onclick="list()" value="Show/Hide The List"></button>
 					<div id="list">
 						<ul>
 						<?php
@@ -96,7 +96,6 @@
 		            	    	}
 	                		}
 							?>
-
 						</ul>
 					</div>
 					<br>
