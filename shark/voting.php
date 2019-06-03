@@ -111,10 +111,10 @@
                     	$result = $conn->query($sql);
                     	if ($result->num_rows > 0) {
                         	while($row = $result->fetch_assoc()) {
-								$cnum = str_replace("'", "\'", $row["ChallengeNum"]);
-								$game = str_replace("'", "\'", $row["Game"]);
-								$console = str_replace("'", "\'", $row["Console"]);
-								$type = str_replace("'", "\'", $row["Type"]);
+								$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
+								$game = str_replace("'", "&apos;", $row["Game"]);
+								$console = str_replace("'", "&apos;", $row["Console"]);
+								$type = str_replace("'", "&apos;", $row["Type"]);
                             	echo "<option value='#" . $cnum . " - " . $game ." - " . $console . " - " . $type . "'>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</option>";
 			                	if(!is_null ( $row["SaveState"] )){
 			                    	echo "<p>" . $row["SaveState"] . "</p>" ;
