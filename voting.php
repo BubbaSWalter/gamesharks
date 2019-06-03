@@ -25,6 +25,12 @@
 		
 		$uname = $response['login'];
 		curl_close($curl);
+
+		include 'sharkcheck.php';
+
+		if (in_array($uname, $shark_array)){
+			header( 'Location: https://gamesharks.wizardsrwe.com/AccessError.php' );
+		}
 	}
 ?>
 <!DOCTYPE html>
