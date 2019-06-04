@@ -134,11 +134,16 @@ include '../meistercheck.php';
 		<div id="winners">
                 <form action="voting/winners.php">
                     Winning Choices:<br>
-                    First Place: <input type="text" name="first" value="<?php echo $winners['first'] ?>"><br>
-                    Second Place: <input type="text" name="second" value="<?php echo $winners['second'] ?>"><br>
-                    Third Place: <input type="text" name="third" value="<?php echo $winners['third'] ?>"><br>
-                    Fouth Place: <input type="text" name="fourth" value="<?php echo $winners['fourth'] ?>"><br>
-                    Fifth Place: <input type="text" name="fifth" value="<?php echo $winners['fifth'] ?>"><br>
+					<label for="first">First Place: </label>
+                    <input type="text" name="first" value="<?php echo $winners['first'] ?>"><br>
+					<label for="second">Second Place: </label>
+                    <input type="text" name="second" value="<?php echo $winners['second'] ?>"><br>
+					<label for="third">Third Place: </label>
+                    <input type="text" name="third" value="<?php echo $winners['third'] ?>"><br>
+					<label for="fourth">Fouth Place: </label>
+                    <input type="text" name="fourth" value="<?php echo $winners['fourth'] ?>"><br>
+					<label for="fifth">Fifth Place: </label>
+                    <input type="text" name="fifth" value="<?php echo $winners['fifth'] ?>"><br>
                     <input type="submit" value="Update Winners">
                 </form>
         </div>
