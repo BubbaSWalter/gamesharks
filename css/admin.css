@@ -64,3 +64,8 @@ li a:hover {
 #clearing{
     clear: left;
 }
+
+.results p{
+    padding:0;
+    margin:0;
+}
