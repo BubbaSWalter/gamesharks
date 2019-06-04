@@ -64,85 +64,73 @@ include '../meistercheck.php';
 	    <p>Hello <?php echo $uname;?></p>
 		
 		<div id="adminmain">
-		<p>Community Results</p>
-				
-		<?php
+			<h5>Community Results</h5>
+			<Div class="results">
+				<?php
 
-			$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-			if ($conn->connect_error) {     // Check connection
-				die("Connection failed: " . $conn->connect_error);
-			} 
+					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+					if ($conn->connect_error) {     // Check connection
+						die("Connection failed: " . $conn->connect_error);
+					} 
 
-			$Username = mysqli_real_escape_string($conn, $_POST['username']);
-			$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
-			$Date = date("Y/m/d h:i:sa");
+					$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting";
+					$result = $conn->query($sql);
+					//time,Username,Choice
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo "<p>Total Votes: " . $row["num"] . "</p>";
+						}
+					}
 
-			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting";
-			$result = $conn->query($sql);
-			//time,Username,Choice
-			if ($result->num_rows > 0) {
-			// output data of each row
-				while($row = $result->fetch_assoc()) {
-					echo "<p class='stuff'>Total Votes: " . $row["num"] . "</p>";
-				}
-			} else {
-			echo "0 results";
-			}
-			$conn->close();
-		?>
+					$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting GROUP BY `Choice`ORDER BY num DESC, Choice ASC";
+					$result = $conn->query($sql);
+					//time,Username,Choice
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo "<p class='stuff'>Challenge: " . $row["Choice"] . " - Count: " . $row["num"] . "</p>";
+						}
+					} else {
+						echo "No Votes Submitted";
+					}
+					$conn->close();
+					?>
+			</div>
 		
+			<h5>Shark Response</h5>
+			<Div class="results">
+				<?php
 
-		
-		<?php
+					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+					if ($conn->connect_error) {     // Check connection
+						die("Connection failed: " . $conn->connect_error);
+					} 
 
-			$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-			if ($conn->connect_error) {     // Check connection
-				die("Connection failed: " . $conn->connect_error);
-			} 
+					$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM sharkvoting";
+					$result = $conn->query($sql);
+					//time,Username,Choice
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo "<p>Total Votes: " . $row["num"] . "</p>";
+						}
+					}
 
-			$Username = mysqli_real_escape_string($conn, $_POST['username']);
-			$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
-			$Date = date("Y/m/d h:i:sa");
-
-			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM voting GROUP BY `Choice`ORDER BY num DESC, Choice ASC";
-			$result = $conn->query($sql);
-			//time,Username,Choice
-			if ($result->num_rows > 0) {
-			// output data of each row
-				while($row = $result->fetch_assoc()) {
-					echo "<p class='stuff'>Challenge: " . $row["Choice"] . " - Count: " . $row["num"] . "</p>";
-				}
-			} else {
-			echo "0 results";
-			}
-			$conn->close();
-		?>
-		
-		<p>Shark Response</p>
-		<?php
-			$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-			if ($conn->connect_error) {     // Check connection
-				die("Connection failed: " . $conn->connect_error);
-			} 
-
-			$Username = mysqli_real_escape_string($conn, $_POST['username']);
-			$Choice = mysqli_real_escape_string($conn, $_POST['choice']);
-			$Date = date("Y/m/d h:i:sa");
-
-			$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM sharkvoting GROUP BY `Choice`ORDER BY num DESC, Choice ASC";
-			$result = $conn->query($sql);
-			//time,Username,Choice
-			if ($result->num_rows > 0) {
-			// output data of each row
-				while($row = $result->fetch_assoc()) {
-					echo "<p class='stuff'>Challenge: " . $row["Choice"] . " - Count: " . $row["num"] . "</p>";
-				}
-			} else {
-			echo "0 results";
-			}
-			$conn->close();
-			?>
-		</div>
+					$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM sharkvoting GROUP BY `Choice`ORDER BY num DESC, Choice ASC";
+					$result = $conn->query($sql);
+					//time,Username,Choice
+					if ($result->num_rows > 0) {
+						// output data of each row
+						while($row = $result->fetch_assoc()) {
+							echo "<p class='stuff'>Challenge: " . $row["Choice"] . " - Count: " . $row["num"] . "</p>";
+						}
+					} else {
+						echo "No Votes Submitted";
+					}
+					$conn->close();
+					?>
+			</div>
 		<div id="winners">
                 <form action="voting/winners.php">
                     Winning Choices:<br>
