@@ -64,7 +64,7 @@ include '../meistercheck.php';
 		<div id="adminmain">
 			
 			<div class="results">
-				<h5>Community Results</h5>
+				<h4>Community Results</h4>
 				<?php
 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -78,7 +78,7 @@ include '../meistercheck.php';
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo "<p>Total Votes: " . $row["num"] . "</p>";
+							echo "<h5>Total Votes: " . $row["num"] . "</h5>";
 						}
 					}
 
@@ -98,7 +98,7 @@ include '../meistercheck.php';
 			</div>
 			
 			<div class="results">
-				<h5>Shark Response</h5>
+				<h4>Shark Response</h4>
 				<?php
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 					if ($conn->connect_error) {     // Check connection
@@ -111,7 +111,7 @@ include '../meistercheck.php';
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							echo "<p>Total Votes: " . $row["num"] . "</p>";
+							echo "<h5>Total Votes: " . $row["num"] . "</h5>";
 						}
 					}
 
