@@ -62,8 +62,9 @@ include '../meistercheck.php';
 ?>
 	<article id="article">
 		<div id="adminmain">
-			<h5>Community Results</h5>
+			
 			<div class="results">
+				<h5>Community Results</h5>
 				<?php
 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -95,8 +96,9 @@ include '../meistercheck.php';
 					$conn->close();
 				?>
 			</div>
-			<h5>Shark Response</h5>
+			
 			<div class="results">
+				<h5>Shark Response</h5>
 				<?php
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 					if ($conn->connect_error) {     // Check connection
