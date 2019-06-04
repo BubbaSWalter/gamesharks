@@ -57,12 +57,12 @@ li a:hover {
     margin-left:400px;
 }
 #winners{
-    float: left;
+    float: right;
     margin-top:0;
     margin-left:0px;
 }
 #clearing{
-    clear: left;
+    clear: right;
 }
 
 .results p{
