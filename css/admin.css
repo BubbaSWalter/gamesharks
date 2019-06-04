@@ -64,7 +64,10 @@ li a:hover {
     margin-left: 0px;
 }
 #clearing{
-    clear: right;
+    position: absolute;
+    top:500px;
+    left:1000px;
+
 }
 
 .results p{
