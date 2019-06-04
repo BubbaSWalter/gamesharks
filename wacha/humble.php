@@ -64,7 +64,7 @@ include '../meistercheck.php';
 	    <p>Hello <?php echo $uname;?></p>
 		
 		<div id="adminmain">
-			<h5>Community Results</h5>
+			<p>Community Results</p>
 			<Div class="results">
 				<?php
 
@@ -98,7 +98,7 @@ include '../meistercheck.php';
 					?>
 			</div>
 		
-			<h5>Shark Response</h5>
+			<p>Shark Response</p>
 			<Div class="results">
 				<?php
 
