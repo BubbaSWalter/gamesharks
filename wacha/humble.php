@@ -61,11 +61,9 @@ include '../meistercheck.php';
     $conn->close();
 ?>
 	<article id="article">
-	    <p>Hello <?php echo $uname;?></p>
-		
 		<div id="adminmain">
-			<p>Community Results</p>
-			<Div class="results">
+			<h5>Community Results</h5>
+			<div class="results">
 				<?php
 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -95,13 +93,11 @@ include '../meistercheck.php';
 						echo "No Votes Submitted";
 					}
 					$conn->close();
-					?>
+				?>
 			</div>
-		
-			<p>Shark Response</p>
-			<Div class="results">
+			<h5>Shark Response</h5>
+			<div class="results">
 				<?php
-
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 					if ($conn->connect_error) {     // Check connection
 						die("Connection failed: " . $conn->connect_error);
@@ -129,8 +125,10 @@ include '../meistercheck.php';
 						echo "No Votes Submitted";
 					}
 					$conn->close();
-					?>
+				?>
 			</div>
+		<div>
+
 		<div id="winners">
                 <form action="voting/winners.php">
                     Winning Choices:<br>
@@ -142,22 +140,23 @@ include '../meistercheck.php';
                     <input type="submit" value="Update Winners">
                 </form>
         </div>
-            <div id="clearing">
-                
-                <form action="voting/full_wipe.php">
-                    Wiping all votes in which group<br>
-                    <select name="wipe">
-                        <option > --- </option>
-                        <option value="shark">Wipe Shark Votes</option>
-                        <option value="community">Wipe Community Votes</option>
-                    </select><br>
-                    <input type="submit" value="Wipe All Votes">
-                </form>
-                <br>
-                <form action="voting/shark_wipe.php">
-                    Shark Voting Single Person Wipe<br>
-                    <select name="sharkpersonwipe">
-                        <option > --- </option>
+
+		<div id="clearing">
+			<form action="voting/full_wipe.php">
+                Wiping all votes in which group<br>
+                <select name="wipe">
+                    <option > --- </option>
+                    <option value="shark">Wipe Shark Votes</option>
+                    <option value="community">Wipe Community Votes</option>
+                </select><br>
+                <input type="submit" value="Wipe All Votes">
+            </form>
+            <br>
+
+			<form action="voting/shark_wipe.php">
+                Shark Voting Single Person Wipe<br>
+                <select name="sharkpersonwipe">
+                    <option > --- </option>
                     <?php 
                         $sql = "SELECT Username FROM sharkvoting ORDER BY Username DESC";
                         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -172,44 +171,45 @@ include '../meistercheck.php';
 				            }
 			            }
                     ?>
-                    </select><br>
-                    <input type="submit" value="Wipe Shark Vote">
-                </form>
-                <br>
-                <form action="voting/community_wipe.php">
-                    Community Voting Single Person Wipe<br>
-                    <select name="sharkpersonwipe">
-                        <option > --- </option>
-                    <?php 
-                        $sql = "SELECT Username FROM voting ORDER BY Username DESC";
-                        $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-			            if ($conn->connect_error) {     // Check connection
-				            die("Connection failed: " . $conn->connect_error);
-			            }
-			            $result = $conn->query($sql);
-			            if ($result->num_rows > 0) {
-			                // output data of each row
-				            while($row = $result->fetch_assoc()) {
-					            echo "<option value='". $row["Username"] . "'>" . $row["Username"] . "</option>";
-				            }
-			            }
-                    ?>
-                    </select><br>
-                    <input type="submit" value="Wipe Community Vote">
-                </form>
-                <br>
-                <form action="voting/voting_status.php">
-                    Voting Status<br>
-                    <select name="status">
-                        <option > --- </option>
-                        <option value="none">Voting Closed</option>
-                        <option value="shark">Enable Shark Only Voting</option></option>
-                        <option value="community">Enable Community Voting</option>
-                    </select><br>
-                    <input type="submit" value="Change Voting Mode">
-                </form>
-            </div>
+                </select><br>
+                <input type="submit" value="Wipe Shark Vote">
+            </form>
+			<br>
 
+			<form action="voting/community_wipe.php">
+                Community Voting Single Person Wipe<br>
+                <select name="sharkpersonwipe">
+                    <option > --- </option>
+                <?php 
+                    $sql = "SELECT Username FROM voting ORDER BY Username DESC";
+                    $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+			        if ($conn->connect_error) {     // Check connection
+				    	die("Connection failed: " . $conn->connect_error);
+			        }
+			        $result = $conn->query($sql);
+			        if ($result->num_rows > 0) {
+			            // output data of each row
+				        while($row = $result->fetch_assoc()) {
+					        echo "<option value='". $row["Username"] . "'>" . $row["Username"] . "</option>";
+				        }
+			        }
+                ?>
+                </select><br>
+                <input type="submit" value="Wipe Community Vote">
+            </form>
+			<br>
+
+			<form action="voting/voting_status.php">
+			    Voting Status<br>
+                <select name="status">
+                    <option > --- </option>
+                    <option value="none">Voting Closed</option>
+                    <option value="shark">Enable Shark Only Voting</option></option>
+                    <option value="community">Enable Community Voting</option>
+                </select><br>
+                <input type="submit" value="Change Voting Mode">
+            </form>
+        </div>
 	</article>
 	<script type="text/javascript" src="../js/ocean.js"></script>
 </body>
