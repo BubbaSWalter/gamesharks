@@ -1,5 +1,5 @@
-shark = false;
 $( document ).ready(function() {
+    token=checkCookie();
 	$.ajax({
 		type:"GET",
 		url:"https://id.twitch.tv/oauth2/validate",
@@ -7,45 +7,22 @@ $( document ).ready(function() {
 			"Authorization":"OAuth "+ token
 		},
 		success: function(data){
+		    console.log(username)
+		 
 			username = data['login']
-			console.log(username)
+			document.getElementById("username").innerHTML = username;
 		}
-	}); 
+	});
 	setTimeout(function(){
-	    if(username === "Guest"){
-	        $("#login").show();
-	        if(window.location.pathname != "/index.php"){
-	            document.location.href = "/index.php"  
-	        }
-	        
-	    }
-	    if (username != "Guest"){
-	        $("#login").hide();
-	        
-	    }
-	    if(window.location.pathname != "/voting.php"){
-	        console.log(username)
-            $.ajax({
-		        type:"GET",
-		        url:"process.php?username=" + username,
-		        success: function(data){
-		            console.log(data)
-                    document.location.href = data
-		        }
-	        });			
-	    }
-
-	    if(window.location.pathname == "/voting.php"){
-            document.getElementById("username").innerHTML = username;
-            
-	    }
+		if(username === "Guest"){
+			$("#login").show();
+			if(window.location.pathname != "/index.php"){
+				document.location.href = "/index.php"  
+			}
+		}
+	}, 1000);
 	
-	}, 500);
-
-
-});
-
-token=checkCookie();
+})
 username = "Guest"
 
 
