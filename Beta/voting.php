@@ -78,24 +78,27 @@
     						<th>Vote 2</th> 
     						<th>Vote 3</th>
   						</tr>
-  						<tr>
-							<td>Challenge #1</td>
-    						<td><input type="radio" name="vote1" value="Challenge1"></td>
-    						<td><input type="radio" name="vote2" value="Challenge1"></td> 
-    						<td><input type="radio" name="vote3" value="Challenge1"></td>
-  						</tr>
-  						<tr>
-							<td>Challenge #2</td>
-    						<td><input type="radio" name="vote1" value="Challenge2"></td>
-    						<td><input type="radio" name="vote2" value="Challenge2"></td> 
-    						<td><input type="radio" name="vote3" value="Challenge2"></td>
-  						</tr>
-						<tr>
-							<td>Challenge #3</td>
-    						<td><input type="radio" name="vote1" value="Challenge3"></td>
-    						<td><input type="radio" name="vote2" value="Challenge3"></td> 
-    						<td><input type="radio" name="vote3" value="Challenge3"></td>
-  						</tr>
+  						<?php
+							$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+							if ($conn->connect_error) {     // Check connection
+								die("Connection failed: " . $conn->connect_error);
+					
+							}
+							$sql = "SELECT * FROM Challenges";
+							$result = $conn->query($sql);
+							if ($result->num_rows > 0) {
+								// output data of each row
+								while($row = $result->fetch_assoc()) {
+									echo '	<tr>';
+									echo '		<td>Challenge#'  . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '</td>'
+									echo '		<td><input type="radio" name="vote1" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
+									echo '		<td><input type="radio" name="vote2" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
+									echo '		<td><input type="radio" name="vote3" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
+									echo '	</tr>'
+
+								}
+							}
+						?>
 					</table>
 				<br>
 			<input type="submit" value="Vote">
