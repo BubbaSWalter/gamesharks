@@ -15,9 +15,9 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
             array_push($MainArray, $row['Choice1'], $row['Choice2'], $row['Choice3']);
-            echo $row['Choice1'] . '<br>';
-            echo $row['Choice2'] . '<br>';
-            echo $row['Choice3'] . '<br>';
+            //echo $row['Choice1'] . '<br>';
+            //echo $row['Choice2'] . '<br>';
+            //echo $row['Choice3'] . '<br>';
 		}
     }
     $arr = array();
