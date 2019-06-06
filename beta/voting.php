@@ -128,11 +128,24 @@
 									$game = str_replace("'", "&apos;", $row["Game"]);
 									$console = str_replace("'", "&apos;", $row["Console"]);
 									$type = str_replace("'", "&apos;", $row["Type"]);
+									$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
 									echo '	<tr>';
-									echo '		<td> Challenge#'  . $cnum . " - " . $game ." - " . $console . " - " . $type . '</td>';
-									echo '		<td><input type="radio" name="vote1" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
-									echo '		<td><input type="radio" name="vote2" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
-									echo '		<td><input type="radio" name="vote3" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td> Challenge#'  . $holder . '</td>';
+									if($_GET['vote1'] == $holder){
+										echo '		<td><input type="radio" name="vote1" align="center" value="' . $holder . '" checked></td>';
+									} else{
+										echo '		<td><input type="radio" name="vote1" align="center" value="' . $holder . '"></td>';
+									}
+									if($_GET['vote2'] == $holder){
+										echo '		<td><input type="radio" name="vote2" align="center" value="' . $holder . '" checked></td>';
+									} else{
+										echo '		<td><input type="radio" name="vote2" align="center" value="' . $holder . '"></td>';
+									}
+									if($_GET['vote3'] == $holder){
+										echo '		<td><input type="radio" name="vote3" align="center" value="' . $holder . '" checked></td>';
+									} else{
+										echo '		<td><input type="radio" name="vote3" align="center" value="' . $holder . '"></td>';
+									}
 									echo '	</tr>';
 
 								}
