@@ -20,6 +20,8 @@
 		}
     }
     arsort($MainArray, 1);
-    print_r($MainArray);
+    foreach ($MainArray as $key => $item) {
+        echo "Challenge #" . $key . " Count: " . $item . "<br>";
+    }
 
 ?>
