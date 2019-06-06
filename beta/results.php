@@ -33,8 +33,8 @@
 
     foreach($arr as $item){
         echo $item['Challenge'] . "<br>";
-        echo $item['Count'] . "<br>";
-        $trueArray[$item['Challenge']] = $item['Count'];
+        echo $item['count'] . "<br>";
+        $trueArray[$item['Challenge']] = $item['count'];
     }
     echo "<br>";
     echo "<br>";
