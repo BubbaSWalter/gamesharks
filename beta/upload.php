@@ -14,7 +14,7 @@
         $_GET['vote3'] == $_GET['vote1'] Or 
         $_GET['vote3'] == $_GET['vote2'] 
          ){
-            $error = urlencode("Error: You voted one challenge more than Once")
+            $error = urlencode("Error: You voted one challenge more than Once");
             header( 'Location: https://gamesharks.wizardsrwe.com/beta/voting.php?error='. $error .'&vote1='. $_GET["vote1"] . '&vote2='. $_GET["vote2"] .' &vote3='. $_GET["vote3"] );
 
          }else{
