@@ -21,10 +21,13 @@
 		}
     }
     $arr = array();
+
     foreach ($MainArray as $key => $item) {
-        echo $item;
+        //$arr[$item['id']][$key] = $item;
+        $arr[$item]['Challenge'] = $item;
+        $arr[$item]['count'] = $arr[$item]['count'] + 1;
     }
-    ksort($arr, SORT_NUMERIC);
+
 
     print_r($arr);
 
