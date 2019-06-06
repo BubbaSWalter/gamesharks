@@ -32,7 +32,7 @@
     $trueArray = array();
 
     foreach($arr as $item){
-        echo $item . "<br>";
+        print_r($item);
     }
 
     //print_r($trueArray)
