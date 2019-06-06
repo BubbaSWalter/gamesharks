@@ -8,7 +8,7 @@
                     
     if ($conn->connect_error) {     // Check connection
 		die("Connection failed: " . $conn->connect_error);
-	}
+	}else{
 	    $sql = "SELECT * FROM testarray";
 	    $result = $conn->query($sql);
 	    if ($result->num_rows > 0) {
