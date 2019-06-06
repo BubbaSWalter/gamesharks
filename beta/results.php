@@ -29,10 +29,11 @@
         
     }
 
-    ksort($arr);
+    $trueArray = array();
 
     foreach($arr as $item){
-        echo "Challenge# " . $item['Challenge'] . " Count:" . $item['count'] . "<br>";
+        echo $item[''challenge] . "<br>"
     }
 
+    //print_r($trueArray)
 ?>
