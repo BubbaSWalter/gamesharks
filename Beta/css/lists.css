@@ -1,4 +1,0 @@
-.stuff p:nth-child(even) {background-color: #CCC}
-.stuff p:nth-child(odd) {background-color: #FFF}
-li:nth-child(even) {background-color: #CCC}
-li:nth-child(odd) {background-color: #FFF}
