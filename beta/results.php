@@ -38,6 +38,6 @@
     }
     echo "<br>";
     echo "<br>";
-    ksort($trueArray)
+    ksort($trueArray);
     print_r($trueArray);
 ?>
