@@ -40,7 +40,5 @@
     arsort($trueArray, 1);
 
     foreach ($trueArray as $key => $item) {
-        echo "Challenge #" . $key . "COunt: " . $item . "<br>";
-   
-        
+        echo "Challenge #" . $key . " Count: " . $item . "<br>";
     }
