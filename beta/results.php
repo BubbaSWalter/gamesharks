@@ -8,17 +8,17 @@
                     
     if ($conn->connect_error) {     // Check connection
 		die("Connection failed: " . $conn->connect_error);
-	}else{
-	    $sql = "SELECT * FROM testarray";
-	    $result = $conn->query($sql);
-	    if ($result->num_rows > 0) {
-		    // output data of each row
-		    while($row = $result->fetch_assoc()) {
-                echo $row['choice1'] . '<br>';
-                echo $row['choice2'] . '<br>';
-                echo $row['choice3'] . '<br>';
-		    }
-        }
+	}
+	$sql = "SELECT * FROM testarray";
+	$result = $conn->query($sql);
+	if ($result->num_rows > 0) {
+		// output data of each row
+		while($row = $result->fetch_assoc()) {
+            echo $row['choice1'] . '<br>';
+            echo $row['choice2'] . '<br>';
+            echo $row['choice3'] . '<br>';
+		}
     }
+    
 
 ?>
