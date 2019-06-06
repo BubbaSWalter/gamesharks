@@ -95,9 +95,9 @@
 									$type = str_replace("'", "&apos;", $row["Type"]);
 									echo '	<tr>';
 									echo '		<td>Challenge#'  . $cnum . " - " . $game ." - " . $console . " - " . $type . '</td>';
-									echo '		<td><input type="radio" name="vote1" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
-									echo '		<td><input type="radio" name="vote2" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
-									echo '		<td><input type="radio" name="vote3" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td><input type="radio" name="vote1" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td><input type="radio" name="vote2" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td><input type="radio" name="vote3" align="center" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
 									echo '	</tr>';
 
 								}
