@@ -40,6 +40,6 @@
     echo "<br>";
     ksort($trueArray);
     foreach($trueArray as $item){
-        echo $item . "<br>";
+        echo key($item) . $item . "<br>";
     }
 ?>
