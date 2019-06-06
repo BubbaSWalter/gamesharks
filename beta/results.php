@@ -24,8 +24,9 @@
 
     foreach ($MainArray as $key => $item) {
         //$arr[$item['id']][$key] = $item;
-        $arr[$item]['Challenge'] = $item;
         $arr[$item]['count'] = $arr[$item]['count'] + 1;
+        $arr[$item]['Challenge'] = $item;
+        
     }
 
     ksort($arr);
