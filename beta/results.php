@@ -14,11 +14,18 @@
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
+            array_push($MainArray, $row['Choice1'], $row['Choice2'], $row['Choice3']);
             echo $row['Choice1'] . '<br>';
             echo $row['Choice2'] . '<br>';
             echo $row['Choice3'] . '<br>';
 		}
     }
-    
+    $arr = array();
+    foreach ($MainArray as $key => $item) {
+        $arr[$item['id']][$key] = "jank";
+    }
+    ksort($arr, SORT_NUMERIC);
+
+    print_r($arr);
 
 ?>
