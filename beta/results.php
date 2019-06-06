@@ -20,5 +20,6 @@
 		}
     }
     arsort($MainArray, 1);
+    print_r($MainArray);
 
 ?>
