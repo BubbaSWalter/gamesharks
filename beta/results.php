@@ -22,7 +22,7 @@
     }
     $arr = array();
     foreach ($MainArray as $key => $item) {
-        $arr[$item['id']][$key] = "jank";
+        echo $item;
     }
     ksort($arr, SORT_NUMERIC);
 
