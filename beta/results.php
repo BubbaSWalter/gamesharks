@@ -38,7 +38,7 @@
     }
     echo "<br>";
     echo "<br>";
-    ksort($trueArray);
+    ksort($trueArray, 1);
 
     foreach ($trueArray as $key => $item) {
         echo $key. "<br>";
