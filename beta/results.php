@@ -42,7 +42,7 @@
 
     foreach ($trueArray as $key => $item) {
         echo $key. "<br>";
-        $echo $item . "<br>";
+        echo $item . "<br>";
         
     }
 
