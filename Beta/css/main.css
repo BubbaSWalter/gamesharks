@@ -31,3 +31,7 @@ body{
   left: 0;
   position: absolute;
 }
+
+table, th, td {
+  border: 1px solid black;
+}
