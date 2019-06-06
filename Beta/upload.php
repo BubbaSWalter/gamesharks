@@ -6,7 +6,7 @@
         $_GET['vote3'] == $_GET['vote1'] Or 
         $_GET['vote3'] == $_GET['vote2'] 
          ){
-             echo "Error: you Voted once Challenge More than Once"
+             echo "Error: you Voted once Challenge More than Once";
          }else{
             echo $_GET;
          }
