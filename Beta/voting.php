@@ -69,7 +69,9 @@
 							?>
 						</ul>
 					</div>
-					<table style="width:100%">
+					<div><?php echo $_GET['error'];?><div>
+					<table style="width:50%">
+						<caption>Pick three choices but you can only chose one challege once</caption>
   						<tr>
 						  	<th>Chanllenge</th>
     						<th>Vote 1</th>
@@ -101,6 +103,9 @@
 		
 		
 		</article>
+		<script>
+			if( document.getElementsByClassName(""))
+		</script>
 	<script type="text/javascript" src="js/list.js"></script>
 	<script type="text/javascript" src="js/ocean.js"></script>
     
