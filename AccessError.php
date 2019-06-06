@@ -14,7 +14,11 @@
 	</div>
 	<article id="article">
 		<p>Welcome to the Game Sharks Voting Pool</p>
-		<p>Currently the Voting is set to Sharks only and I dont have you down as a shark. If you feel this is in error please let BubbaSWalter know</p>
+		<p>currently Voting is Restricted depending which group your in</p>
+		<ul>
+			<li>Week 1 Should just be anyone who is NOT a sharks. They are narrowing it down two 5 choices.</li>
+			<li>Week 2 is restricted to sharks only.  They are deciding between the top 5.</li>
+		</ul>
 		<script type="text/javascript" src="/js/ocean.js"></script>
 	</article>
 	
