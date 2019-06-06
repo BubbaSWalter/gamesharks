@@ -132,7 +132,7 @@ include '../meistercheck.php';
 
 			<div class="results">
 				<h4>Test Vote</h4>
-				Note Real Vote<br>
+				Not Real Vote<br>
 				<?php
 					$MainArray = array();
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -162,7 +162,7 @@ include '../meistercheck.php';
 					}
 					arsort($MainArray, 1);
 					foreach ($MainArray as $key => $item) {
-						echo "Challenge #" . $key . " Count: " . $item . "<br>";
+						echo "<p class='stuff'>Challenge: #" . $key . " Count: " . $item . "<p>";
 					}
 				?>
 			</div>
