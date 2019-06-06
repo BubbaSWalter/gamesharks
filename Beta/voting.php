@@ -70,7 +70,7 @@
 						</ul>
 					</div>
 					<div><?php echo $_GET['error'];?><div>
-					<table style="width:50%">
+					<table>
 						<caption>Pick three choices but you can only chose one challege once</caption>
   						<tr>
 						  	<th>Chanllenge</th>
