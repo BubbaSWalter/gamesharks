@@ -22,7 +22,7 @@
                 $sql = "INSERT INTO testvoting (time,Username,Choice1,choice2,choice3) 
                     VALUES ('$Date','$Username','$Choice1','$Choice2','$Choice3') ON DUPLICATE KEY UPDATE    
                     time='$Date', Choice1='$Choice', Choice2='$Choice', Choice3='$Choice'
-
+                    ";
                 if ($conn->query($sql) === TRUE) {
                     echo "Page saved!";
                 } else {
