@@ -9,7 +9,7 @@
     if ($conn->connect_error) {     // Check connection
 		die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "SELECT * FROM testarray";
+	$sql = "SELECT * FROM testvoting";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
 		// output data of each row
