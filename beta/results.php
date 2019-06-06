@@ -39,5 +39,7 @@
     echo "<br>";
     echo "<br>";
     ksort($trueArray);
-    print_r($trueArray);
+    foreach($trueArray as $item){
+        echo $item . "<br>";
+    }
 ?>
