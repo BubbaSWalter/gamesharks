@@ -131,7 +131,8 @@ include '../meistercheck.php';
 			</div>
 
 			<div class="results">
-				<h4>Shark Response</h4>
+				<h4>Test Vote</h4>
+				Note Real Vote<br>
 				<?php
 					$MainArray = array();
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
