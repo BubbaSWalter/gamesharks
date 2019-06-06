@@ -29,19 +29,18 @@
         
     }
 
-    $trueArray = array();
+        $trueArray = array();
 
     foreach($arr as $item){
         $trueArray[$item['Challenge']] = $item['count'];
     }
     echo "<br>";
     echo "<br>";
-    ksort($trueArray, 1);
+    
+    arsort($trueArray, 1);
 
     foreach ($trueArray as $key => $item) {
         echo "Challenge #" . $key . "COunt: " . $item . "<br>";
    
         
     }
-
-?>
