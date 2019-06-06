@@ -30,7 +30,7 @@
 
     ksort($arr);
 
-    foreach($arr => $item){
+    foreach($arr as $item){
         echo $item['Challenge'] . "Count:" . $item['count'];
     }
 
