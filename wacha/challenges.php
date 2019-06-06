@@ -101,8 +101,8 @@ include '../meistercheck.php';
 		            <option value="Game Twist">Game Twist</option>
 		            <option value="Gimmick">Gimmick</option>
 		            <option value="Other">Other</option>
-		        </select></br>
-		        Challenge Discrption:</br>
+		        </select><br>
+		        Challenge Discrption:<br>
 		        <textarea name="Description" rows="5" cols="33"></textarea><br>
 		        Save State(Optional):<br>
 		        <input type="text" name="SaveState"><br>
