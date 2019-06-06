@@ -32,8 +32,11 @@
     $trueArray = array();
 
     foreach($arr as $item){
-        print_r($item);
+        echo $item['Challenge'] . "<br>";
+        echo $item['Count'] . "<br>";
+        $trueArray[$item['Challenge']] = $item['Count'];
     }
-
-    //print_r($trueArray)
+    echo "<br>";
+    echo "<br>";
+    print_r($trueArray);
 ?>
