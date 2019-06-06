@@ -140,7 +140,7 @@ include '../meistercheck.php';
 						die("Connection failed: " . $conn->connect_error);
 					} 
 
-					$sql = "SELECT `Choice`, COUNT(*) AS `num` FROM testvoting";
+					$sql = "SELECT COUNT(*) AS `num` FROM testvoting";
 					$result = $conn->query($sql);
 					//time,Username,Choice
 					if ($result->num_rows > 0) {
