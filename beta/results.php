@@ -28,7 +28,7 @@
         $arr[$item]['count'] = $arr[$item]['count'] + 1;
     }
 
-    ksort($arr,1);
+    ksort($arr);
 
     foreach($arr => $item){
         echo $item['Challenge'] . "Count:" . $item['count'];
