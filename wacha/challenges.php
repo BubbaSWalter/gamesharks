@@ -46,7 +46,7 @@ include '../meistercheck.php';
 	<article id="article">
 	    <p>Hello <?php echo $uname;?></p>
 	    <div id"remchall">
-	        <p>Add a Challenge</p>
+	        <p>Remove a Challenge</p>
 	        <form  action="challengemod/removechallenge.php">
 		    <select name="choice">
 		        <option > --- </option>
