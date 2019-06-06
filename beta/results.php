@@ -14,9 +14,9 @@
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
-            echo $row['choice1'] . '<br>';
-            echo $row['choice2'] . '<br>';
-            echo $row['choice3'] . '<br>';
+            echo $row['Choice1'] . '<br>';
+            echo $row['Choice2'] . '<br>';
+            echo $row['Choice3'] . '<br>';
 		}
     }
     
