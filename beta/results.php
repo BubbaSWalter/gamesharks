@@ -31,7 +31,7 @@
     ksort($arr);
 
     foreach($arr as $item){
-        echo $item['Challenge'] . "Count:" . $item['count'];
+        echo "Challenge# " . $item['Challenge'] . " Count:" . $item['count'] . "<br>";
     }
 
 ?>
