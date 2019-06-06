@@ -98,7 +98,7 @@
 									echo '		<td><input type="radio" name="vote1" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
 									echo '		<td><input type="radio" name="vote2" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
 									echo '		<td><input type="radio" name="vote3" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
-									echo '	</tr>'
+									echo '	</tr>';
 
 								}
 							}
