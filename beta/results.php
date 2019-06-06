@@ -32,7 +32,7 @@
     $trueArray = array();
 
     foreach($arr as $item){
-        echo $item[''challenge] . "<br>"
+        echo $item[''challenge] . "<br>";
     }
 
     //print_r($trueArray)
