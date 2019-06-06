@@ -78,21 +78,21 @@
   						</tr>
   						<tr>
 							<td>Challenge #1</td>
-    						<td><input type="radio" name="vote1" value="male"></td>
-    						<td><input type="radio" name="vote2" value="male"></td> 
-    						<td><input type="radio" name="vote3" value="male"></td>
+    						<td><input type="radio" name="vote1" value="Challenge1"></td>
+    						<td><input type="radio" name="vote2" value="Challenge1"></td> 
+    						<td><input type="radio" name="vote3" value="Challenge1"></td>
   						</tr>
   						<tr>
 							<td>Challenge #2</td>
-    						<td><input type="radio" name="vote1" value="male"></td>
-    						<td><input type="radio" name="vote2" value="male"></td> 
-    						<td><input type="radio" name="vote3" value="male"></td>
+    						<td><input type="radio" name="vote1" value="Challenge2"></td>
+    						<td><input type="radio" name="vote2" value="Challenge2"></td> 
+    						<td><input type="radio" name="vote3" value="Challenge2"></td>
   						</tr>
 						<tr>
 							<td>Challenge #3</td>
-    						<td><input type="radio" name="vote1" value="male"></td>
-    						<td><input type="radio" name="vote2" value="male"></td> 
-    						<td><input type="radio" name="vote3" value="male"></td>
+    						<td><input type="radio" name="vote1" value="Challenge3"></td>
+    						<td><input type="radio" name="vote2" value="Challenge3"></td> 
+    						<td><input type="radio" name="vote3" value="Challenge3"></td>
   						</tr>
 					</table>
 				<br>
