@@ -32,8 +32,6 @@
     $trueArray = array();
 
     foreach($arr as $item){
-        echo $item['Challenge'] . "<br>";
-        echo $item['count'] . "<br>";
         $trueArray[$item['Challenge']] = $item['count'];
     }
     echo "<br>";
@@ -41,8 +39,8 @@
     ksort($trueArray, 1);
 
     foreach ($trueArray as $key => $item) {
-        echo $key. "<br>";
-        echo $item . "<br>";
+        echo "Challenge #" . $key . "COunt: " . $item . "<br>";
+   
         
     }
 
