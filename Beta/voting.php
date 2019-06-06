@@ -89,11 +89,15 @@
 							if ($result->num_rows > 0) {
 								// output data of each row
 								while($row = $result->fetch_assoc()) {
+									$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
+									$game = str_replace("'", "&apos;", $row["Game"]);
+									$console = str_replace("'", "&apos;", $row["Console"]);
+									$type = str_replace("'", "&apos;", $row["Type"]);
 									echo '	<tr>';
-									echo '		<td>Challenge#'  . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '</td>'
-									echo '		<td><input type="radio" name="vote1" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
-									echo '		<td><input type="radio" name="vote2" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
-									echo '		<td><input type="radio" name="vote3" value="' . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . '"></td>';
+									echo '		<td>Challenge#'  . $cnum . " - " . $game ." - " . $console . " - " . $row["Type"] . '</td>'
+									echo '		<td><input type="radio" name="vote1" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td><input type="radio" name="vote2" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
+									echo '		<td><input type="radio" name="vote3" value="' . $cnum . " - " . $game ." - " . $console . " - " . $type . '"></td>';
 									echo '	</tr>'
 
 								}
