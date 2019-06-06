@@ -1,4 +1,10 @@
 <?php
+    date_default_timezone_set("America/Chicago");
+    $servername = "localhost";
+    $username = "u919436859_admin";
+    $password = "GjefadD~i63a";
+    $dbname = "u919436859_shark";
+    
     date_default_timezone_set('America/Chicago');
     if($_GET['vote1'] == $_GET['vote2'] Or 
         $_GET['vote1'] == $_GET['vote3'] Or 
