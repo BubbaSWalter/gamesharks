@@ -107,6 +107,7 @@
 					<div><?php echo $_GET['error'];?><div>
 					<table>
 						<caption>Pick three choices but you can only chose one challege once</caption>
+						<caption><strong><?php echo $_GET['error'];?></strong></caption>
   						<tr>
 						  	<th>Chanllenge</th>
     						<th>Vote 1</th>
