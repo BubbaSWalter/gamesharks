@@ -1,38 +1,3 @@
-<?php
-    if(!isset($_COOKIE["username"])) {
-        header( 'Location: https://gamesharks.wizardsrwe.com/' );
-    }
-?>
-<?php
-    $uname = "Guest";
-	if(isset($_COOKIE["username"])) {
-		$uname = $_COOKIE["username"];
-		
-		$curl = curl_init();
-		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://id.twitch.tv/oauth2/validate",
-			CURLOPT_RETURNTRANSFER => true,
-			CURLOPT_TIMEOUT => 30,
-			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-			CURLOPT_CUSTOMREQUEST => "GET",
-			CURLOPT_HTTPHEADER => array(
-				"Authorization: OAuth ". $uname 
-			),
-		));
-		
-		$resp = curl_exec($curl);
-		$response = json_decode($resp, true);
-		
-		$uname = $response['login'];
-		curl_close($curl);
-
-		include 'sharkcheck.php';
-
-		if (in_array($uname, $shark_array)){
-			header( 'Location: https://gamesharks.wizardsrwe.com/AccessError.php' );
-		}
-	}
-?>
 <!DOCTYPE html>
 <html>
 	<meta charset="UTF-8">
@@ -104,24 +69,26 @@
 							?>
 						</ul>
 					</div>
-					<br>
-					<select name="choice" id="choice">
-					<?php
-                		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-                		if ($conn->connect_error) {     // Check connection
-                    		die("Connection failed: " . $conn->connect_error);
-			
-            	    	}
-            	    	$sql = "SELECT * FROM Challenges";
-            	    	$result = $conn->query($sql);
-            	    	if ($result->num_rows > 0) {
-            	    	    // output data of each row
-            	        	while($row = $result->fetch_assoc()) {
-            	    	        echo "<option value='#" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "'>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</option>";
-            	        	}
-            	    	}
-            		?>
-					</select>
+					<table style="width:100%">
+  						<tr>
+						  	<th>Chanllenge</th>
+    						<th>Vote 1</th>
+    						<th>Vote 2</th> 
+    						<th>Vote 3</th>
+  						</tr>
+  						<tr>
+							<td>Challenge #1</td>
+    						<td><input type="radio" name="gender" value="male"></td>
+    						<td><input type="radio" name="gender" value="male"></td> 
+    						<td><input type="radio" name="gender" value="male"></td>
+  						</tr>
+  						<tr>
+							<td>Challenge #2</td>
+    						<td><input type="radio" name="gender" value="male"></td>
+    						<td><input type="radio" name="gender" value="male"></td> 
+    						<td><input type="radio" name="gender" value="male"></td>
+  						</tr>
+					</table>
 				<br>
 			<input type="submit" value="Vote">
 			</form>
