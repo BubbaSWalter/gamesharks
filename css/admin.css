@@ -51,8 +51,10 @@ li a:hover {
 }
 #meisterlist{
     margin-top:-415px;
+    position:absolute;
 }
 #usermanagemnt{
+    position:absolute;
     margin-top:-415px;
 }
 #winners{
