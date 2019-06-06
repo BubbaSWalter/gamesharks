@@ -88,6 +88,12 @@
     						<td><input type="radio" name="vote2" value="male"></td> 
     						<td><input type="radio" name="vote3" value="male"></td>
   						</tr>
+						<tr>
+							<td>Challenge #3</td>
+    						<td><input type="radio" name="vote1" value="male"></td>
+    						<td><input type="radio" name="vote2" value="male"></td> 
+    						<td><input type="radio" name="vote3" value="male"></td>
+  						</tr>
 					</table>
 				<br>
 			<input type="submit" value="Vote">
