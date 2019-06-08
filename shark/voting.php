@@ -91,13 +91,16 @@
 				</div>
 
 				<br>
-				<select name="choice" id="choice">
+				<table>
+  					<tr>
+    					<th>Challenge</th>
+    					<th>Choice</th> 
+  					</tr>
 					<?php
 						$conn = new mysqli($servername, $username, $password, $dbname);
 						if ($conn->connect_error) {     // Check connection
 							die("Connection failed: " . $conn->connect_error);
 						}
-
 						$winners = array();
 	                	$sql = "SELECT * FROM winner";
 	                	$result = $conn->query($sql);
@@ -107,7 +110,8 @@
                             	$winners = $row;
                         }} else {
                         	echo "0 results";
-                        }
+						}
+						
                     	$sql = "SELECT * FROM `Challenges` WHERE `ChallengeNum`='" . $winners['first'] . "' or `ChallengeNum`='" . $winners['second'] . "' or `ChallengeNum`='" . $winners['third'] . "' or `ChallengeNum`='" . $winners['fourth'] . "' or `ChallengeNum`='" . $winners['fifth'] . "'  ORDER BY ChallengeNum ASC";
                     	$result = $conn->query($sql);
                     	if ($result->num_rows > 0) {
@@ -116,17 +120,24 @@
 								$game = str_replace("'", "&apos;", $row["Game"]);
 								$console = str_replace("'", "&apos;", $row["Console"]);
 								$type = str_replace("'", "&apos;", $row["Type"]);
-                            	echo "<option value='#" . $cnum . " - " . $game ." - " . $console . " - " . $type . "'>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</option>";
-			                	if(!is_null ( $row["SaveState"] )){
-			                    	echo "<p>" . $row["SaveState"] . "</p>" ;
-			                	}
-			                	echo "</li>";
+								$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
+								echo "<tr>";
+									echo "<td><label for="male">' . 'Challenge #' . $holder .  '</label></td>"
+									echo '<td><input type="radio" name="choice" value="' . $holder . '"></td>';
+								echo
                     	}} else {
                         	echo "0 results";
                     	}
-                    	$conn->close();
+						$conn->close();
+						
+						<tr>
+    						
+    						<td>Jackson</td> 
+    						<td>94</td>
+  						</tr>
 					?>
-				</select>
+  					
+				</table>
 				<br>
   				<input type="submit" value="Vote">
 			</form>
