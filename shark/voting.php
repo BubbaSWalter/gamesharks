@@ -24,7 +24,7 @@
 		
 		//$shark_array = array("boodamedz","crazy_sunshine","dantheenigma","faronheights","heisanevilgenius","khead161","kuuribro","mastertimethief","myohel0", "megagwolf","nintendocaprisun","protonjon","smashtoons","tallmanstan","thejewker","bubbaswalter");
 		
-		if (!in_array($uname, $shark_array) Or !in_array($uname, $meister_array)){
+		if (!in_array($uname, $shark_array) and !in_array($uname, $meister_array)){
 			header( 'Location: https://gamesharks.wizardsrwe.com/AccessError.php' );
 		}
 	} else {
