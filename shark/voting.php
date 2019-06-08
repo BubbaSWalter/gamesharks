@@ -122,7 +122,7 @@
 								$type = str_replace("'", "&apos;", $row["Type"]);
 								$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
 								echo "<tr>";
-									echo "<td><label for=" . $holder .">' . 'Challenge #" . $holder .  "</label></td>";
+									echo "<td> . $holder . </td>";
 									echo '<td><input type="radio" name="choice" value="' . $holder . '"></td>';
 								echo "</tr>";
                     	}} else {
@@ -130,11 +130,6 @@
                     	}
 						$conn->close();
 						
-						<tr>
-    						
-    						<td>Jackson</td> 
-    						<td>94</td>
-  						</tr>
 					?>
   					
 				</table>
