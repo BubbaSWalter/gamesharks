@@ -122,9 +122,9 @@
 								$type = str_replace("'", "&apos;", $row["Type"]);
 								$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
 								echo "<tr>";
-									echo "<td><label for="male">' . 'Challenge #' . $holder .  '</label></td>";
+									echo "<td><label for=" . $holder .">' . 'Challenge #" . $holder .  "</label></td>";
 									echo '<td><input type="radio" name="choice" value="' . $holder . '"></td>';
-									echo "</tr>";
+								echo "</tr>";
                     	}} else {
                         	echo "0 results";
                     	}
