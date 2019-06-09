@@ -94,7 +94,7 @@
 		<?php
 		    if(isset($_COOKIE["username"])) {
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
-		        if (in_array($uname, $Admin_array)){
+		        if (in_array($uname, $Admin_array)or in_array($uname, $meister_array)){
 		            echo '<input type="submit" onclick="location.href=\'/wacha/humble.php\'" value="Admin Access">';
 		        }
 		    }
