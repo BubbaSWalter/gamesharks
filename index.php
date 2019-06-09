@@ -73,7 +73,7 @@
 		<?php
 		    if(isset($_COOKIE["username"])) {
                 if($check == 'true'){
-                    if (in_array($uname, $shark_array)){
+                    if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
 				        echo '<p><a href="https://gamesharks.wizardsrwe.com/shark/voting.php">Click to Vote</a></p>' ;
                     } else {
                         echo '<p><a href="https://gamesharks.wizardsrwe.com/AccessError.php">Click to Vote</a></p>' ;
@@ -94,7 +94,7 @@
 		<?php
 		    if(isset($_COOKIE["username"])) {
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
-		        if (in_array($uname, $Admin_array)or in_array($uname, $meister_array)){
+		        if (in_array($uname, $Admin_array)){
 		            echo '<input type="submit" onclick="location.href=\'/wacha/humble.php\'" value="Admin Access">';
 		        }
 		    }
