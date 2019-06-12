@@ -29,7 +29,7 @@
             }
             $holder = rtrim($holder,',');
             $holder = $holder ")<br>";
-            print $holder
+            print $holder;
         }
     } else {
         echo "0 results";
