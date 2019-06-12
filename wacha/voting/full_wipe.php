@@ -5,6 +5,7 @@
 	$password = "GjefadD~i63a";
 	$dbname = "u919436859_shark";
     print_r($global);
+    echo <br>;
     if($global == 'shark'){
         $sql = "SELECT * FROM `sharkvoting`";
     } else if($global == 'community'){
@@ -18,14 +19,17 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
     $result = $conn->query($sql);
-
+    
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
+            $holder = "INSERT INTO voting (Time, Username, Choice)  VALUES (";
             foreach( $row as $k => $v){
-                echo $v;
+                $holder = $holder .  $v . ",";
             }
-            echo "<br>";
+            $holder = rtrim($holder,',');
+            $holder = $holder ")<br>";
+            print $holder
         }
     } else {
         echo "0 results";
