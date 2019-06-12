@@ -32,7 +32,7 @@ if($_GET['vote1'] == $_GET['vote2'] Or
                 $Choice3 = mysqli_real_escape_string($conn, $_GET['vote3']);
                 $Date = date("Y/m/d h:i:sa");
 
-                $sql = "INSERT INTO voting (time,Username,Choice1,choice2,choice3) 
+                $sql = "INSERT INTO voting (time,Username,Choice1,Choice2,Choice3) 
                     VALUES ('$Date','$Username','$Choice1','$Choice2','$Choice3') ON DUPLICATE KEY UPDATE    
                     time='$Date', Choice1='$Choice1', Choice2='$Choice2', Choice3='$Choice3'
                     ";
