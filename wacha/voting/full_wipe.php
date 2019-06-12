@@ -17,7 +17,6 @@
 	if ($conn->connect_error) {     // Check connection
 		die("Connection failed: " . $conn->connect_error);
 	}
-	$result = $conn->query($sql);
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
