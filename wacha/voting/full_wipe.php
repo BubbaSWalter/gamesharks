@@ -28,7 +28,7 @@
                 $holder = $holder .  $v . ",";
             }
             $holder = rtrim($holder,',');
-            $holder = $holder ")<br>";
+            $holder = $holder . ")<br>";
             print $holder;
         }
     } else {
