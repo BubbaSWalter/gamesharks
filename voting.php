@@ -59,7 +59,8 @@
                     $servername = "localhost";
 	                $username = "u919436859_admin";
 	                $password = "GjefadD~i63a";
-	                $dbname = "u919436859_shark";
+					$dbname = "u919436859_shark";
+					
 
 	                $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	                if ($conn->connect_error) {     // Check connection
@@ -72,7 +73,7 @@
 	                if ($result->num_rows > 0) {
 		            // output data of each row
 		                while($row = $result->fetch_assoc()) {
-			                echo "<span> Current Choices:" . $row["Choice1"] .", " . $row["Choice2"] .", ". $row["Choice3"] .", </span><br>";
+			                echo "<span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
 		                }
 	                } else {
 		                echo "<span> Current Choice: NONE </span><br>";
