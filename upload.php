@@ -46,5 +46,5 @@ if($_GET['vote1'] == $_GET['vote2'] Or
 
 
          }
-//header( 'Location: https://gamesharks.wizardsrwe.com/confirm.php' );
+header( 'Location: https://gamesharks.wizardsrwe.com/confirm.php' );
 ?>

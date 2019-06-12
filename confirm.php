@@ -39,7 +39,9 @@
         if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-			    $choice = $row["Choice"];
+				$choice1 = $row["Choice1"];
+				$choice2 = $row["Choice2"];
+				$choice3 = $row["Choice3"];
 		    }
 	    }
 	    $conn->close();
@@ -64,7 +66,7 @@
 	</div>
 	<article id="article">
 		<p>Hello <span id="username"><?php echo $uname;?></span>:</p>
-		<p>We have your vote for <span id="challenge"><?php echo $choice;?></span>
+		<p>We have your vote for <span id="challenge"><?php echo $choice1;?>, <?php echo $choice2;?>, <?php echo $choice3;?> </span>
 		
 	</article>
 	<script type="text/javascript" src="js/ocean.js"></script>
