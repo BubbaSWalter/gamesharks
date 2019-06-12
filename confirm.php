@@ -66,7 +66,13 @@
 	</div>
 	<article id="article">
 		<p>Hello <span id="username"><?php echo $uname;?></span>:</p>
-		<p>We have your vote for <span id="challenge"><?php echo $choice1;?>, <?php echo $choice2;?>, <?php echo $choice3;?> </span>
+		<p>We have your votes as
+			<ul>
+				<li><?php echo $choice1;?></li>
+				<li><?php echo $choice2;?></li>
+				<li><?php echo $choice3;?></li>
+			</ul>
+		</p>
 		
 	</article>
 	<script type="text/javascript" src="js/ocean.js"></script>
