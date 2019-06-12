@@ -5,7 +5,7 @@
     $mysqlHostName      = $servername;
     $DbName             = $dbname;
     $backup_name        = "mybackup.sql";
-    $tables             = array("voting","sharkvoting");
+    $tables             = "voting";
 
     //or add 5th parameter(array) of specific tables:    array("mytable1","mytable2","mytable3") for multiple tables
 
