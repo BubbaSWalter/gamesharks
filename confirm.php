@@ -66,12 +66,11 @@
 	</div>
 	<article id="article">
 		<p>Hello <span id="username"><?php echo $uname;?></span>:</p>
-		<p>We have your votes as
-			<ul>
-				<li><?php echo $choice1;?></li>
-				<li><?php echo $choice2;?></li>
-				<li><?php echo $choice3;?></li>
-			</ul>
+		<p>We have your votes as:<br>
+				Vote Choice 1: <?php echo $choice1;?><br>
+				Vote Choice 2: <li><?php echo $choice2;?><br>
+				Vote Choice 3: <li><?php echo $choice3;?><br>
+			
 		</p>
 		
 	</article>
