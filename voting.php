@@ -81,7 +81,7 @@
 	                }
 	                $conn->close();
 				?>
-					Pick Your Poison:<br>
+					<br>Pick Your Poison:<br>
 					<button type="button" onclick="list()">Show/Hide The List</button>
 					<div id="list">
 						<ul>
