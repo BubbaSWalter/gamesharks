@@ -25,10 +25,10 @@
         while($row = $result->fetch_assoc()) {
             $holder = "INSERT INTO voting (Time, Username, Choice)  VALUES (";
             foreach( $row as $k => $v){
-                $holder = $holder .  $v . ",";
+                $holder. =   $v . ",";
             }
-            $holder = $holder . ")<br>";
-            echo $holder;
+            $holder. = ")<br>";
+ 
         }
     } else {
         echo "0 results";
