@@ -34,7 +34,7 @@ if($_GET['vote1'] == $_GET['vote2'] Or
 
                 $sql = "INSERT INTO voting (time,Username,Choice1,choice2,choice3) 
                     VALUES ('$Date','$Username','$Choice1','$Choice2','$Choice3') ON DUPLICATE KEY UPDATE    
-                    time='$Date', Choice1='$Choice', Choice2='$Choice', Choice3='$Choice'
+                    time='$Date', Choice1='$Choice1', Choice2='$Choice2', Choice3='$Choice3'
                     ";
                 if ($conn->query($sql) === TRUE) {
                     echo "Page saved!";
