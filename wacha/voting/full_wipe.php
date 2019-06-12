@@ -1,5 +1,5 @@
 <?php
-	$global = $_GET['wipe']
+	$global = $_GET['wipe'];
 	$servername = "localhost";
 	$username = "u919436859_admin";
 	$password = "GjefadD~i63a";
