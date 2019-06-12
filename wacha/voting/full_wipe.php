@@ -4,8 +4,6 @@
 	$username = "u919436859_admin";
 	$password = "GjefadD~i63a";
 	$dbname = "u919436859_shark";
-    print_r($global);
-    echo <br>;
     if($global == 'shark'){
         $sql = "DELETE FROM `sharkvoting`";
     } else if($global == 'community'){
