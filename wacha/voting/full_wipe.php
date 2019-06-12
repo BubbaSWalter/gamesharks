@@ -7,9 +7,9 @@
     print_r($global);
     echo <br>;
     if($global == 'shark'){
-        $sql = "SELECT * FROM `sharkvoting`";
+        $sql = "DELETE FROM `sharkvoting`";
     } else if($global == 'community'){
-        $sql = "SELECT * FROM `voting`";
+        $sql = "DELETE FROM `voting`";
     } else{
         header("Location: https://gamesharks.wizardsrwe.com/wacha/humble.php");
     }
@@ -18,19 +18,10 @@
 	if ($conn->connect_error) {     // Check connection
 		die("Connection failed: " . $conn->connect_error);
 	}
-    $result = $conn->query($sql);
-    
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while($row = $result->fetch_assoc()) {
-            $holder = "INSERT INTO voting (Time, Username, Choice)  VALUES (";
-            foreach( $row as $k => $v){
-                $holder. =   $v . ",";
-            }
-            $holder. = ")<br>";
- 
-        }
+	$result = $conn->query($sql);
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
     } else {
-        echo "0 results";
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
 ?>
