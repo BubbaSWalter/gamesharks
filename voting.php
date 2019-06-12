@@ -73,10 +73,11 @@
 	                if ($result->num_rows > 0) {
 		            // output data of each row
 		                while($row = $result->fetch_assoc()) {
-			                echo "<span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
+							
+			                echo "<br><span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
 		                }
 	                } else {
-		                echo "<span> Current Choice: NONE </span><br>";
+		                echo "<br><span> Current Choice: NONE </span><br>";
 	                }
 	                $conn->close();
 				?>
