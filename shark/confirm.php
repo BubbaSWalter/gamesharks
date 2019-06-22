@@ -44,7 +44,7 @@
 	<article id="article">
 		<?php
 		    if(isset($_COOKIE["username"])) {
-		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
+		        echo '<input type="submit" onclick="location.href=\'..\\logout.html\'" value="Logout">';
 		    }
 		?>
 		<p>Hello <span id="username">Guest</span>:</p>
