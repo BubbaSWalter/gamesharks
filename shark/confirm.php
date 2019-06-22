@@ -42,6 +42,11 @@
 		<h1>GameSharks Conformation Page</h1>
 	</div>
 	<article id="article">
+		<?php
+		    if(isset($_COOKIE["username"])) {
+		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
+		    }
+		?>
 		<p>Hello <span id="username">Guest</span>:</p>
 		<p>We have your vote for <span id="challenge"><?php echo $choice;?></span>
 		
