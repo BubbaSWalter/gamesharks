@@ -76,10 +76,14 @@
                     if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
 				        echo '<p><a href="https://gamesharks.wizardsrwe.com/shark/voting.php">Click to Vote</a></p>' ;
                     } else {
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/AccessError.php">Click to Vote</a></p>' ;
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-guppy.php">Click to Vote</a></p>' ;
                     }
                 } else if($check == 'false'){
-                    echo '<p><a href="https://gamesharks.wizardsrwe.com/voting.php">Click to Vote</a></p>' ;
+					if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-shark.php">Click to Vote</a></p>' ;
+                    } else {
+						echo '<p><a href="https://gamesharks.wizardsrwe.com/voting.php">Click to Vote</a></p>' ;
+                    }
 		        } else if ($check == 'closed'){
 		            echo '<p><a href="https://gamesharks.wizardsrwe.com/Closed.php">Click to Vote</a></p>' ;
 		  
