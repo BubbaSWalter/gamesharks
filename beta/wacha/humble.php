@@ -102,7 +102,9 @@ include '../../meistercheck.php';
 						}
 					}
 					
-					print_r($MainArray)
+					foreach($item in $MainArray){
+						echo "\n" . $item;
+					}
 
 
 					/*foreach ($MainArray as $key => $item) {
