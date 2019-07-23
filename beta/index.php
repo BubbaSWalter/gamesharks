@@ -19,7 +19,6 @@
 		$x++;
 	} */
 	foreach($MainArray as $item){
-		print_r($item) . '\r\n';
 		echo $item['ChNum']  . $item['Count']  . '\r\n';
 	}
 ?>
