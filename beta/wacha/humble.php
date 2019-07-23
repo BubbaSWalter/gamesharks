@@ -94,7 +94,7 @@ include '../../meistercheck.php';
 						}
 					}
 					
-					print_r($MainArray);
+					print($MainArray);
 					echo ('<br>');
 					echo ('<br>');
 					echo ('<br>');
