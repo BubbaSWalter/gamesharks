@@ -1,5 +1,5 @@
 <?php
-	$cars = array(
+	$MainArray = array(
 		array("ChNum"=> 1, "Count"=>"12"),
 		array("ChNum"=> 2, "Count"=>"12"),
 		array("ChNum"=> 3, "Count"=>"42")
