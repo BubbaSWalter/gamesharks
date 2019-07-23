@@ -5,7 +5,9 @@
 	$password = "GjefadD~i63a";
 	$dbname = "u919436859_shark";
 
-
+    if (!in_array($uname, $meister_array)){
+		header( 'Location: https://gamesharks.wizardsrwe.com/' );
+	}
 	$MainArray = array();
 	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	if ($conn->connect_error) {     // Check connection
