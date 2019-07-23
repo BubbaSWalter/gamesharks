@@ -5,7 +5,9 @@
 	$password = "GjefadD~i63a";
 	$dbname = "u919436859_shark";
 
-
+    if (!in_array($uname, $meister_array)){
+		header( 'Location: https://gamesharks.wizardsrwe.com/' );
+	}
 	$MainArray = array();
 	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	if ($conn->connect_error) {     // Check connection
@@ -88,7 +90,7 @@
 	echo 'After <br>';
 	$ChNum = array_column($MainArray,'ChNum');
 	$Count = array_column($MainArray, 'Count');
-	array_multisort($Count, SORT_DESC, $ChNum,SORT_DESC, $MainArray)
+	array_multisort($Count, SORT_DESC, $ChNum,SORT_ASC, $MainArray);
 	foreach ($MainArray as $key => $value) {
 		echo $value['ChNum'] . ' - ' . $value['Count'] . '<br>';
 		
