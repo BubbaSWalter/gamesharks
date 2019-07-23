@@ -69,11 +69,12 @@ include '../../meistercheck.php';
 
 					$MainArray = array();
 					while($x <= 100) {
+						$temparray = array(
+							"chnum" => 'Challenge name' . $x,
+							'count' => 0,
+						);
 						array_push($MainArray,
-							"Challenge Num " . $x => 	array(
-								"chnum" => 'Challenge name',
-								'count' => 0,
-							), 
+							"Challenge Num " . $x => array($temparray) 
 						);
 						$x++;
 					} 
