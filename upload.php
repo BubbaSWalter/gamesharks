@@ -13,7 +13,7 @@ if ($conn->connect_error) {     // Check connection
 $Choice1 = mysqli_real_escape_string($conn, $_GET['vote1']);
 $Choice2 = mysqli_real_escape_string($conn, $_GET['vote2']);
 $Choice3 = mysqli_real_escape_string($conn, $_GET['vote3']);
-
+$Username = mysqli_real_escape_string($conn, $_GET['username']);
 if($Choice1 == ""){
     $Choice1 = "00 - No Vote Choice 1 -". $Username;
 }
@@ -39,7 +39,7 @@ if($Choice1 == $Choice2 Or
             if ($conn->connect_error) {     // Check connection
                 die("Connection failed: " . $conn->connect_error);
             } else{
-                $Username = mysqli_real_escape_string($conn, $_GET['username']);
+                
                 $Date = date("Y/m/d h:i:sa");
 
 
