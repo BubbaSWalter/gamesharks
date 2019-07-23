@@ -6,8 +6,8 @@
 	$dbname = "u919436859_shark";
 
     /*if (!in_array($uname, $meister_array)){
-		header( 'Location: https://gamesharks.wizardsrwe.com/' );*/
-	}
+		header( 'Location: https://gamesharks.wizardsrwe.com/' );
+	}*/
 	$MainArray = array();
 	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	if ($conn->connect_error) {     // Check connection
@@ -46,7 +46,7 @@
 				}
 			}
 			if($test == true){
-				$MainArray[$row['Choice1']]['Count'] += 1;
+				$MainArray[$row['Choice2']]['Count'] += 1;
 			}elseif($test == false)	{
 				$MainArray[$row['Choice2']] = array('ChNum' => $row['Choice2'], 'Count' => 1);
 			}
@@ -61,7 +61,7 @@
 				}
 			}
 			if($test == true){
-				$MainArray[$row['Choice1']]['Count'] += 1;
+				$MainArray[$row['Choice3']]['Count'] += 1;
 			}elseif($test == false)	{
 				$MainArray[$row['Choice3']] = array('ChNum' => $row['Choice3'],'Count' => 1);
 			}
