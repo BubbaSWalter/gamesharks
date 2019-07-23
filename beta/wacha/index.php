@@ -73,7 +73,7 @@
 <h2>Formatted Output</h2>
 <?php
 	foreach ($MainArray as $key => $value) {
-		echo $value['ChNum'] . ' - ' . $value[0] . '<br>';
+		echo $value['ChNum'] . ' - ' . $value['Count'] . '<br>';
 		
 	}
 ?>
