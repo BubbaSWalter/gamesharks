@@ -86,8 +86,8 @@
 		
 	}
 	echo 'After <br>';
-	$ChNum = array_column($MainArray,'ChNum')
-	$Count = array_column($MainArray, 'Count')
+	$ChNum = array_column($MainArray,'ChNum');
+	$Count = array_column($MainArray, 'Count');
 	array_multisort($Count, SORT_DESC, $ChNum,SORT_DESC, $MainArray)
 	foreach ($MainArray as $key => $value) {
 		echo $value['ChNum'] . ' - ' . $value['Count'] . '<br>';
