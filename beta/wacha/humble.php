@@ -87,10 +87,9 @@ include '../../meistercheck.php';
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							
-							$MainArray[$row['Choice1']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
-							$MainArray[$row['Choice2']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
-							$MainArray[$row['Choice3']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice1']] => array('chnum' => $row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice2']] => array('chnum' => $row['Choice2'],  'count' => $MainArray[$row['Choice2']['count']] + 1);
+							$MainArray[$row['Choice3']] => array('chnum' => $row['Choice3'],  'count' => $MainArray[$row['Choice3']['count']] + 1);
 						}
 					}
 					
