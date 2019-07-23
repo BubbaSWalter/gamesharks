@@ -1,5 +1,12 @@
 <?php
-	var $MainArray = array();
+	$cars = array(
+		array("ChNum"=> 1, "Count"=>"12"),
+		array("ChNum"=> 2, "Count"=>"12"),
+		array("ChNum"=> 3, "Count"=>"42")
+	);
+
+
+	/*var $MainArray = array();
 	while($x <= 100) {
 		var $temparray = array(
 			'ChNum' . $x => array(
@@ -9,6 +16,6 @@
 		);
 		array_push($MainArray, $temparray)
 		$x++;
-	} 
+	} */
 	print_r($MainArray);
 ?>
