@@ -4,20 +4,21 @@
 	array_push($MainArray,array("ChNum"=> 1, "Count"=>"12"),array("ChNum"=> 2, "Count"=>"12"),array("ChNum"=> 3, "Count"=>"42"));
 	$x = 1;
 	$test = false;
-	while($x <=100){
+	while($x < 4){
 		foreach($MainArray as $item){
-			if($item['ChNum'] == $x){
-				$item['Count'] += 1;
+			if($item['ChNum'] == $x  && $test == false){
+				$MainArray[$x]['Count'] += 1; 
+				echo 'Challenge#' . $item['ChNum'] ." - Count" . $item['Count']. '<br>';
 				$test = true;
 			}
-		}
-		if($test == false){
+		}$x++;
+		/*if($test == false){
 			array_push($MainArray,array("ChNum"=> $x, "Count"=>"12"));
-		}
+		}*/
 		$test = false;
-		$x++;
 	}
 	foreach($MainArray as $item){
 		echo 'Challenge#' . $item['ChNum'] ." - Count" . $item['Count']. '<br>';
 	}
+	print_r($MainArray);
 ?>
