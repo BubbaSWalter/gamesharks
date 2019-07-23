@@ -67,9 +67,9 @@ include '../../meistercheck.php';
 				<h4>Community Results</h4>
 				<?php
 
-					$MainArray = array();
+					var $MainArray = array();
 					while($x <= 100) {
-						$temparray = array(
+						var $temparray = array(
 							"chnum" => 'Challenge name' . $x,
 							'count' => 0,
 						);
