@@ -8,12 +8,13 @@
 		foreach($MainArray as $item){
 			if($item['ChNum'] == $x){
 				$item['Count'] = $item['Count'] +1;
+				$test = true:
 			}
 		}
 		if($test == false){
 			array_push($MainArray,array("ChNum"=> $x, "Count"=>"12"));
 		}
-		
+		$test = false:
 		$x++;
 	}
 	foreach($MainArray as $item){
