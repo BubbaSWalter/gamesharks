@@ -15,13 +15,13 @@ $Choice2 = mysqli_real_escape_string($conn, $_GET['vote2']);
 $Choice3 = mysqli_real_escape_string($conn, $_GET['vote3']);
 $Username = mysqli_real_escape_string($conn, $_GET['username']);
 if($Choice1 == ""){
-    $Choice1 = "00 - No Vote Choice 1 -". mysqli_real_escape_string($conn, $_GET['username']);
+    $Choice1 = "00 - No Vote Choice 1 - ". mysqli_real_escape_string($conn, $_GET['username']);
 }
 if($Choice2 == ""){
-    $Choice2 = "00 - No Vote Choice 2 -". mysqli_real_escape_string($conn, $_GET['username']);
+    $Choice2 = "00 - No Vote Choice 2 - ". mysqli_real_escape_string($conn, $_GET['username']);
 }
 if($Choice3 == ""){
-    $Choice3 = "00 - No Vote Choice 3 -". mysqli_real_escape_string($conn, $_GET['username']);
+    $Choice3 = "00 - No Vote Choice 3 - ". mysqli_real_escape_string($conn, $_GET['username']);
 }
 
 if($Choice1 == $Choice2 Or 
