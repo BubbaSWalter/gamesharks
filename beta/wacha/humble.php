@@ -88,9 +88,9 @@ include '../../meistercheck.php';
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
 							print_r($row['Choice1']);
-							$MainArray[$row['Choice1']] = $MainArray[$row['Choice1']] + 1;
-							$MainArray[$row['Choice2']] = $MainArray[$row['Choice2']] + 1;
-							$MainArray[$row['Choice3']] = $MainArray[$row['Choice3']] + 1;
+							$MainArray[$row['Choice1']] = array($row['Choice1'], $MainArray[$row['Choice1']] + 1);
+							$MainArray[$row['Choice2']] = array($row['Choice2'], $MainArray[$row['Choice2']] + 1);
+							$MainArray[$row['Choice3']] = array($row['Choice3'], $MainArray[$row['Choice3']] + 1);
 						}
 					}
 					echo ('<br>')
