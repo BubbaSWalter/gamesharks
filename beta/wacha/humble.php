@@ -73,9 +73,7 @@ include '../../meistercheck.php';
 							"chnum" => 'Challenge name' . $x,
 							'count' => 0,
 						);
-						array_push($MainArray,
-							"Challenge Num " . $x => array($temparray) 
-						);
+						$MainArray.concat($temparray);
 						$x++;
 					} 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -102,6 +100,7 @@ include '../../meistercheck.php';
 						}
 					}
 					
+					print_r($MainArray);
 
 
 					/*foreach ($MainArray as $key => $item) {
