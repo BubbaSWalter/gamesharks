@@ -19,7 +19,7 @@
 		$x++;
 	} */
 	foreach($MainArray as $item){
-		print_r($item) . '<br>';
-		echo $item . '<br>';
+		print_r($item) . '\r\n';
+		echo $item['ChNum']  . $item['Count']  . '\r\n';
 	}
 ?>
