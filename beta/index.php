@@ -1,7 +1,7 @@
 <h1>Test Area</h1>
 <?php
 	$MainArray = array();
-	array_push($MainArray,array("ChNum"=> 1, "Count"=>"12"),array("ChNum"=> 2, "Count"=>"12"),array("ChNum"=> 3, "Count"=>"42"))
+	array_push($MainArray,array("ChNum"=> 1, "Count"=>"12"),array("ChNum"=> 2, "Count"=>"12"),array("ChNum"=> 3, "Count"=>"42"));
 
 	/*var $MainArray = array();
 	while($x <= 100) {
