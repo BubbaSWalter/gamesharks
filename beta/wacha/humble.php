@@ -94,7 +94,6 @@ include '../../meistercheck.php';
 						}
 					}
 					
-					arsort($MainArray, 1);
 					print_r($MainArray);
 					echo ('<br>');
 					echo ('<br>');
