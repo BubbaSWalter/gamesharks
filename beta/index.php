@@ -7,17 +7,6 @@
 		array_push($MainArray,array("ChNum"=> $x, "Count"=>"12"));
 		$x++;
 	}
-	/*var $MainArray = array();
-	while($x <= 100) {
-		var $temparray = array(
-			'ChNum' . $x => array(
-				"chnum" => 'Challenge name' . $x,
-				'count' => 0,
-			),
-		);
-		array_push($MainArray, $temparray)
-		$x++;
-	} */
 	foreach($MainArray as $item){
 		echo 'Challenge' . $item['ChNum'] ." - Count" . $item['Count']. '<br>';
 	}
