@@ -69,10 +69,12 @@ include '../../meistercheck.php';
 
 					$MainArray = array();
 					while($x <= 100) {
-						$MainArray = $MainArray . array('Challengenum' . $x =>array(
-							"chnum" => 'Challenge name',
-							'count' => 0,
-						),);
+						array_push($MainArray,
+							"Challenge Num " . $x => 	array(
+								"chnum" => 'Challenge name',
+								'count' => 0,
+							), 
+						);
 						$x++;
 					} 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
