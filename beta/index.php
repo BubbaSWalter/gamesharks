@@ -2,7 +2,7 @@
 <?php
 	$MainArray = array();
 	array_push($MainArray,array("ChNum"=> 1, "Count"=>"12"),array("ChNum"=> 2, "Count"=>"12"),array("ChNum"=> 3, "Count"=>"42"));
-	$x = 0;
+	$x = 1;
 	$test = false;
 	while($x <=100){
 		foreach($MainArray as $item){
