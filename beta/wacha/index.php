@@ -5,8 +5,8 @@
 	$password = "GjefadD~i63a";
 	$dbname = "u919436859_shark";
 
-    if (!in_array($uname, $meister_array)){
-		header( 'Location: https://gamesharks.wizardsrwe.com/' );
+    /*if (!in_array($uname, $meister_array)){
+		header( 'Location: https://gamesharks.wizardsrwe.com/' );*/
 	}
 	$MainArray = array();
 	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -70,13 +70,6 @@
 	}
 	print_r($MainArray);
 
-	//// as of PHP 5.5.0 you can use array_column() instead of the above code
-//$volume  = array_column($data, 'volume');
-//$edition = array_column($data, 'edition');
-
-// Sort the data with volume descending, edition ascending
-// Add $data as the last parameter, to sort by the common key
-//array_multisort($volume, SORT_DESC, $edition, SORT_ASC, $data);
 ?>
 
 <br>
