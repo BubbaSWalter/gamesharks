@@ -26,11 +26,21 @@ if($_GET['vote1'] == $_GET['vote2'] Or
             if ($conn->connect_error) {     // Check connection
                 die("Connection failed: " . $conn->connect_error);
             } else{
+
                 $Username = mysqli_real_escape_string($conn, $_GET['username']);
                 $Choice1 = mysqli_real_escape_string($conn, $_GET['vote1']);
                 $Choice2 = mysqli_real_escape_string($conn, $_GET['vote2']);
                 $Choice3 = mysqli_real_escape_string($conn, $_GET['vote3']);
                 $Date = date("Y/m/d h:i:sa");
+                if($Choice1 == ""){
+                    $Choice1 = "00 - No Vote Choice 1 -". $Username;
+                }
+                if($Choice2 == ""){
+                    $Choice2 = "00 - No Vote Choice 2 -". $Username;
+                }
+                if($Choice3 == ""){
+                    $Choice3 = "00 - No Vote Choice 3 -". $Username;
+                }
 
                 $sql = "INSERT INTO voting (time,Username,Choice1,Choice2,Choice3) 
                     VALUES ('$Date','$Username','$Choice1','$Choice2','$Choice3') ON DUPLICATE KEY UPDATE    
