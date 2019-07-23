@@ -94,9 +94,7 @@ include '../../meistercheck.php';
 						}
 					}
 					
-					foreach ( $MainArray as $var ) {
-						echo $var['challengenum'] . " - ". $var['count'];
-					}
+
 
 
 					/*foreach ($MainArray as $key => $item) {
