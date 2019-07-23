@@ -66,7 +66,15 @@ include '../../meistercheck.php';
 			<div class="results">
 				<h4>Community Results</h4>
 				<?php
+
 					$MainArray = array();
+					while($x <= 100) {
+						$MainArray = array(
+							"chnum" => 'Challenge name',
+							'count' => 0,
+						);
+						$x++;
+					} 
 					$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 					if ($conn->connect_error) {     // Check connection
 						die("Connection failed: " . $conn->connect_error);
@@ -87,11 +95,11 @@ include '../../meistercheck.php';
 					if ($result->num_rows > 0) {
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
-							$MainArray[$row['Choice1']] =  array([$row['Choice1']] + 1);
+							
 						}
 					}
 					
-
+					print_r($MainArray)
 
 
 					/*foreach ($MainArray as $key => $item) {
