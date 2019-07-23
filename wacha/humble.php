@@ -94,7 +94,7 @@ include '../meistercheck.php';
 					}
 					arsort($MainArray, 1);
 					foreach ($MainArray as $key => $item) {
-						echo "<p class='stuff'>Challenge: #" . $key . " Count: " . $item . "<p>";
+						echo "<p class='stuff'>Challenge: #" . $key . "-  Count: " . $item . "<p>";
 					}
 				?>
 			</div>
