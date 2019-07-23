@@ -86,6 +86,5 @@
 	array_multisort($Count, SORT_DESC, $ChNum,SORT_ASC, $MainArray);
 	foreach ($MainArray as $key => $value) {
 		echo $value['ChNum'] . ' - ' . $value['Count'] . '<br>';
-		
 	}
 ?>
