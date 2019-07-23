@@ -18,5 +18,7 @@
 		array_push($MainArray, $temparray)
 		$x++;
 	} */
-	print_r($MainArray);
+	foreach($item in $MainArray){
+		echo $item . '\n';
+	}
 ?>
