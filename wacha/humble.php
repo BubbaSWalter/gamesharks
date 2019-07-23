@@ -92,6 +92,7 @@ include '../meistercheck.php';
 							$MainArray[$row['Choice3']] = $MainArray[$row['Choice3']] + 1;
 						}
 					}
+					print_r($MainArray);
 					arsort($MainArray, 1);
 					foreach ($MainArray as $key => $item) {
 						echo "<p class='stuff'>Challenge: #" . $key . "-  Count: " . $item . "<p>";
