@@ -2,6 +2,10 @@
 <?php
 	$MainArray = array();
 	include '../mesitercheck.php';
+	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+	if ($conn->connect_error) {     // Check connection
+		die("Connection failed: " . $conn->connect_error);
+	} 
 	$sql = "SELECT * FROM voting";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
