@@ -30,9 +30,9 @@
 				}
 			}
 			if($test == true){
-				$MainArray['ChNum'][0] += 1;
+				$MainArray['ChNum']['Count'] += 1;
 			}elseif($test == false)	{
-				$MainArray[$row['Choice1']] = array('ChNum' => $row['Choice1'], 1);
+				$MainArray[$row['Choice1']] = array('ChNum' => $row['Choice1'],'Count' => 1);
 			}
 
 			//Choice 2 Processing
@@ -44,9 +44,9 @@
 				}
 			}
 			if($test == true){
-				$MainArray['ChNum'][0] += 1;
+				$MainArray['ChNum']['Count'] += 1;
 			}elseif($test == false)	{
-				$MainArray[$row['Choice2']] = array('ChNum' => $row['Choice2'], 1);
+				$MainArray[$row['Choice2']] = array('ChNum' => $row['Choice2'], 'Count' => 1);
 			}
 
 			
@@ -59,9 +59,9 @@
 				}
 			}
 			if($test == true){
-				$MainArray['ChNum'][0] += 1;
+				$MainArray['ChNum']['Count'] += 1;
 			}elseif($test == false)	{
-				$MainArray[$row['Choice3']] = array('ChNum' => $row['Choice3'], 1);
+				$MainArray[$row['Choice3']] = array('ChNum' => $row['Choice3'],'Count' => 1);
 			}
 
 		}
