@@ -32,7 +32,7 @@
 			if($test == true){
 				$MainArray['ChNum'][0] += 1;
 			}elseif($test == false)	{
-				$MainArray[$row['Choice1']] = array('ChNum' => $row['Choice1'],[] 1);
+				$MainArray[$row['Choice1']] = array('ChNum' => $row['Choice1'], 1);
 			}
 
 			//Choice 2 Processing
