@@ -26,7 +26,6 @@
 			$test = false;
 			foreach($MainArray as $item){
 				if($item['ChNum'] == $row['Choice1']){
-					echo 'Choice 1 Exsit';
 					$test = true;
 				}
 			}
@@ -36,8 +35,44 @@
 				$MainArray[$row['Choice1']] = array('ChNum' => $row['Choice1'], 1);
 			}
 
+			//Choice 2 Processing
+			$test = false;
+			foreach($MainArray as $item){
+				if($item['ChNum'] == $row['Choice2'])
+				{
+					$test = true;
+				}
+			}
+			if($test == true){
+				$MainArray['ChNum']['Count'] += 1;
+			}elseif($test == false)	{
+				$MainArray[$row['Choice2']] = array('ChNum' => $row['Choice2'], 1);
+			}
+
+			
+			//Choice 3 Processing
+			$test = false;
+			foreach($MainArray as $item){
+				if($item['ChNum'] == $row['Choice3'])
+				{
+					$test = true;
+				}
+			}
+			if($test == true){
+				$MainArray['ChNum']['Count'] += 1;
+			}elseif($test == false)	{
+				$MainArray[$row['Choice3']] = array('ChNum' => $row['Choice3'], 1);
+			}
+
 		}
 	}
 	print_r($MainArray);
 
+?>
+<br>
+<h2>Formatted Output</h2>
+<?php
+	foreach ($MainArray as $key => $value) {
+		print_r($value);
+	}
 ?>
