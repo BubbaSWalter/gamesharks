@@ -67,7 +67,7 @@
 		}
 	}
 	print_r($MainArray);
-	echo $MainArray['ChNum']['Count'];
+	echo $MainArray['22 - Sonic the Hedgehog 2 - GEN - Race']['Count'];
 ?>
 
 <br>
