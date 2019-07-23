@@ -88,18 +88,16 @@ include '../../meistercheck.php';
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
 							
-							$MainArray[$row['Choice1']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
-							$MainArray[$row['Choice2']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
-							$MainArray[$row['Choice3']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice1']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice2']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice3']] = 'challengenum' => array($row['Choice1'],  'count' => $MainArray[$row['Choice1']['count']] + 1);
 						}
 					}
 					
 					foreach ( $MainArray as $var ) {
-						echo ($var['challengenum'] .  $var['count']);
+						echo $var['challengenum'] . " - ". $var['count'];
 					}
-					echo ('<br>');
-					echo ('<br>');
-					echo ('<br>');
+
 
 					/*foreach ($MainArray as $key => $item) {
 						echo "<p class='stuff'>Challenge: #" . $key . "-  Count: " . $item . "<p>";
