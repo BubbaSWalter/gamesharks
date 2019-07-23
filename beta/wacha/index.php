@@ -67,8 +67,9 @@
 		}
 	}
 	print_r($MainArray);
-
+	echo $MainArray['ChNum']['Count'];
 ?>
+
 <br>
 <h2>Formatted Output</h2>
 <?php
