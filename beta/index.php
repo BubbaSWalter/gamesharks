@@ -19,6 +19,7 @@
 		$x++;
 	} */
 	foreach($MainArray as $item){
-		echo $item . '\n';
+		print_r($item) . '<br>';
+		echo $item . '<br>';
 	}
 ?>
