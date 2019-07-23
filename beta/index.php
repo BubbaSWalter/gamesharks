@@ -19,6 +19,6 @@
 		$x++;
 	} */
 	foreach($MainArray as $item){
-		echo $item['ChNum']  . $item['Count'];
+		echo 'Challenge' . $item['ChNum'] ." - Count" . $item['Count']. '<br>';
 	}
 ?>
