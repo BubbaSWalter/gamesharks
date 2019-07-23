@@ -1,5 +1,5 @@
 <?php
-include '../meistercheck.php';
+include '../../meistercheck.php';
 ?>
 
 <?php 
