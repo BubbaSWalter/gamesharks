@@ -88,13 +88,15 @@ include '../../meistercheck.php';
 						// output data of each row
 						while($row = $result->fetch_assoc()) {
 							
-							$MainArray[$row['Choice1']] = array($row['Choice1'], $MainArray[$row['Choice1']] + 1);
-							$MainArray[$row['Choice2']] = array($row['Choice2'], $MainArray[$row['Choice2']] + 1);
-							$MainArray[$row['Choice3']] = array($row['Choice3'], $MainArray[$row['Choice3']] + 1);
+							$MainArray[$row['Choice1']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice2']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
+							$MainArray[$row['Choice3']] = 'challengenum' = array($row['Choice1'],  'count' = $MainArray[$row['Choice1']['count']] + 1);
 						}
 					}
 					
-					print($MainArray);
+					foreach ( $MainArray as $var ) {
+						echo "\n", $var['challengenum'], "\t\t", $var['count'];
+					}
 					echo ('<br>');
 					echo ('<br>');
 					echo ('<br>');
