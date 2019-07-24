@@ -14,6 +14,7 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 
+	header( 'Location: https://gamesharks.wizardsrwe.com/' );
 	
 	$sql = "SELECT * FROM voting";
 	$result = $conn->query($sql);
