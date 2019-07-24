@@ -134,7 +134,7 @@ include '../meistercheck.php';
 					$Count = array_column($MainArray, 'Count');
 					array_multisort($Count, SORT_DESC, $ChNum,SORT_ASC, $MainArray);
 					foreach ($MainArray as $key => $value) {
-						echo '<p>Challenge#' .$value['ChNum'] . ' - ' . $value['Count'] . '</p>';
+						echo '<p>Challenge #' .$value['ChNum'] . ' - ' . $value['Count'] . '</p>';
 					}
 				?>
 			</div>
