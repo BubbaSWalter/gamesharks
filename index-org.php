@@ -66,32 +66,30 @@
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
-	<p>Hello, <?php echo $uname;?>:</p>
-		<p>Welcome to the Game Sharks Sharkmas</p>
+	    <p>Hello, <?php echo $uname;?>:</p>
+		<p>Welcome to the Game Sharks Voting Pool</p>
+		<p>Click Login to start.  You will need a twitch account to vote</p>
+		<p>Sharks and Guppies are allowed one vote.  Challenge Meisters will not be voting.  We are the tiebreakers</p>
 		<?php
 		    if(isset($_COOKIE["username"])) {
                 if($check == 'true'){
-						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
-                    if (in_array($uname, $shark_array)){
-				        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
+                    if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
+				        echo '<p><a href="https://gamesharks.wizardsrwe.com/shark/voting.php">Click to Vote</a></p>' ;
                     } else {
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-guppy.php">Click to Vote</a></p>' ;
                     }
-				}
-                if($check == 'false'){
-					echo '<p>Stage 2 of Sharkmas - Creating your gist for Sharkmas</p>' ;
-					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to Signup for Sharkmas</a></p>' ;
-				} 
-				ifif($check == 'closed'){
-					echo '<p>Your a bit early.</p>'
-					echo '<p>Please wait for the Announcement.</p>' 
-				}
-			}
-			
+                } else if($check == 'false'){
+					if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-shark.php">Click to Vote</a></p>' ;
+                    } else {
+						echo '<p><a href="https://gamesharks.wizardsrwe.com/voting.php">Click to Vote</a></p>' ;
+                    }
+		        } else if ($check == 'closed'){
+		            echo '<p><a href="https://gamesharks.wizardsrwe.com/Closed.php">Click to Vote</a></p>' ;
+		  
+		        }
 		    }
 		?>
-
-		
 		<?php
 		    if(!isset($_COOKIE["username"])) {
 		        echo '<input type="submit" onclick="location.href=\'login.html\'" value="Login">';
