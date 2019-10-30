@@ -47,7 +47,7 @@
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
 		    }
 		?>
-		<p>Hello <span id="username">Guest</span>:</p>
+		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>We have you signed up as a <?php echo $choice;?>. Please let <span>BubbaSWalter</span> know if this is incorrect via either a ping or Direct Message.</p>
 		
 	</article>
