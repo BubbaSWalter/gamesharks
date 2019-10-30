@@ -82,9 +82,9 @@
 					echo '<p>Stage 2 of Sharkmas - Creating your gist for Sharkmas</p>' ;
 					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to Signup for Sharkmas</a></p>' ;
 				} 
-				ifif($check == 'closed'){
-					echo '<p>Your a bit early.</p>'
-					echo '<p>Please wait for the Announcement.</p>' 
+				if($check == 'closed'){
+					echo '<p>Your a bit early.</p>';
+					echo '<p>Please wait for the Announcement.</p>' ;
 				}
 			
 		    }
