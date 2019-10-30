@@ -2,7 +2,7 @@
 	$choice = "No Choice Submitted";
 	$uname = "Guest";
 	if(isset($_COOKIE["username"])) {
-		include '../uname.php';
+		include 'uname.php';
 		$servername = "localhost";
 		$username = "u919436859_admin";
 		$password = "GjefadD~i63a";
