@@ -79,11 +79,6 @@ include '../meistercheck.php';
 					
 				}
 			?>
-  			<tr>
-    			<td>Jill</td>
-    			<td>Smith</td>
-    			<td>50</td>
-  			</tr>
 		</table>
 	</article>
 	<script type="text/javascript" src="../js/ocean.js"></script>
