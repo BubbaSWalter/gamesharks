@@ -86,7 +86,6 @@
 					echo '<p>Your a bit early.</p>'
 					echo '<p>Please wait for the Announcement.</p>' 
 				}
-			}
 			
 		    }
 		?>
