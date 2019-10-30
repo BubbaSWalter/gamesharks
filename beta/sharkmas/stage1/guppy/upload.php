@@ -12,7 +12,9 @@ if ($conn->connect_error) {     // Check connection
 
 $Username = mysqli_real_escape_string($conn, $_GET['username']);
 $Date = date("Y/m/d h:i:sa");
-$class = 'Shark';
+$class = 'Guppy';
+
+
 $sql = "INSERT INTO sharkmas (dt, username, class) 
 VALUES ('$Date','$Username','$class') ON DUPLICATE KEY UPDATE    
 dt='$Date', class='$class'";
