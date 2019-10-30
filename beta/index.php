@@ -54,7 +54,7 @@
 		    if(isset($_COOKIE["username"])) {
                 if($check == 'true'){
 						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
-                    if (in_array($uname, $shark_array)or in_array($uname, $meister_array)){
+                    if (in_array($uname, $shark_array)){
 				        echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
                     } else {
                         echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
