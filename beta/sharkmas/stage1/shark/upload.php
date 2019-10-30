@@ -15,7 +15,7 @@ $Date = date("Y/m/d h:i:sa");
 
 $sql = "INSERT INTO sharkmas (dt, username, class) 
 VALUES ('$Date','$Username','Shark') ON DUPLICATE KEY UPDATE    
-time='$Date', Choice='$Choice'";
+dt='$Date', Choice='$Choice'";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
