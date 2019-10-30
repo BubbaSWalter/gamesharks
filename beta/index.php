@@ -55,9 +55,9 @@
                 if($check == 'true'){
 						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
                     if (in_array($uname, $shark_array)or in_array($uname, $meister_array)){
-				        echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/shark/signup.php">Click to Signup for Sharkmas</a></p>' ;
+				        echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
                     } else {
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/guppy/signup.php">Click to Signup for Sharkmas</a></p>' ;
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/beta/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
                     }
 				}
                 if($check == 'false'){

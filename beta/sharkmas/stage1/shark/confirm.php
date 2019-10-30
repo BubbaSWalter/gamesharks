@@ -19,7 +19,7 @@
         if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-			    $choice = $row["type"];
+			    $choice = $row["class"];
 		    }
 	    }
 	    $conn->close();
