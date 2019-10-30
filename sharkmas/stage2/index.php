@@ -39,7 +39,8 @@
     <canvas id='bgCanvas'></canvas>
 	<div id="Sharky" class="center">
 	<img src="/img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
-		<h1>GameSharks Sharkmas Signup Conformation Page</h1>
+		<h1>GameSharks Sharkmas</h1>
+		<h2>Sharkmas Target</h2>
 	</div>
 	<article id="article">
 		<?php
@@ -48,7 +49,7 @@
 		    }
 		?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>. Please let <span>BubbaSWalter</span>. Need help ask meister </p>
+		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>.  Need help figuring out what your target wants ask meister </p>
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
