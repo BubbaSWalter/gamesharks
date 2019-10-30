@@ -47,7 +47,7 @@
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
 		    }
 		?>
-		<p>Hello <span id="username">Guest</span>:</p>
+		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>. Please let <span>BubbaSWalter</span>. Need help ask meister </p>
 		
 	</article>
