@@ -75,7 +75,9 @@ include '../meistercheck.php';
 						echo '<td>'. $row["target"]. '</td>';
 						echo '</tr>';
 					}} else {
-					echo "0 results";
+						echo "0 results";
+					}
+				}
 			?>
   			<tr>
     			<td>Jill</td>
