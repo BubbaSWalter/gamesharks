@@ -105,7 +105,7 @@
   <div class="snow__flake"></div>
 </div>
 	<div id="Sharky" class="center">
-	<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks"  width="400" height="200" class="center" style="object-fit: cover;">
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
