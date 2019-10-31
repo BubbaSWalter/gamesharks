@@ -14,7 +14,7 @@
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    z-index: 0;
+    z-index: -1;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     box-pack: center;
