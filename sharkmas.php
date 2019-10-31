@@ -57,12 +57,55 @@
 	<title>GameSharks Voting Page</title>
 	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/sharkmas.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
-    <canvas id='bgCanvas'></canvas>
+
+<div class="snow">
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+</div>
 	<div id="Sharky" class="center">
-	<img src="img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks"  width="369" height="200" class="center">
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
