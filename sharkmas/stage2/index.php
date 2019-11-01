@@ -34,11 +34,12 @@
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/lists.css">
+	<link rel="stylesheet" type="text/css" href="/css/sharkmas.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
-    <canvas id='bgCanvas'></canvas>
+	
 	<div id="Sharky" class="center">
-	<img src="/img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		<h1>GameSharks Sharkmas</h1>
 		<h2>Sharkmas Target</h2>
 	</div>
@@ -53,6 +54,5 @@
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
-	<script type="text/javascript" src="js/ocean.js"></script>
 </body>
 </html>
