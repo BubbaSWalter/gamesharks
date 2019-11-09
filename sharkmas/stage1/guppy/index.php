@@ -93,7 +93,14 @@
 		    <h1>Stage1 - Signup</h1>
 	    </div>
 	    <article id="article">
-		    Person Signing up:<span id="username"><?php echo $uname; ?></span><br>
+            <p>
+                Person Signing up:<span id="username"><?php echo $uname; ?></span><br>
+            </p>
+            <p>
+                You are Signing up as a Guppy.
+            </p>
+		    
+            
 			<form action="upload.php">
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">
   				<input type="submit" value="Vote">
