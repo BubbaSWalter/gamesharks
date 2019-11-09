@@ -88,7 +88,7 @@
   <div class="snow__flake"></div>
 </div>
         <div id="Sharky" class="center">
-		<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
+		<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		    <h1>GameSharks Sharkmas</h1>
 		    <h1>Stage1 - Signup</h1>
 	    </div>
