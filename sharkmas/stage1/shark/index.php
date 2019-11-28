@@ -101,7 +101,7 @@
             </p>
 			<form action="upload.php">
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">
-  				<input type="submit" value="Signup">
+  				<input type="submit" value="Sign Up for Sharkmas">
 			</form>
 		
 		
