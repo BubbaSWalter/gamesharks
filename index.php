@@ -55,7 +55,6 @@
 <html>
 	<meta charset="UTF-8">
 	<title>GameSharks Voting Page</title>
-	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/sharkmas.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
