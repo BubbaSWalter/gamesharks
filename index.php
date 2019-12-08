@@ -121,8 +121,8 @@
                     }
 				}
                 if($check == 'false'){
-					echo '<p>Stage 2 of Sharkmas - Creating your gist for Sharkmas</p>' ;
-					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to Signup for Sharkmas</a></p>' ;
+					echo '<p>Stage 2 of Sharkmas - Creating your gift for Sharkmas</p>' ;
+					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to findout who  your target is for Sharkmas</a></p>' ;
 				} 
 				if($check == 'closed'){
 					echo '<p>Your a bit early.</p>';
