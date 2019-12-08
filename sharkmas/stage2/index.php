@@ -50,7 +50,7 @@
 		    }
 		?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>.  Need help figuring out what your target wants ask meister </p>
+		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>.  If you need help figuring out what your target wants you can always ask a challenge meister.</p>
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
