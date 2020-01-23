@@ -52,16 +52,15 @@
 		    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		    <script type="text/javascript" src="js/login.js"></script>
 			<form action="upload.php" method="get">
-				<input type="hidden" name="username" value="<?php echo $uname; ?>">
+				<input type="hidden" name="username" value="<?php echo $uname; ?>">	
 				Person Voting:<span id="username"><?php echo $uname; ?></span><br>
-				<?php
-    
-                    $servername = "localhost";
+
+				<?php 
+					$servername = "localhost";
 	                $username = "u919436859_admin";
 	                $password = "GjefadD~i63a";
 					$dbname = "u919436859_shark";
-					
-
+				
 	                $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	                if ($conn->connect_error) {     // Check connection
 		                die("Connection failed: " . $conn->connect_error);
@@ -81,81 +80,53 @@
 	                }
 	                $conn->close();
 				?>
-					<br>Pick Your Poison:<br>
-					<button type="button" onclick="list()">Show/Hide The List</button>
-					<div id="list">
-						<ul>
-						<?php
-				    		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-	                		if ($conn->connect_error) {     // Check connection
-		            	    	die("Connection failed: " . $conn->connect_error);
-	                		}
-	                		$sql = "SELECT * FROM Challenges";
-	                		$result = $conn->query($sql);
-	                		if ($result->num_rows > 0) {
-		            		// output data of each row
-		            	    	while($row = $result->fetch_assoc()) {
-			        	        	echo "<li><p>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"]. "</p>";
-			        	        	echo "<p>". $row["Description"] . "</p>";
-			        	        	if(!is_null ( $row["SaveState"] )){
-			        	        	    echo "<p>" . $row["SaveState"] . "</p>" ;
-			        	        	}
-			        	        	echo "</li>";
-		            	    	}
-	                		}
-							?>
-						</ul>
-					</div>
-					<br>
-					<table>
-						<caption>Pick three choices but you can only chose one challege once</caption>
-						<caption><strong><?php echo $_GET['error'];?></strong></caption>
-  						<tr>
-						  	<th>Chanllenge</th>
-    						<th>Vote 1</th>
-    						<th>Vote 2</th> 
-    						<th>Vote 3</th>
-  						</tr>
-  						<?php
-							$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-							if ($conn->connect_error) {     // Check connection
-								die("Connection failed: " . $conn->connect_error);
-					
-							}
-							$sql = "SELECT * FROM Challenges";
-							$result = $conn->query($sql);
-							if ($result->num_rows > 0) {
-								// output data of each row
-								while($row = $result->fetch_assoc()) {
-									$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
-									$game = str_replace("'", "&apos;", $row["Game"]);
-									$console = str_replace("'", "&apos;", $row["Console"]);
-									$type = str_replace("'", "&apos;", $row["Type"]);
-									$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
-									echo '	<tr>';
-									echo '		<td> Challenge#'  . $holder . '</td>';
-									if($_GET['vote1'] == $holder){
-										echo '		<td><input type="radio" name="vote1" align="center" value="' . $holder . '" checked></td>';
-									} else{
-										echo '		<td><input type="radio" name="vote1" align="center" value="' . $holder . '"></td>';
-									}
-									if($_GET['vote2'] == $holder){
-										echo '		<td><input type="radio" name="vote2" align="center" value="' . $holder . '" checked></td>';
-									} else{
-										echo '		<td><input type="radio" name="vote2" align="center" value="' . $holder . '"></td>';
-									}
-									if($_GET['vote3'] == $holder){
-										echo '		<td><input type="radio" name="vote3" align="center" value="' . $holder . '" checked></td>';
-									} else{
-										echo '		<td><input type="radio" name="vote3" align="center" value="' . $holder . '"></td>';
-									}
-									echo '	</tr>';
+				<?php
+				    $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+	                if ($conn->connect_error) {     // Check connection
+		            	die("Connection failed: " . $conn->connect_error);
+	                }
+	                $sql = "SELECT * FROM Challenges";
+	                $result = $conn->query($sql);
+	                if ($result->num_rows > 0) {
+		            	// output data of each row
+		            	while($row = $result->fetch_assoc()) {
+			        	/*	echo "<li><p>Challenge #" . $row["ChallengeNum"] . " - " . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"]. "</p>";
+			        		echo "<p>". $row["Description"] . "</p>";
+			        		if(!is_null ( $row["SaveState"] )){
+			        			echo "<p>" . $row["SaveState"] . "</p>" ;
+			        		}
+			        		echo "</li>";
+		            	    }
+						}*/
+						echo "Challenge #" . $row["ChallengeNum"] . "</p>";
+						echo $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</p>";
+						echo "Challenge Discription </p>"
+						echo $row["Description"] . "</p>";
+						$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
+						$game = str_replace("'", "&apos;", $row["Game"]);
+						$console = str_replace("'", "&apos;", $row["Console"]);
+						$type = str_replace("'", "&apos;", $row["Type"]);
+						$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
 
-								}
-							}
-						?>
-					</table>
-				<br>
+						if($_GET['vote1'] == $holder){
+							echo '	<input type="radio" name="vote1" align="center" value="' . $holder . '" checked></br>';
+						} else{
+							echo '	<input type="radio" name="vote1" align="center" value="' . $holder . '"></br>';
+						}
+						if($_GET['vote2'] == $holder){
+							echo '	<input type="radio" name="vote2" align="center" value="' . $holder . '" checked></br>';
+						} else{
+							echo '	<input type="radio" name="vote2" align="center" value="' . $holder . '"></br>';
+						}
+						if($_GET['vote3'] == $holder){
+							echo '	<input type="radio" name="vote3" align="center" value="' . $holder . '" checked></br>';
+						} else{
+							echo '	<input type="radio" name="vote3" align="center" value="' . $holder . '"></br>';
+						}
+						echo '</br>';
+
+				?>
+
 			<input type="submit" value="Vote">
 			</form>
 		
