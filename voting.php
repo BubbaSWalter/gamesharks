@@ -60,7 +60,9 @@
 	                $username = "u919436859_admin";
 	                $password = "GjefadD~i63a";
 					$dbname = "u919436859_shark";
-				
+					$Choice1 =""
+					$Choice2 =""
+					$Choice3 =""
 	                $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	                if ($conn->connect_error) {     // Check connection
 		                die("Connection failed: " . $conn->connect_error);
@@ -73,7 +75,10 @@
 		            // output data of each row
 		                while($row = $result->fetch_assoc()) {
 							
-			                echo "<br><span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
+							echo "<br><span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
+							$Choice1 = $row["Choice1"];
+							$Choice2 = $row["Choice2"];
+							$Choice3 = $row["Choice3"];
 		                }
 	                } else {
 						echo "<br><span> Current Choices: NONE </span><br>";
@@ -103,17 +108,17 @@
 							$type = str_replace("'", "&apos;", $row["Type"]);
 							$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
 
-							if($_GET['vote1'] == $holder){
+							if($_GET['vote1'] == $holder or $Choice1 == $holder ){
 								echo 'Choice A:	<input type="radio" name="vote1" align="center" value="' . $holder . '" checked></br>';
 							} else{
 								echo 'Choice A:	<input type="radio" name="vote1" align="center" value="' . $holder . '"></br>';
 							}
-							if($_GET['vote2'] == $holder){
+							if($_GET['vote2'] == $holder or $Choice2 == $holder){
 								echo 'Choice B:	<input type="radio" name="vote2" align="center" value="' . $holder . '" checked></br>';
 							} else{
 								echo 'Choice B:	<input type="radio" name="vote2" align="center" value="' . $holder . '"></br>';
 							}
-							if($_GET['vote3'] == $holder){
+							if($_GET['vote3'] == $holder or $Choice3 == $holder){
 								echo 'Choice C:	<input type="radio" name="vote3" align="center" value="' . $holder . '" checked></br>';
 							} else{
 								echo 'Choice C:	<input type="radio" name="vote3" align="center" value="' . $holder . '"></br>';
