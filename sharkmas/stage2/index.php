@@ -23,7 +23,9 @@
 		    }
 	    }
 	    $conn->close();
-	}
+	}else{
+        header("Location: https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=p1bz1fklprq12zah2vz810xpqq33s4&redirect_uri=https://gamesharks.wizardsrwe.com/authy");
+    }
 ?>
 
 <!DOCTYPE html>

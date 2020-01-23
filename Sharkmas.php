@@ -55,41 +55,84 @@
 <html>
 	<meta charset="UTF-8">
 	<title>GameSharks Voting Page</title>
-	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/sharkmas.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
-    <canvas id='bgCanvas'></canvas>
+
+<div class="snow">
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+  <div class="snow__flake"></div>
+</div>
 	<div id="Sharky" class="center">
-	<img src="img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
-	    <p>Hello, <?php echo $uname;?>:</p>
-		<p>Welcome to the Game Sharks Voting Pool</p>
-		<p>Click Login to start.  You will need a twitch account to vote</p>
-		<p>Sharks and Guppies are allowed one vote.  Challenge Meisters will not be voting.  We are the tiebreakers</p>
+	<p>Hello, <?php echo $uname;?>:</p>
+		<p>Welcome to the Game Sharks Sharkmas</p>
 		<?php
 		    if(isset($_COOKIE["username"])) {
                 if($check == 'true'){
-                    if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
-				        echo '<p><a href="https://gamesharks.wizardsrwe.com/shark/voting.php">Click to Vote</a></p>' ;
+						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
+                    if (in_array($uname, $shark_array)){
+				        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
                     } else {
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-guppy.php">Click to Vote</a></p>' ;
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
                     }
-                } else if($check == 'false'){
-					if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/closed-shark.php">Click to Vote</a></p>' ;
-                    } else {
-						echo '<p><a href="https://gamesharks.wizardsrwe.com/voting.php">Click to Vote</a></p>' ;
-                    }
-		        } else if ($check == 'closed'){
-		            echo '<p><a href="https://gamesharks.wizardsrwe.com/Closed.php">Click to Vote</a></p>' ;
-		  
-		        }
+				}
+                if($check == 'false'){
+					echo '<p>Stage 2 of Sharkmas - Creating your gift for Sharkmas</p>' ;
+					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to find out who  your target is for Sharkmas</a></p>' ;
+				} 
+				if($check == 'closed'){
+					echo '<p>Your a bit early.</p>';
+					echo '<p>Please wait for the Announcement.</p>' ;
+				}
+			
 		    }
 		?>
+
+		
 		<?php
 		    if(!isset($_COOKIE["username"])) {
 		        echo '<input type="submit" onclick="location.href=\'login.html\'" value="Login">';
@@ -104,7 +147,6 @@
 		    }
 		?>
 		<script type="text/javascript" src="/js/login.js"></script>
-		<script type="text/javascript" src="/js/ocean.js"></script>
 	</article>
 	
 <?php include 'include/footer.php'?>
