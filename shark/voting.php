@@ -50,6 +50,28 @@
 	<article id="article">
 	    <p>You are allowed to vote once.  If you want to change your vote please ping BubbaSWalter on Discord. Multiple votes could result in votes being voided</p>
 		Person Voting:<span id="username"><?php echo $uname; ?></span><br>
+	    <?php
+	        $Choice = "";
+	        $conn = new mysqli($servername, $username, $password, $dbname);
+				if ($conn->connect_error) {     // Check connection
+					die("Connection failed: " . $conn->connect_error);
+			}
+			$sql = "SELECT * FROM sharkvoting WHERE Username = '$uname'";
+	        $result = $conn->query($sql);
+	        //time,Username,Choice
+	        if ($result->num_rows > 0) {
+	            // output data of each row
+	            while($row = $result->fetch_assoc()) {
+	                echo "<span> Current Choice:" . "Challenge#  " . $row["Choice"] . "</span>";
+	                $Choice = $row["Choice"];
+	            }
+	            
+	        } else {
+	            echo "<span> Current Choice: NONE </span>";
+	            echo "</br>";
+	                }
+	    ?>
+		
 		<form action="upload.php">
 			<input type="hidden" name="username" value="<?php echo $uname; ?>">
 
@@ -86,7 +108,11 @@
 						$console = str_replace("'", "&apos;", $row["Console"]);
 						$type = str_replace("'", "&apos;", $row["Type"]);
 						$holder = $cnum . " - " . $game ." - " . $console . " - " . $type;
-						echo 'Vote for this challenge: <input type="radio" name="choice" value="' . $holder . '"></br>';
+						if( substr($Choice , 0,2 ) == substr($holder , 0,2 ) ){
+						    echo 'Vote for this challenge:	<input type="radio" name="vote1" align="center" value="' . $holder . '" checked></br>';
+						}else{
+						    echo 'Vote for this challenge:	<input type="radio" name="vote1" align="center" value="' . $holder . '"></br>';
+						}
 						echo '</br>';
 					}
 				} else {
