@@ -40,7 +40,6 @@
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="../css/lists.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
     <canvas id='bgCanvas'></canvas>
@@ -55,8 +54,9 @@
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">	
 				Person Voting:<span id="username"><?php echo $uname; ?></span><br>
 
+				
 				<?php
-				    					$servername = "localhost";
+				    $servername = "localhost";
 	                $username = "u919436859_admin";
 	                $password = "GjefadD~i63a";
 					$dbname = "u919436859_shark";
@@ -76,7 +76,8 @@
 			                echo "<br><span> Current Choices:<br>" . $row["Choice1"] ."<br>" . $row["Choice2"] ."<br>". $row["Choice3"] ."<br>";
 		                }
 	                } else {
-		                echo "<br><span> Current Choice: NONE </span><br>";
+						echo "<br><span> Current Choices: NONE </span><br>";
+						echo "</br>";
 	                }
 	                $conn->close();
 	                
@@ -90,11 +91,12 @@
 	                if ($result->num_rows > 0) {
 		            	// output data of each row
 		            	while($row = $result->fetch_assoc()) {
-							echo "<h5>Challenge #" . $row["ChallengeNum"] . "h5";
-							echo "ul";
+							echo "<h3>Challenge #" . $row["ChallengeNum"] . "</h3>";
+							echo "<ul>";
 							echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>";
 							echo "   <li>" . "Challenge Description </li>";
 							echo "   <li>" . $row["Description"] . "</li>";
+							echo "</ul>";
 							$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
 							$game = str_replace("'", "&apos;", $row["Game"]);
 							$console = str_replace("'", "&apos;", $row["Console"]);
