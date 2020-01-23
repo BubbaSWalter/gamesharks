@@ -100,7 +100,7 @@
 						}*/
 						echo "Challenge #" . $row["ChallengeNum"] . "</p>";
 						echo $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</p>";
-						echo "Challenge Discription </p>"
+						echo "Challenge Discription </p>";
 						echo $row["Description"] . "</p>";
 						$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
 						$game = str_replace("'", "&apos;", $row["Game"]);
