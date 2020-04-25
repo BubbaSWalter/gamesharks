@@ -1,4 +1,4 @@
 <?php
-header("Location: http://kadgar.net/live/alopexgames/faronheights/muchparanoia/wizardsrwe/shogun_gundam04/someone3255/trojanhorse711/twilightamory");
+header("Location: http://kadgar.net/live/bladeworksmaster/someone3255/TheManiacalgamer/Sefhighwind/warlink05/wizardsrwe/faronheights/LesleyPro_04/Famout/kyupo");
 exit();
 ?>
