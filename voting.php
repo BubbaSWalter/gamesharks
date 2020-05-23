@@ -99,7 +99,9 @@
 							echo "<h3>Challenge #" . $row["ChallengeNum"] . "</h3>";
 							echo "<ul>";
 							echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>";
-							echo "   <li>" . "Challenge Description </li>";
+							echo "</ul>"
+							echo "<h3> Challenge Description </h3>";
+							echo "<ul>";
 							echo "   <li>" . $row["Description"] . "</li>";
 							echo "</ul>";
 							$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
