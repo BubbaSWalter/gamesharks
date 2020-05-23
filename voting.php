@@ -99,7 +99,7 @@
 							echo "<h3>Challenge #" . $row["ChallengeNum"] . "</h3>";
 							echo "<ul>";
 							echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>";
-							echo "</ul>"
+							echo "</ul>";
 							echo "<h3> Challenge Description </h3>";
 							echo "<ul>";
 							echo "   <li>" . $row["Description"] . "</li>";
