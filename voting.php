@@ -100,7 +100,7 @@
 							echo "<ul>";
 							echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>";
 							echo "</ul>";
-							echo "<h3> Challenge Description </h3>";
+							echo "<h5> Challenge Description </h5>";
 							echo "<ul>";
 							echo "   <li>" . $row["Description"] . "</li>";
 							echo "</ul>";
