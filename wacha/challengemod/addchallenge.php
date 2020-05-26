@@ -1,8 +1,17 @@
 <?php
     print_r($_POST);
     echo "<br>";
-    
-    $sql = "INSERT INTO Challenges (ChallengeNum, SubmitBy, Game, Console, Type, Description, SaveState) VALUES ('". $_POST['Num'] ."', '" . $_POST['Created'] . "', '" . $_POST['Game'] . "', '" . $_POST['Consoles'] .  "', '" . $_POST['Type']  . "', '" . $_POST['Description'] ."', '" . $_POST['SaveState'] . "') ON DUPLICATE KEY UPDATE SubmitBy='" . $_POST['Created'] . "', Game='" . $_POST['Game'] . "', Console='" . $_POST['Consoles'] . "', Type='" . $_POST['Type'] . "', Description='" . $_POST['Description'] . "', SaveState='" . $_POST['SaveState'] . "';";
+    $_POST['Num'] = str_replace("\\s", "", $_POST['Num']);
+    $_POST['Created'] = str_replace("\\s", "", $_POST['Created']);
+    $_POST['Type'] = str_replace("\\s", "", $_POST['Type']);
+    $_POST['Description'] = str_replace("\\s", "", $_POST['Description']);
+
+    $sql = "INSERT INTO Challenges (ChallengeNum, SubmitBy, Game, Console, Type, Description, SaveState) 
+    VALUES ('". $_POST['Num'] ."', '" . $_POST['Created'] . "', '" . $_POST['Game'] . 
+    "', '" . $_POST['Consoles'] .  "', '" . $_POST['Type']  . "', '" . $_POST['Description'] ."', '" . 
+    $_POST['SaveState'] . "') ON DUPLICATE KEY UPDATE SubmitBy='" . $_POST['Created'] . "', Game='" . 
+    $_POST['Game'] . "', Console='" . $_POST['Consoles'] . "', Type='" . $_POST['Type'] . "', Description='" . 
+    $_POST['Description'] . "', SaveState='" . $_POST['SaveState'] . "';";
     
     $servername = "localhost";
 	$username = "u919436859_admin";
@@ -27,5 +36,5 @@
 <script>
     setTimeout(function(){
         window.location.href = "https://gamesharks.wizardsrwe.com/wacha/challenges.php"; 
-        }, 3000);
+        }, 10000);
 </script>
