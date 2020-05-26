@@ -36,5 +36,5 @@
 <script>
     setTimeout(function(){
         window.location.href = "https://gamesharks.wizardsrwe.com/wacha/challenges.php"; 
-        }, 10000);
+        }, 3000);
 </script>
