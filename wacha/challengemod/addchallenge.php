@@ -22,5 +22,5 @@
     }
 	
 	
-	//header("Location: https://gamesharks.wizardsrwe.com/wacha/challenges.php");
+	header("Location: https://gamesharks.wizardsrwe.com/wacha/challenges.php");
 ?>
