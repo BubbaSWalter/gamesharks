@@ -1,10 +1,10 @@
 <?php
     print_r($_POST);
     echo "<br>";
-    $_POST['Game'] = str_replace("\\s", "", $_POST['Game']);
-    $_POST['Created'] = str_replace("\\s", "", $_POST['Created']);
-    $_POST['Type'] = str_replace("\\s", "", $_POST['Type']);
-    $_POST['Description'] = str_replace("\\s", "", $_POST['Description']);
+    $_POST['Game'] = str_replace("\s", "'", $_POST['Game']);
+    $_POST['Created'] = str_replace("\s", "'", $_POST['Created']);
+    $_POST['Type'] = str_replace("\s", "'", $_POST['Type']);
+    $_POST['Description'] = str_replace("\s", "'", $_POST['Description']);
 
     $sql = "INSERT INTO Challenges (ChallengeNum, SubmitBy, Game, Console, Type, Description, SaveState) 
     VALUES ('". $_POST['Num'] ."', '" . $_POST['Created'] . "', '" . $_POST['Game'] . 
