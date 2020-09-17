@@ -99,11 +99,11 @@
                     while($row = $result->fetch_assoc()) {
 						echo "<h3>Challenge #" . $row["ChallengeNum"] . "</h3>";
 						echo "<ul>";
-						echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>";
+						echo "   <li>" . $row["Game"] ." - " . $row["Console"] . " - " . $row["Type"] . "</li>". nl2br("\r\n");
 						echo "</ul>";
 						echo "<h4>     Challenge Description </h4>";
 						echo "<ul>";
-						echo "   <li>" . $row["Description"] . "</li>";
+						echo "   <li>" . $row["Description"] . "</li>". nl2br("\r\n");
 						echo "</ul>";
 						$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
 						$game = str_replace("'", "&apos;", $row["Game"]);
