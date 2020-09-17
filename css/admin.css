@@ -4,6 +4,10 @@ article{
     max-height: 100%;
 }
 
+body{
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+}
+
 ul {
     float: left;
     list-style-type: none;
