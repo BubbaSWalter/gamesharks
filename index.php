@@ -66,7 +66,7 @@
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
-	<?php
+		<?php
 		    if(!isset($_COOKIE["username"])) {
 		        echo '<a href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=p1bz1fklprq12zah2vz810xpqq33s4&redirect_uri=https://gamesharks.wizardsrwe.com/authy/&force_verify=true" class="loginButton">Twitch Login</a>';
                 }
