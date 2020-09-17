@@ -66,6 +66,19 @@
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
+	<?php
+		    if(!isset($_COOKIE["username"])) {
+		        echo '<a href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=p1bz1fklprq12zah2vz810xpqq33s4&redirect_uri=https://gamesharks.wizardsrwe.com/authy/&force_verify=true" class="loginButton">Twitch Login</a>';
+                }
+		?>
+		<?php
+		    if(isset($_COOKIE["username"])) {
+		        echo '<a href="/logout.html" class="myButton">Logout</a> ';
+		        if (in_array($uname, $Admin_array)){
+					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
+		        }
+		    }
+		?>
 	    <p>Hello, <?php echo $uname;?>:</p>
 		<p>Welcome to the Game Sharks Voting Pool</p>
 		<p>Click Login to start.  You will need a twitch account to vote</p>
@@ -90,19 +103,7 @@
 		        }
 		    }
 		?>
-		<?php
-		    if(!isset($_COOKIE["username"])) {
-		        echo '<a href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=p1bz1fklprq12zah2vz810xpqq33s4&redirect_uri=https://gamesharks.wizardsrwe.com/authy/&force_verify=true" class="loginButton">Twitch Login</a>';
-                }
-		?>
-		<?php
-		    if(isset($_COOKIE["username"])) {
-		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
-		        if (in_array($uname, $Admin_array)){
-		            echo '<input type="submit" onclick="location.href=\'/wacha/humble.php\'" value="Admin Access">';
-		        }
-		    }
-		?>
+
 		<script type="text/javascript" src="/js/login.js"></script>
 		<script type="text/javascript" src="/js/ocean.js"></script>
 	</article>
