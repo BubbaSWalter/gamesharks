@@ -1,4 +1,5 @@
 <?php
+print_r($_POST);
 date_default_timezone_set("America/Chicago");
 $servername = "localhost";
 $username = "u919436859_admin";
@@ -23,5 +24,5 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-header( 'Location: https://gamesharks.wizardsrwe.com/shark/confirm.php' );
+#header( 'Location: https://gamesharks.wizardsrwe.com/shark/confirm.php' );
 ?>
