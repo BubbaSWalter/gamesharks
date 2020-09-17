@@ -2,6 +2,8 @@ article{
     margin-left:300px;
     min-height:1220px;
     max-height: 100%;
+    background-color:white;
+	background-color:rgba(255, 255, 255, 0.5);
 }
 
 body{
