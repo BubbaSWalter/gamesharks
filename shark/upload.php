@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+print_r($_GET);
 date_default_timezone_set("America/Chicago");
 $servername = "localhost";
 $username = "u919436859_admin";
@@ -12,7 +12,7 @@ if ($conn->connect_error) {     // Check connection
 } 
 
 $Username = mysqli_real_escape_string($conn, $_GET['username']);
-$Choice = mysqli_real_escape_string($conn, $_GET['choice']);
+$Choice = mysqli_real_escape_string($conn, $_GET['vote1']);
 $Date = date("Y/m/d h:i:sa");
 
 $sql = "INSERT INTO sharkvoting (time,Username,Choice) 
