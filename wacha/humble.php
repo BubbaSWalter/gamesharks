@@ -42,7 +42,7 @@ include '../meistercheck.php';
 <body>
     <canvas id='bgCanvas'></canvas>
 	<div id="Sharky" class="center">
-	<img src="../img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="/img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
 		<h1>Voting Results</h1>
 		<div id="navbar">
     <ul>
@@ -306,6 +306,6 @@ include '../meistercheck.php';
             </form>
         </div>
 	</article>
-	<script type="text/javascript" src="../js/ocean.js"></script>
+	<script type="text/javascript" src="/js/ocean.js"></script>
 </body>
 </html>
