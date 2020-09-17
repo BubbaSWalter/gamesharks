@@ -113,7 +113,7 @@
 						if( substr($Choice , 0,2 ) == substr($holder , 0,2 ) ){
 						    echo 'Vote for this challenge:	<input type="radio" name="vote1" align="center" value="' . $holder . '" checked></br>' . nl2br("\r\n");
 						}else{
-						    echo 'Vote for this challenge:	<input type="radio" name="vote1" align="center" value="' . $holder . '"></br>';
+						    echo 'Vote for this challenge:	<input type="radio" name="vote1" align="center" value="' . $holder . '"></br>'. nl2br("\r\n");
 						}
 						echo '</br>';
 					}
