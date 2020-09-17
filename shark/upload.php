@@ -24,5 +24,5 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-#header( 'Location: https://gamesharks.wizardsrwe.com/shark/confirm.php' );
+header( 'Location: https://gamesharks.wizardsrwe.com/shark/confirm.php' );
 ?>
