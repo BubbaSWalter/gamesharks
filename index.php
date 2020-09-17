@@ -92,8 +92,8 @@
 		?>
 		<?php
 		    if(!isset($_COOKIE["username"])) {
-		        echo '<input type="submit" onclick="location.href=\'login.html\'" value="Login">';
-		    }
+		        echo '<a href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=62sc35sal94impteckaa88ja9ptcam&redirect_uri=https%3A%2F%2Fprotonjon.wizardsrwe.com%2Fauthy%2F&scope=user_subscriptions&force_verify=true" class="loginButton">Twitch Login</a>';
+                }
 		?>
 		<?php
 		    if(isset($_COOKIE["username"])) {
