@@ -21,7 +21,12 @@
 			echo "<h5>Total Votes: " . $row["num"] . "</h5>";
 		}
     }
-    
+    $conn->close();
+    $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+	if ($conn->connect_error) {     // Check connection
+		die("Connection failed: " . $conn->connect_error);
+	} 
+
     $sql = "SELECT * FROM voting";
 	if ($result->num_rows > 0) {
 		// output data of each row
@@ -32,6 +37,9 @@
             $MainArray[$Row['Choice3']] +=  1;
 		}
     }
+    $conn->close();
+
+
     echo(json_encode($MainArray));
     
 ?>
