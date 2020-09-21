@@ -14,7 +14,7 @@ function LoadChallenge() {
 
     $.get( url , function( data ) {
         $( ".result" ).html( data );
-        alert( "Load was performed." );
+        alert( data );
       });
 
 
