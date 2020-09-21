@@ -78,8 +78,8 @@
                 }
 
                 $math = $Ch1 + $Ch2 + $Ch3 + $Ch4 + $Ch5 + $Ch6 + $Ch7 + $Ch8 +$Ch9 + $Ch10;
-                echo $row['User_Name'];
-                $holder[$row['User_Name']] = $math;
+                echo $row['UserName'];
+                $holder[$row['UserName']] = $math;
             }
             echo(json_encode($holder));
           } else {
