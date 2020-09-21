@@ -9,7 +9,6 @@ function LoadChallenge() {
     }
     $.post( "pcgetresults.php", { db: DataBase, Ch: Challenge})
     .done(function( data ) {
-        $holder = JSON.parse(data)
-        console.log(data);
+        alert(data);
     });
 }
