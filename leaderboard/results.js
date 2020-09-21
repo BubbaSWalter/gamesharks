@@ -1,5 +1,6 @@
 
 function LoadChallenge() {
     var Challenge = document.getElementById("challenge").value;
-    alert("The form was submitted " + Challenge );
+    var Group = document.getElementById("Group").value;
+    alert("Pulling out" + Challenge + " for Group " + Group);
 }
