@@ -23,6 +23,6 @@
                 array_push ( $holder, $dumb  );
 		    }
         }
-        print_r($holder);
+        echo(json_encode($holder))
 	    $conn->close();
 ?>
