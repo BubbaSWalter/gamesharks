@@ -15,16 +15,14 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM $database ORDER BY Challenge_Points DESC ";
+		$sql = "SELECT * FROM $database WHERE Challenge_Score='$Challenge' ORDER BY Challenge_Points DESC ";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-                if(strval($row['Challlenge_Num']) == strval( $Challenge ) ){
-                    $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'],$row['Challenge_Time'], $row['Challenge_Points'] ];
-                    array_push ( $holder, $dumb  );
-                }
+                $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'],$row['Challenge_Time'], $row['Challenge_Points'] ];
+                array_push ( $holder, $dumb  );
                 
                 
 		    }
