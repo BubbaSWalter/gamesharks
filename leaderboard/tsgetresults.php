@@ -13,7 +13,7 @@
     }
 
     $holder = [];
-    $trueholder = []
+    $trueholder = [];
     #print $database;
         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 		if ($conn->connect_error) {     // Check connection
