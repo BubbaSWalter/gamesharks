@@ -34,13 +34,231 @@
 			<br/>
 			<label for="Group">Challenge Group: </label>
 		
-		<select id="Group" name="Group">
-			<option value="Sharks">Main Community Group</option>
-			<option value="Guppies">Sharks</option>
-		</select>
-
+			<select id="Group" name="Group">
+				<option value="Sharks">Main Community Group</option>
+				<option value="Guppies">Sharks</option>
+			</select>
+			<button type="button" onclick="LoadChallenge()">Load Challenge</button>
 		</form>
-		<button type="button" onclick="LoadChallenge()">Load Challenge</button>
+		
+		<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-cb0t{background-color:#ea9999;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-cb0t" colspan="4">Challenge 1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-cb0t">User Name</td>
+    <td class="tg-cb0t">Score</td>
+    <td class="tg-cb0t">Points Awarderd</td>
+  </tr>
+  <tr>
+    <td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+  <tr>
+  	<td id='1name' class="tg-0pky"></td>
+    <td id='1score' class="tg-0pky"></td>
+    <td id='1points'class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+
 	</article>
 	
 <?php include 'include/footer.php'?>
