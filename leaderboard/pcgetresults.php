@@ -15,7 +15,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM $database WHERE Challenge_Score='$Challenge' ORDER BY Challenge_Points DESC ";
+		$sql = "SELECT * FROM $database WHERE Challenge_Score='" . $Challenge ."' ORDER BY Challenge_Points DESC ";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
