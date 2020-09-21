@@ -15,7 +15,8 @@ function LoadChallenge() {
     $.get( url , function( data ) {
         $( ".result" ).html( data );
         alert( data );
-        console.log(data);
+        $holder = JSON.parse(data)
+        console.log($holder);
       });
 
 
