@@ -37,48 +37,47 @@
                     $Ch2 = 0;
                 }
 
-                $Ch3 = $row['Challenge 1'];
+                $Ch3 = $row['Challenge 3'];
                 if ($Ch3 == NULL) {
                     $Ch3 = 0;
                 }
 
-                $Ch4 = $row['Challenge 1'];
+                $Ch4 = $row['Challenge 4'];
                 if ($Ch4 == NULL) {
                     $Ch4 = 0;
                 }
 
-                $Ch5 = $row['Challenge 1'];
+                $Ch5 = $row['Challenge 5'];
                 if ($Ch5 == NULL) {
                     $Ch5 = 0;
                 }
 
-                $Ch6 = $row['Challenge 1'];
+                $Ch6 = $row['Challenge 6'];
                 if ($Ch6 == NULL) {
                     $Ch6 = 0;
                 }
 
-                $Ch7 = $row['Challenge 1'];
+                $Ch7 = $row['Challenge 7'];
                 if ($Ch7 == NULL) {
                     $Ch7 = 0;
                 }
 
-                $Ch8 = $row['Challenge 1'];
+                $Ch8 = $row['Challenge 8'];
                 if ($Ch8 == NULL) {
                     $Ch8 = 0;
                 }
 
-                $Ch9 = $row['Challenge 1'];
+                $Ch9 = $row['Challenge 9'];
                 if ($Ch9 == NULL) {
                     $Ch9 = 0;
                 }
 
-                $Ch10 = $row['Challenge 1'];
+                $Ch10 = $row['Challenge 10'];
                 if ($Ch10 == NULL) {
                     $Ch10 = 0;
                 }
 
                 $math = $Ch1 + $Ch2 + $Ch3 + $Ch4 + $Ch5 + $Ch6 + $Ch7 + $Ch8 +$Ch9 + $Ch10;
-                echo $row['UserName'];
                 $holder[$row['UserName']] = $math;
             }
             echo(json_encode($holder));
