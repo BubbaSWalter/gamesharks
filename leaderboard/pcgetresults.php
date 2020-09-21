@@ -7,7 +7,7 @@
     $database = $_POST['db'];
     $database = 'Guppy_ScoreBoard';
     $Challenge = $_POST['ch'];
-    $Challenge = '1';
+    $Challenge = '1' ;
     $holder = [];
     #print $database;
         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -21,7 +21,7 @@
         if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-                if($row['Challlenge_Num'] == $Challenge){
+                if(strval($row['Challlenge_Num']) == strval( $Challenge ) ){
                     $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'],$row['Challenge_Time'], $row['Challenge_Points'] ];
                     array_push ( $holder, $dumb  );
                 }
