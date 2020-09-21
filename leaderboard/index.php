@@ -16,7 +16,7 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?gid=1256110192&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+	<iframe width="800" height="800" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?gid=1256110192&amp;widget=true&amp;headers=false"></iframe>
 	</article>
 	
 <?php include 'include/footer.php'?>
