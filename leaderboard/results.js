@@ -64,3 +64,22 @@ function LoadChallenge() {
         });
       });
 }
+
+$( document ).ready(function() {
+    $.get( url , function( data ) {
+        $( ".result" ).html( data );
+        $holder = JSON.parse(data)
+        console.log($holder);
+        count = 1
+        $holder.forEach(element => {
+            $("#pc" + count + "name").text(element[0]);
+            if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
+                $("#pc" + count + "score").text(element[1] + " ( " + element[2] + " )");
+            } else{
+                $("#pc" + count + "score").text("");
+            }
+            $("#pc" + count + "point").text(element[3]);
+            count +=1;
+        });
+      });
+});
