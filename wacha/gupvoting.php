@@ -22,7 +22,7 @@
 		}
     }
     
-    $sql = "SELECT *  FROM voting";
+    $sql = "SELECT * FROM voting";
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
@@ -31,6 +31,6 @@
             $MainArray[$Row['Choice3']] +=  1;
 		}
     }
-    echo(json_encode($trueholder));
+    echo(json_encode($MainArray));
     
 ?>
