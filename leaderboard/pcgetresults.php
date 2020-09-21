@@ -4,9 +4,9 @@
     $password = "GjefadD~i63a";
     $dbname = "u919436859_shark";
 
-    $database = $_POST['db'];
+    #$database = $_POST['db'];
     $database = 'Guppy_ScoreBoard';
-    $Challenge = $_POST['ch'];
+    #$Challenge = $_POST['ch'];
     $Challenge = '1' ;
     $holder = [];
     #print $database;
@@ -15,7 +15,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM Guppy_ScoreBoard WHERE `Challenge_Score` ='".$Challenge."' ";
+		$sql = "SELECT * FROM Guppy_ScoreBoard WHERE Challenge_Num = '1'";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
