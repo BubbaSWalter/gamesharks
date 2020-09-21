@@ -7,13 +7,12 @@ function LoadChallenge() {
     if (Group == 'Guppies') {
         DataBase = 'Guppy_ScoreBoard';
     }
-    $.post( "getresults.php", { db: DataBase})
-    .done(function( data ) {
-        
+       
 
     });
     $.post("getresults.php", function(data, status){
-        data.forEach(element => {
+        var holder = JSON.parse(data)
+        holder.forEach(element => {
             alert( "Data Loaded: " + element );
         });
       });
