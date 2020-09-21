@@ -7,7 +7,7 @@ function LoadChallenge() {
     if (Group == 'Guppies') {
         DataBase = 'Guppy_ScoreBoard';
     }
-    $.post( "test.php", { db: DataBase})
+    $.post( "getresults.php", { db: DataBase})
     .done(function( data ) {
       alert( "Data Loaded: " + data );
     });
