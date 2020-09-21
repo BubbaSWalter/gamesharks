@@ -35,8 +35,8 @@
 			<label for="Group">Challenge Group: </label>
 		
 			<select id="Group" name="Group">
-				<option value="Sharks">Main Community Group</option>
-				<option value="Guppies">Sharks</option>
+				<option value="Guppies">Main Community Group</option>
+				<option value="Sharks">Sharks</option>
 			</select>
 			<button type="button" onclick="LoadChallenge()">Load Challenge</button>
 		</form>
