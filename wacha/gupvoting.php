@@ -38,7 +38,7 @@
     arsort($MainArray);
     $truearray = [];
     foreach ($MainArray as $key => $value) {
-        echo $key . " - " . $value . " Votes";
+        echo $key . " - " . $value . " Votes".  nl2br("\r\n");
     }
 
 
