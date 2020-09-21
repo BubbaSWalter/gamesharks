@@ -113,7 +113,7 @@
   					<td id='10point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-e454">11</td>
+					<td class="tg-eyx6"">11</td>
   					<td id='11name' class="tg-eyx6"></td>
   					<td id='11score' class="tg-eyx6"></td>
   					<td id='11point' class="tg-eyx6"></td>
@@ -125,7 +125,7 @@
   					<td id='12point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-e454">13</td>
+					<td class="tg-eyx6"">13</td>
   					<td id='13name' class="tg-eyx6"></td>
   					<td id='13score' class="tg-eyx6"></td>
   					<td id='13point' class="tg-eyx6"></td>
@@ -137,7 +137,7 @@
   					<td id='14point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-e454">15</td>
+					<td class="tg-eyx6"">15</td>
   					<td id='15name' class="tg-eyx6"></td>
   					<td id='15score' class="tg-eyx6"></td>
   					<td id='15point' class="tg-eyx6"></td>
