@@ -84,7 +84,7 @@
 
             }
             foreach ($holder as $key => $value) {
-                array_push($trueholder, [$key, $value])
+                array_push($trueholder, [$key, $value]);
             }
             echo(json_encode($trueholder));
           } else {
