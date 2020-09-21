@@ -17,6 +17,9 @@ function LoadChallenge() {
         alert( data );
         $holder = JSON.parse(data)
         console.log($holder);
+        $holder.forEach(element => {
+            console.log(element);
+        });
       });
 
 
