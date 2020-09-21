@@ -17,15 +17,10 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?widget=true&amp;headers=false"></iframe>
+	<iframe id="dado" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?widget=true&amp;headers=false"></iframe>
 	</article>
 	
 <?php include 'include/footer.php'?>
-<script>
-	$( document ).ready(function() {
-		$('#dado').contents().find('body').css('background', '-webkit-radial-gradient(circle, #1a82f7, #2F2727);';
-	});
-	
-</script>
+<script src="background.js"></script>
 </body>
 </html>
