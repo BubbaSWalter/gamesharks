@@ -15,6 +15,7 @@ function LoadChallenge() {
     $.get( url , function( data ) {
         $( ".result" ).html( data );
         alert( data );
+        console.log(data);
       });
 
 
