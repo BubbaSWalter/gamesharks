@@ -7,7 +7,7 @@
 	<title>GameSharks Season 5 Leaderboard</title>
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/iframe.css">
+	<link rel="stylesheet" type="text/css" href="/css/table.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <canvas id='bgCanvas'></canvas>
@@ -41,219 +41,110 @@
 			<button type="button" onclick="LoadChallenge()">Load Challenge</button>
 		</form>
 		
-		<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-cb0t{background-color:#ea9999;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-cb0t" colspan="4">Challenge 1</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-cb0t">User Name</td>
-    <td class="tg-cb0t">Score</td>
-    <td class="tg-cb0t">Points Awarderd</td>
-  </tr>
-  <tr>
-    <td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-  <tr>
-  	<td id='1name' class="tg-0pky"></td>
-    <td id='1score' class="tg-0pky"></td>
-    <td id='1points'class="tg-0pky"></td>
-  </tr>
-</tbody>
-</table>
+
+		<table class="tg">
+			<thead>
+  				<tr>
+		 			<th class="tg-cb0t">Place</th>
+    				<th class="tg-cb0t">Username</th>
+    				<th class="tg-cb0t">Score</th>
+    				<th class="tg-cb0t">Points Awarded</th>
+  				</tr>
+			</thead>
+			<tbody>
+  				<tr>
+		  			<td class="tg-gri2">1st</td>
+    				<td id='1name' class="tg-gri2"></td>
+    				<td id='1score' class="tg-gri2"></td>
+    				<td id='1point' class="tg-gri2"></td>
+  				</tr>
+				<tr>
+					<td class="tg-hnm8">2nd</td>
+					<td id='2name' class="tg-hnm8"></td>
+					<td id='2score' class="tg-hnm8"></td>
+					<td id='2point' class="tg-hnm8"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-4ffq">3rd</td>
+					<td id='3name' class="tg-4ffq"></td>
+					<td id='3score' class="tg-4ffq"></td>
+					<td id='3point' class="tg-4ffq"></td>
+  				</tr>
+  				<tr>
+					<td class="tg-e454">4</td>
+  					<td id='4name' class="tg-e454"></td>
+  					<td id='4score' class="tg-e454"></td>
+  					<td id='4point' class="tg-e454"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-eyx6">5</td>
+  					<td id='5name' class="tg-eyx6"></td>
+  					<td id='5score' class="tg-eyx6"></td>
+  					<td id='5point' class="tg-eyx6"></td>
+  				</tr> 				
+				<tr>
+		  			<td class="tg-eyx6">6</td>
+  					<td id='6name' class="tg-eyx6"></td>
+  					<td id='6score' class="tg-eyx6"></td>
+  					<td id='6point' class="tg-eyx6"></td>
+  				</tr>  				
+				<tr>
+		  			<td class="tg-eyx6">7</td>
+  					<td id='7name' class="tg-eyx6"></td>
+  					<td id='7score' class="tg-eyx6"></td>
+  					<td id='7point' class="tg-eyx6"></td>
+  				</tr>  			
+				<tr>
+		  			<td class="tg-eyx6">8</td>
+  					<td id='8name' class="tg-eyx6"></td>
+  					<td id='8score' class="tg-eyx6"></td>
+  					<td id='8point' class="tg-eyx6"></td>
+  				</tr>  				
+				<tr>
+		  			<td class="tg-eyx6">9</td>
+  					<td id='9name' class="tg-eyx6"></td>
+  					<td id='9score' class="tg-eyx6"></td>
+  					<td id='9point' class="tg-eyx6"></td>
+  				</tr>
+				  <tr>
+		  			<td class="tg-eyx6">10</td>
+  					<td id='10name' class="tg-eyx6"></td>
+  					<td id='10score' class="tg-eyx6"></td>
+  					<td id='10point' class="tg-eyx6"></td>
+  				</tr> 
+				  <tr>
+		  			<td class="tg-eyx6">11</td>
+  					<td id='11name' class="tg-eyx6"></td>
+  					<td id='11score' class="tg-eyx6"></td>
+  					<td id='11point' class="tg-eyx6"></td>
+  				</tr> 
+				  <tr>
+		  			<td class="tg-eyx6">12</td>
+  					<td id='12name' class="tg-eyx6"></td>
+  					<td id='12score' class="tg-eyx6"></td>
+  					<td id='12point' class="tg-eyx6"></td>
+  				</tr> 
+				  <tr>
+		  			<td class="tg-eyx6">13</td>
+  					<td id='13name' class="tg-eyx6"></td>
+  					<td id='13score' class="tg-eyx6"></td>
+  					<td id='13point' class="tg-eyx6"></td>
+  				</tr> 
+				  <tr>
+		  			<td class="tg-eyx6">14</td>
+  					<td id='14name' class="tg-eyx6"></td>
+  					<td id='14score' class="tg-eyx6"></td>
+  					<td id='14point' class="tg-eyx6"></td>
+  				</tr> 
+				  <tr>
+		  			<td class="tg-eyx6">15</td>
+  					<td id='15name' class="tg-eyx6"></td>
+  					<td id='15score' class="tg-eyx6"></td>
+  					<td id='15point' class="tg-eyx6"></td>
+  				</tr> 
+				
+			</tbody>
+		</table>
 
 
 
