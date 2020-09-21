@@ -81,9 +81,10 @@
                 $math = $Ch1 + $Ch2 + $Ch3 + $Ch4 + $Ch5 + $Ch6 + $Ch7 + $Ch8 +$Ch9 + $Ch10;
                 $holder[$row['UserName']] = $math;
                 arsort($holder);
-                foreach ($holder as $key => $value) {
-                    echo $key . " " . $value;
-                }
+
+            }
+            foreach ($holder as $key => $value) {
+                echo $key . " " . $value;
             }
             echo(json_encode($holder));
           } else {
