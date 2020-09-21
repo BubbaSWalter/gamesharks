@@ -7,7 +7,7 @@
     $database = $_POST['db'];
     $database = 'Guppy_ScoreBoard';
     $Challenge = $_POST['ch'];
-    $Challenge = 1 ;
+    $Challenge = '1' ;
     $holder = [];
     #print $database;
         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -15,19 +15,16 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM $database WHERE Challenge_Score='" . $Challenge ."' ORDER BY Challenge_Points DESC ";
+		$sql = "SELECT * FROM $database WHERE Challenge_Score='$Challenge' ";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
             // output data of each row
-            
-		    while($row = $result->fetch_assoc()) {
-                #$dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'],$row['Challenge_Time'], $row['Challenge_Points'] ];
-                #array_push ( $holder, $dumb  );
+            while($row = $result->fetch_assoc()) {
                 
-                echo [$row['User_Name'].l $row['Challlenge_Num']. $row['Challenge_Score']. $row['Challenge_Time']. $row['Challenge_Points'];
-		    }
-        }else {
+              echo "id: " . $row["User_Name"] "<br>";
+            }
+          } else {
             echo "0 results";
           }
         echo(json_encode($holder));
