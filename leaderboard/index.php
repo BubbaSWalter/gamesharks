@@ -151,7 +151,7 @@
 		</div>
 
 		<div id='st'>
-		<h2 id=Chname>Season Totals</h2>>
+		<h2 id=Chname>Season Totals</h2>
 		<table class="tg">
 			<thead>
   				<tr>
