@@ -50,8 +50,10 @@ function LoadChallenge() {
         count = 1
         $holder.forEach(element => {
             $("#pc" + count + "name").text(element[0]);
-            $("#pc" + count + "score").text(element[1] + " ( " + element[2] + " )");
-            $("#pc" + count + "point").text(element[1] + " ( " + element[2] + " )");
+            if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
+                $("#pc" + count + "score").text(element[1] + " ( " + element[2] + " )");
+            }
+            $("#pc" + count + "point").text(element[3]);
             count +=1;
         });
       });
