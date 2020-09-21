@@ -29,10 +29,12 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
             #print_r($row);
-            echo $Row["Choice1"] . " " . $Row['Choice2']. " " . $Row['Choice3'];
-            $MainArray[$Row['Choice1']] +=  1;
-            $MainArray[$Row['Choice2']] +=  1;
-            $MainArray[$Row['Choice3']] +=  1;
+            echo $row["Choice1"];
+            echo $row['Choice2']
+            echo $row['Choice3'];
+            $MainArray[$row['Choice1']] +=  1;
+            $MainArray[$row['Choice2']] +=  1;
+            $MainArray[$row['Choice3']] +=  1;
 		}
     }
     $conn->close();
