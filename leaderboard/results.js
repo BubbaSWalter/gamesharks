@@ -7,7 +7,7 @@ function LoadChallenge() {
     if (Group == 'Guppies') {
         DataBase = 'Guppy_ScoreBoard';
     }
-    $.post( "getresults.php", { db: DataBase, Ch: Challenge})
+    $.post( "pcgetresults.php", { db: DataBase, Ch: Challenge})
     .done(function( data ) {
         $holder = JSON.parse(data)
         console.log(data);
