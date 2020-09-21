@@ -30,7 +30,7 @@
 		while($row = $result->fetch_assoc()) {
             #print_r($row);
             echo $row["Choice1"];
-            echo $row['Choice2']
+            echo $row['Choice2'];
             echo $row['Choice3'];
             $MainArray[$row['Choice1']] +=  1;
             $MainArray[$row['Choice2']] +=  1;
