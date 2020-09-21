@@ -6,6 +6,8 @@ function LoadChallenge() {
     alert("Pulling out" + Challenge + " for Group " + Group);
     if (Group == 'Guppies') {
         DataBase = 'Guppy_ScoreBoard';
+    } else{
+        DataBase = 'Shark_ScoreBoard';
     }
     $.post( "pcgetresults.php", { db: DataBase, Ch: Challenge})
     .done(function( data ) {

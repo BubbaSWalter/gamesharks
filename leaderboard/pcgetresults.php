@@ -29,5 +29,6 @@
             echo "0 results";
           }
         
-	    $conn->close();
-?>
+        $conn->close();
+        print_r($_POST);
+        ?>
