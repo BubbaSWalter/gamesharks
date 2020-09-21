@@ -61,6 +61,22 @@ function LoadChallenge() {
             count +=1;
         });
       });
+      url = "tsgetresults.php?db=" + DataBase;
+      $.get( url , function( data ) {
+        $( ".result" ).html( data );
+        $holder = JSON.parse(data)
+        count = 1
+        $holder.forEach(element => {
+            $("#st" + count + "name").text(element[0]);
+            if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
+                $("#st" + count + "score").text(element[1] + " ( " + element[2] + " )");
+            } else{
+                $("#st" + count + "score").text("");
+            }
+            $("#st" + count + "point").text(element[3]);
+            count +=1;
+        });
+      });
 }
 
 $( document ).ready(function() {
