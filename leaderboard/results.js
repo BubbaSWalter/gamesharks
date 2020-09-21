@@ -10,8 +10,11 @@ function LoadChallenge() {
     $.post( "getresults.php", { db: DataBase})
     .done(function( data ) {
         
+
+    });
+    $.post("getresults.php", function(data, status){
         data.forEach(element => {
             alert( "Data Loaded: " + element );
         });
-    });
+      });
 }
