@@ -15,7 +15,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM $database WHERE Challenge_Score='$Challenge' ";
+		$sql = "SELECT * FROM $database WHERE `Challenge_Score` ='".$Challenge."' ";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
@@ -24,9 +24,10 @@
                 
               print_r($row);
             }
+            echo(json_encode($holder));
           } else {
             echo "0 results";
           }
-        echo(json_encode($holder));
+        
 	    $conn->close();
 ?>
