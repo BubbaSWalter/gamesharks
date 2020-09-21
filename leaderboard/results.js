@@ -43,6 +43,8 @@ function LoadChallenge() {
         $("#pc" + count + "name").text("");
         $("#pc" + count + "score").text("");
         $("#pc" + count + "point").text("");
+        $("#st" + count + "name").text("");
+        $("#st" + count + "point").text("");
         count = count +1;
     }
 
@@ -95,6 +97,24 @@ $( document ).ready(function() {
                 $("#pc" + count + "score").text("");
             }
             $("#pc" + count + "point").text(element[3]);
+            count +=1;
+        });
+      });
+
+
+      url = "tsgetresults.php?db=" + DataBase;
+
+      /*<td id='st1name' class="tg-gri2"></td>
+      <td id='st1point' class="tg-gri2"></td>*/
+
+      $.get( url , function( data ) {
+        $( ".result" ).html( data );
+        $holder = JSON.parse(data)
+        console.log($holder)
+        count = 1
+        $holder.forEach(element => {
+            $("#st" + count + "name").text(element[0]);
+            $("#st" + count + "point").text(element[1]);
             count +=1;
         });
       });
