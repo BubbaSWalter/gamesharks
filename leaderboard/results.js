@@ -39,7 +39,13 @@ function LoadChallenge() {
 /*     <td id='pc1name' class="tg-gri2"></td>
     <td id='pc1score' class="tg-gri2"></td>
     <td id='pc1point' class="tg-gri2"></td> */
-
+    count = 1;
+    while (count < 15) {
+        $("#pc" + count + "name").text("");
+        $("#pc" + count + "score").text("");
+        $("#pc" + count + "point").text("");
+        count = count +1;
+    }
 
     $.get( url , function( data ) {
         $( ".result" ).html( data );
