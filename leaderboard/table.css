@@ -20,6 +20,6 @@
 
 #container{
     display: inline-grid ;
-    grid-template-columns: auto 20px auto;
+    grid-template-columns: auto 200px auto;
     
 }
