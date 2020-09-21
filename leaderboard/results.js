@@ -9,7 +9,7 @@ function LoadChallenge() {
     } else{
         DataBase = 'Shark_ScoreBoard';
     }
-    url = ;
+    url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     alert("pcgetresults.php?db=" + DataBase + "&ch=" + Challenge);
 
     $.get( url , function( data ) {
