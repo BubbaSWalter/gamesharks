@@ -19,7 +19,7 @@
         if ($result->num_rows > 0) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
-                $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'], $row['Challenge_Points'], ]
+                $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'], $row['Challenge_Points'] ];
                 array_push ( $holder, $dumb  );
 		    }
         }
