@@ -19,7 +19,7 @@
 		<form action="index.php"">
 			<label for="cars">Challenge1:</label>
 		
-			<select id="" name="challenge">
+			<select id="challenge" name="challenge">
   				<option value="Challenge 1">Challenge 1:  TMNT: Turtles in Time Distance</option>
 			</select>
 		</form>
