@@ -16,13 +16,14 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-		<form action="index.php" onsubmit="myFunction()">
+		<form action="index.php"">
 			<label for="cars">Challenge1:</label>
 		
 			<select id="" name="challenge">
   				<option value="Challenge 1">Challenge 1:  TMNT: Turtles in Time Distance</option>
 			</select>
 		</form>
+		<button type="button" onclick="LoadChallenge()">Load Challenge</button>
 	</article>
 	
 <?php include 'include/footer.php'?>
