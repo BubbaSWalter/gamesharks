@@ -11,5 +11,6 @@ function LoadChallenge() {
     .done(function( data ) {
       alert( "Data Loaded: " + data );
       console.log(data);
+      console.log();
     });
 }
