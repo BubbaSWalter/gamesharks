@@ -65,6 +65,8 @@ function LoadChallenge() {
 }
 
 $( document ).ready(function() {
+    var Challenge = '1';
+    var DataBase = 'Guppy_ScoreBoard';
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     $.get( url , function( data ) {
         $( ".result" ).html( data );
