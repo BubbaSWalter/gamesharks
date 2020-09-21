@@ -25,7 +25,7 @@ function LoadChallenge() {
         count = 1
         $holder.forEach(element => {
             $("#pc" + count + "name").text(element[0]);
-            counbt +=1;
+            count +=1;
         });
       });
 
