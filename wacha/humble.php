@@ -29,7 +29,7 @@ include '../meistercheck.php';
     
     if (!in_array($uname, $meister_array)){
 			header( 'Location: https://gamesharks.wizardsrwe.com/wacha/accessdenied.php' );
-	}\
+	}
 	$title = 'GameSharks Results Page';
 	include 'include/header.php';
     include 'include/navbar.php';
