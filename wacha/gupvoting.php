@@ -29,15 +29,17 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
             #print_r($row);
-            echo $row["Choice1"];
-            echo $row['Choice2'];
-            echo $row['Choice3'];
             $MainArray[$row['Choice1']] +=  1;
             $MainArray[$row['Choice2']] +=  1;
             $MainArray[$row['Choice3']] +=  1;
 		}
     }
     $conn->close();
+    arsort($MainArray);
+    $truearray = [];
+    foreach ($MainArray as $key => $value) {
+        echo $key . " - " . $value . " Votes";
+    }
 
 
     echo(json_encode($MainArray));
