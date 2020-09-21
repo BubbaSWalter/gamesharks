@@ -5,6 +5,7 @@
     $dbname = "u919436859_shark";
 
     $database = $_POST['db'];
+    $database = 'Guppy_ScoreBoard';
     $Challenge = $_POST['ch'];
     $holder = [];
     #print $database;
