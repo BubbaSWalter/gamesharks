@@ -78,7 +78,8 @@
                 }
 
                 $math = $Ch1 + $Ch2 + $Ch3 + $Ch4 + $Ch5 + $Ch6 + $Ch7 + $Ch8 +$Ch9 + $Ch10; 
-                array_push( $holder[$row['User_Name']] = $math );
+                $User_Name = $row['User_Name']
+                $holder[$User_name] = $math;
             }
             echo(json_encode($holder));
           } else {
