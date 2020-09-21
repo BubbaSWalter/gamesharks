@@ -27,6 +27,6 @@
 	</article>
 	
 <?php include 'include/footer.php'?>
-<script src="loadchallengeresults.js"></script>
+<script src="results.js"></script>
 </body>
 </html>
