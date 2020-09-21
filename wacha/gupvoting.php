@@ -29,6 +29,7 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
             #print_r($row);
+            echo $Row['Choice1'] . " " . $Row['Choice2']. " " . $Row['Choice3'];
             $MainArray[$Row['Choice1']] +=  1;
             $MainArray[$Row['Choice2']] +=  1;
             $MainArray[$Row['Choice3']] +=  1;
