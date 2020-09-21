@@ -22,7 +22,7 @@
 		}
     }
     
-    $sql = "SELECT * AS `num` FROM voting";
+    $sql = "SELECT *  FROM voting";
 	if ($result->num_rows > 0) {
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
