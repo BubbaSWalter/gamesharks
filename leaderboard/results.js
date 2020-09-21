@@ -35,7 +35,6 @@ function LoadChallenge() {
         $("#Chname").text('REDACTED FOR SPOILERS');
     }
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
-    alert("pcgetresults.php?db=" + DataBase + "&ch=" + Challenge);
 
 /*     <td id='pc1name' class="tg-gri2"></td>
     <td id='pc1score' class="tg-gri2"></td>
@@ -44,7 +43,6 @@ function LoadChallenge() {
 
     $.get( url , function( data ) {
         $( ".result" ).html( data );
-        alert( data );
         $holder = JSON.parse(data)
         console.log($holder);
         count = 1
@@ -57,6 +55,4 @@ function LoadChallenge() {
             count +=1;
         });
       });
-
-
 }
