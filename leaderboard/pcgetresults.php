@@ -30,5 +30,4 @@
           }
         
         $conn->close();
-        print_r($_POST);
         ?>
