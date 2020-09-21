@@ -4,7 +4,7 @@
     $password = "GjefadD~i63a";
     $dbname = "u919436859_shark";
 
-    $database = $_POST['database'];
+    $database = $_POST['db'];
 
     print $database;
 ?>
