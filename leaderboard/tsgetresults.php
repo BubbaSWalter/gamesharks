@@ -7,7 +7,7 @@
     $database = $_GET['db'];
     #$database = 'Guppy_ScoreBoard';
     if ($database == 'Guppy_ScoreBoard') {
-        $database = 'Guppy_LeaderBoard';
+        $database = 'Guppy Leaderboard';
     } else if ($database == 'Shark_ScoreBoard') {
         $database = 'Shark_LeaderBoard';
     }
