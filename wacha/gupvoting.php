@@ -40,8 +40,5 @@
     foreach ($MainArray as $key => $value) {
         echo $key . " - " . $value . " Votes".  nl2br("\r\n");
     }
-
-
-    echo(json_encode($MainArray));
     
 ?>
