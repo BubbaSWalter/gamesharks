@@ -42,6 +42,7 @@
 		</form>
 		
 
+		<div id='container'>
 		<div id='pc'>
 		<table class="tg">
 			<thead>
@@ -253,6 +254,8 @@
 			</tbody>
 		</table>
 		</div>
+		</div>
+
 
 
 

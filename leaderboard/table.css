@@ -12,9 +12,13 @@
 
 
 #st{
-    display: inline;
+    grid-column-start: 2;
 }
 #pc{
-    display: inline;
-    padding-left: 20px;
+    grid-column-start: 1;
+}
+
+#container{
+    display: grid;
+    
 }
