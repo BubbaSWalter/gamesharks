@@ -9,6 +9,6 @@
 <body>
     <canvas id='bgCanvas'></canvas>
 	<div id="Sharky" class="center">
-	<img src="../img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
+	<img src="/img/GameSharks_logo_square.png" alt="GameSharks"  width="369" height="200" class="center">
 		<h1><?php echo $title; ?></h1>
 	</div>
