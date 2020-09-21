@@ -7,9 +7,9 @@
     $database = $_GET['db'];
     #$database = 'Guppy_ScoreBoard';
     if ($database == 'Guppy_ScoreBoard') {
-        $database == 'Guppy_LeaderBoard';
+        $database = 'Guppy_LeaderBoard';
     } else if ($database == 'Shark_ScoreBoard') {
-        $database == 'Shark_LeaderBoard';
+        $database = 'Shark_LeaderBoard';
     }
 
     $holder = [];
