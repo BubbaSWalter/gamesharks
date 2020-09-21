@@ -44,6 +44,7 @@
 
 		<div id='container'>
 		<div id='pc'>
+			<h2 id=Chname>Insert Challenge Name Here</h2>
 		<table class="tg">
 			<thead>
   				<tr>
@@ -150,6 +151,7 @@
 		</div>
 
 		<div id='st'>
+		<h2 id=Chname>Season Totals</h2>>
 		<table class="tg">
 			<thead>
   				<tr>
