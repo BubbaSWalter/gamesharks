@@ -11,7 +11,7 @@ function LoadChallenge() {
     }
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     alert(url);
-    $.get(  , function( data ) {
+    $.get( url , function( data ) {
         $( ".result" ).html( data );
         alert( "Load was performed." );
       });
