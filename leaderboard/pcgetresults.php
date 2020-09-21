@@ -23,9 +23,10 @@
 		    while($row = $result->fetch_assoc()) {
                 if($row['Challlenge_Num'] == $Challenge){
                     $dumb = [$row['User_Name'], $row['Challlenge_Num'], $row['Challenge_Score'],$row['Challenge_Time'], $row['Challenge_Points'] ];
+                    array_push ( $holder, $dumb  );
                 }
                 
-                array_push ( $holder, $dumb  );
+                
 		    }
         }
         echo(json_encode($holder));
