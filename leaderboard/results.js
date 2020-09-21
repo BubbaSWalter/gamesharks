@@ -9,6 +9,6 @@ function LoadChallenge() {
     }
     $.post( "getresults.php", { db: DataBase})
     .done(function( data ) {
-      console.log(data);
+      alert( "Data Loaded: " + data );
     });
 }
