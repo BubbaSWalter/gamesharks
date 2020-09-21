@@ -1,4 +1,8 @@
 <?php
+	$servername = "localhost";
+	$username = "u919436859_admin";
+	$password = "GjefadD~i63a";
+	$dbname = "u919436859_shark";
 	$MainArray = array();
 	$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 	if ($conn->connect_error) {     // Check connection
