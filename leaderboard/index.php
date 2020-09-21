@@ -42,6 +42,7 @@
 		</form>
 		
 
+		<div id='pc'>
 		<table class="tg">
 			<thead>
   				<tr>
@@ -54,97 +55,204 @@
 			<tbody>
   				<tr>
 		  			<td class="tg-gri2">1st</td>
-    				<td id='1name' class="tg-gri2"></td>
-    				<td id='1score' class="tg-gri2"></td>
-    				<td id='1point' class="tg-gri2"></td>
+    				<td id='pc1name' class="tg-gri2"></td>
+    				<td id='pc1score' class="tg-gri2"></td>
+    				<td id='pc1point' class="tg-gri2"></td>
   				</tr>
 				<tr>
 					<td class="tg-hnm8">2nd</td>
-					<td id='2name' class="tg-hnm8"></td>
-					<td id='2score' class="tg-hnm8"></td>
-					<td id='2point' class="tg-hnm8"></td>
+					<td id='pc2name' class="tg-hnm8"></td>
+					<td id='pc2score' class="tg-hnm8"></td>
+					<td id='pc2point' class="tg-hnm8"></td>
   				</tr>
   				<tr>
 		  			<td class="tg-4ffq">3rd</td>
-					<td id='3name' class="tg-4ffq"></td>
-					<td id='3score' class="tg-4ffq"></td>
-					<td id='3point' class="tg-4ffq"></td>
+					<td id='pc3name' class="tg-4ffq"></td>
+					<td id='pc3score' class="tg-4ffq"></td>
+					<td id='pc3point' class="tg-4ffq"></td>
   				</tr>
   				<tr>
 					<td class="tg-e454">4</td>
-  					<td id='4name' class="tg-e454"></td>
-  					<td id='4score' class="tg-e454"></td>
-  					<td id='4point' class="tg-e454"></td>
+  					<td id='pc4name' class="tg-e454"></td>
+  					<td id='pc4score' class="tg-e454"></td>
+  					<td id='pc4point' class="tg-e454"></td>
   				</tr>
   				<tr>
 		  			<td class="tg-eyx6">5</td>
-  					<td id='5name' class="tg-eyx6"></td>
-  					<td id='5score' class="tg-eyx6"></td>
-  					<td id='5point' class="tg-eyx6"></td>
+  					<td id='pc5name' class="tg-eyx6"></td>
+  					<td id='pc5score' class="tg-eyx6"></td>
+  					<td id='pc5point' class="tg-eyx6"></td>
   				</tr> 				
   				<tr>
 					<td class="tg-e454">6</td>
-  					<td id='6name' class="tg-e454"></td>
-  					<td id='6score' class="tg-e454"></td>
-  					<td id='6point' class="tg-e454"></td>
+  					<td id='pc6name' class="tg-e454"></td>
+  					<td id='pc6score' class="tg-e454"></td>
+  					<td id='pc6point' class="tg-e454"></td>
   				</tr>
   				<tr>
 		  			<td class="tg-eyx6">7</td>
-  					<td id='7name' class="tg-eyx6"></td>
-  					<td id='7score' class="tg-eyx6"></td>
-  					<td id='7point' class="tg-eyx6"></td>
+  					<td id='pc7name' class="tg-eyx6"></td>
+  					<td id='pc7score' class="tg-eyx6"></td>
+  					<td id='pc7point' class="tg-eyx6"></td>
   				</tr>			
   				<tr>
 					<td class="tg-e454">8</td>
-  					<td id='8name' class="tg-e454"></td>
-  					<td id='8score' class="tg-e454"></td>
-  					<td id='8point' class="tg-e454"></td>
+  					<td id='pc8name' class="tg-e454"></td>
+  					<td id='pc8score' class="tg-e454"></td>
+  					<td id='pc8point' class="tg-e454"></td>
   				</tr>
   				<tr>
 		  			<td class="tg-eyx6">9</td>
-  					<td id='9name' class="tg-eyx6"></td>
-  					<td id='9score' class="tg-eyx6"></td>
-  					<td id='9point' class="tg-eyx6"></td>
+  					<td id='pc9name' class="tg-eyx6"></td>
+  					<td id='pc9score' class="tg-eyx6"></td>
+  					<td id='pc9point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
 					<td class="tg-e454">10</td>
-  					<td id='10name' class="tg-e454"></td>
-  					<td id='10score' class="tg-e454"></td>
-  					<td id='10point' class="tg-e454"></td>
+  					<td id='pc10name' class="tg-e454"></td>
+  					<td id='pc10score' class="tg-e454"></td>
+  					<td id='pc10point' class="tg-e454"></td>
   				</tr>
 				<tr>
 					<td class="tg-eyx6"">11</td>
-  					<td id='11name' class="tg-eyx6"></td>
-  					<td id='11score' class="tg-eyx6"></td>
-  					<td id='11point' class="tg-eyx6"></td>
+  					<td id='pc11name' class="tg-eyx6"></td>
+  					<td id='pc11score' class="tg-eyx6"></td>
+  					<td id='pc11point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
 					<td class="tg-e454">12</td>
-  					<td id='12name' class="tg-e454"></td>
-  					<td id='12score' class="tg-e454"></td>
-  					<td id='12point' class="tg-e454"></td>
+  					<td id='pc12name' class="tg-e454"></td>
+  					<td id='pc12score' class="tg-e454"></td>
+  					<td id='pc12point' class="tg-e454"></td>
   				</tr>
 				<tr>
 					<td class="tg-eyx6"">13</td>
-  					<td id='13name' class="tg-eyx6"></td>
-  					<td id='13score' class="tg-eyx6"></td>
-  					<td id='13point' class="tg-eyx6"></td>
+  					<td id='pc13name' class="tg-eyx6"></td>
+  					<td id='pc13score' class="tg-eyx6"></td>
+  					<td id='pc13point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
 					<td class="tg-e454">14</td>
-  					<td id='14name' class="tg-e454"></td>
-  					<td id='14score' class="tg-e454"></td>
-  					<td id='14point' class="tg-e454"></td>
+  					<td id='pc14name' class="tg-e454"></td>
+  					<td id='pc14score' class="tg-e454"></td>
+  					<td id='pc14point' class="tg-e454"></td>
   				</tr>
 				<tr>
 					<td class="tg-eyx6"">15</td>
-  					<td id='15name' class="tg-eyx6"></td>
-  					<td id='15score' class="tg-eyx6"></td>
-  					<td id='15point' class="tg-eyx6"></td>
+  					<td id='pc15name' class="tg-eyx6"></td>
+  					<td id='pc15score' class="tg-eyx6"></td>
+  					<td id='pc15point' class="tg-eyx6"></td>
   				</tr>
 				
 			</tbody>
 		</table>
+		</div>
+
+		<div id='st'>
+		<table class="tg">
+			<thead>
+  				<tr>
+		 			<th class="tg-cb0t">Place</th>
+    				<th class="tg-cb0t">Username</th>
+    				<th class="tg-cb0t">Score</th>
+    				<th class="tg-cb0t">Points Awarded</th>
+  				</tr>
+			</thead>
+			<tbody>
+  				<tr>
+		  			<td class="tg-gri2">1st</td>
+    				<td id='st1name' class="tg-gri2"></td>
+    				<td id='st1score' class="tg-gri2"></td>
+    				<td id='st1point' class="tg-gri2"></td>
+  				</tr>
+				<tr>
+					<td class="tg-hnm8">2nd</td>
+					<td id='st2name' class="tg-hnm8"></td>
+					<td id='st2score' class="tg-hnm8"></td>
+					<td id='st2point' class="tg-hnm8"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-4ffq">3rd</td>
+					<td id='st3name' class="tg-4ffq"></td>
+					<td id='st3score' class="tg-4ffq"></td>
+					<td id='st3point' class="tg-4ffq"></td>
+  				</tr>
+  				<tr>
+					<td class="tg-e454">4</td>
+  					<td id='st4name' class="tg-e454"></td>
+  					<td id='st4score' class="tg-e454"></td>
+  					<td id='st4point' class="tg-e454"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-eyx6">5</td>
+  					<td id='st5name' class="tg-eyx6"></td>
+  					<td id='st5score' class="tg-eyx6"></td>
+  					<td id='st5point' class="tg-eyx6"></td>
+  				</tr> 				
+  				<tr>
+					<td class="tg-e454">6</td>
+  					<td id='st6name' class="tg-e454"></td>
+  					<td id='st6score' class="tg-e454"></td>
+  					<td id='st6point' class="tg-e454"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-eyx6">7</td>
+  					<td id='st7name' class="tg-eyx6"></td>
+  					<td id='st7score' class="tg-eyx6"></td>
+  					<td id='st7point' class="tg-eyx6"></td>
+  				</tr>			
+  				<tr>
+					<td class="tg-e454">8</td>
+  					<td id='st8name' class="tg-e454"></td>
+  					<td id='st8score' class="tg-e454"></td>
+  					<td id='st8point' class="tg-e454"></td>
+  				</tr>
+  				<tr>
+		  			<td class="tg-eyx6">9</td>
+  					<td id='st9name' class="tg-eyx6"></td>
+  					<td id='st9score' class="tg-eyx6"></td>
+  					<td id='st9point' class="tg-eyx6"></td>
+  				</tr>
+  				<tr>
+					<td class="tg-e454">10</td>
+  					<td id='st10name' class="tg-e454"></td>
+  					<td id='st10score' class="tg-e454"></td>
+  					<td id='st10point' class="tg-e454"></td>
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">11</td>
+  					<td id='st11name' class="tg-eyx6"></td>
+  					<td id='st11score' class="tg-eyx6"></td>
+  					<td id='st11point' class="tg-eyx6"></td>
+  				</tr>
+  				<tr>
+					<td class="tg-e454">12</td>
+  					<td id='st12name' class="tg-e454"></td>
+  					<td id='st12score' class="tg-e454"></td>
+  					<td id='st12point' class="tg-e454"></td>
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">13</td>
+  					<td id='st13name' class="tg-eyx6"></td>
+  					<td id='st13score' class="tg-eyx6"></td>
+  					<td id='st13point' class="tg-eyx6"></td>
+  				</tr>
+  				<tr>
+					<td class="tg-e454">14</td>
+  					<td id='st14name' class="tg-e454"></td>
+  					<td id='st14score' class="tg-e454"></td>
+  					<td id='st14point' class="tg-e454"></td>
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">15</td>
+  					<td id='st15name' class="tg-eyx6"></td>
+  					<td id='st15score' class="tg-eyx6"></td>
+  					<td id='st15point' class="tg-eyx6"></td>
+  				</tr>
+				
+			</tbody>
+		</table>
+		</div>
 
 
 
