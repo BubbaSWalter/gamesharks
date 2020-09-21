@@ -7,7 +7,7 @@
 	<title>GameSharks Season 5 Leaderboard</title>
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/table.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
     <canvas id='bgCanvas'></canvas>
