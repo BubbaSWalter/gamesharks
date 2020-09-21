@@ -66,6 +66,7 @@ function LoadChallenge() {
 }
 
 $( document ).ready(function() {
+    url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     $.get( url , function( data ) {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
