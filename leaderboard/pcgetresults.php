@@ -21,8 +21,8 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                
-              print_r($row);
+                $dumb = [$row['User_Name'], [$row['Challenge_Score'], [$row['Challenge_TIme'], [$row['Challenge_Points'] ]
+                array_push($holder, [$dumb])
             }
             echo(json_encode($holder));
           } else {
