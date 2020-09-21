@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/iframe.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
     <canvas id='bgCanvas'></canvas>
@@ -16,8 +17,7 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-	<iframe style="width: 80vw;height: 60vh;background-color: #000
-" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?gid=1256110192&amp;widget=true&amp;headers=false"></iframe>
+	<iframe style= src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml?gid=1256110192&amp;widget=true&amp;headers=false"></iframe>
 	</article>
 	
 <?php include 'include/footer.php'?>

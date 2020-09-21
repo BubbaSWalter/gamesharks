@@ -1,0 +1,7 @@
+iframe {
+    width: 80vw;
+    height: 60vh;
+}
+iframe body{
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+}
