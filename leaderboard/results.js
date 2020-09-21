@@ -9,8 +9,12 @@ function LoadChallenge() {
     } else{
         DataBase = 'Shark_ScoreBoard';
     }
-    $.post( "pcgetresults.php", { db: DataBase, Ch: Challenge})
-    .done(function( data ) {
-        alert(data);
-    });
+    url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
+    alert(url);
+    $.get(  , function( data ) {
+        $( ".result" ).html( data );
+        alert( "Load was performed." );
+      });
+
+
 }
