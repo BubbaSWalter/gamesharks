@@ -5,7 +5,6 @@
 <html>
 	<meta charset="UTF-8">
 	<title>GameSharks Season 5 Leaderboard</title>
-	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="/css/header.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/iframe.css">
@@ -17,10 +16,16 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-	<iframe id="dado" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9i-Jzdoc2e7HCTdYMeGRxVsj4jSA8bsF572y-gWnaS4xDCGMPBpLB2E1gT3QvCSHszDl6ZUcN5awv/pubhtml"></iframe>
+		<form action="index.php" onsubmit="myFunction()">
+			<label for="cars">Challenge1:</label>
+		
+			<select id="" name="challenge">
+  				<option value="volvo">Challenge1:  TMNT: Turtles in Time Distance</option>
+			</select>
+		</form>
 	</article>
 	
 <?php include 'include/footer.php'?>
-<script src="background.js"></script>
+<script src="loadchallengeresults.js"></script>
 </body>
 </html>
