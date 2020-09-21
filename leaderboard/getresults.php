@@ -6,7 +6,7 @@
 
     #$database = $_POST['db'];
     $database = 'Guppy_ScoreBoard';
-    $holder = []
+    $holder = [];
     #print $database;
         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
 		if ($conn->connect_error) {     // Check connection
