@@ -74,8 +74,9 @@
                 if ($Ch10 == NULL) {
                     $Ch10 = 0;
                 }
+
                 $math = $Ch1 + $Ch2 + $Ch3 + $Ch4 + $Ch5 + $Ch6 + $Ch7 + $Ch8 +$Ch9 + $Ch10; 
-                array_push( $row['User_Name'] => $math );
+                array_push( $holder[$row['User_Name']] = $math );
             }
             echo(json_encode($holder));
           } else {
