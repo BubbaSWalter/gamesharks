@@ -4,9 +4,9 @@
     $password = "GjefadD~i63a";
     $dbname = "u919436859_shark";
 
-    $database = $_POST['db'];
+    $database = $_GET['db'];
     #$database = 'Guppy_ScoreBoard';
-    $Challenge = $_POST['ch'];
+    $Challenge = $_GET['ch'];
     #$Challenge = '1' ;
     $holder = [];
     #print $database;
