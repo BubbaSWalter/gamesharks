@@ -15,7 +15,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM Guppy_ScoreBoard WHERE Challenge_Num = '1'";
+		$sql = "SELECT * FROM Guppy_ScoreBoard WHERE Challenge_Num = '1' ORDER By Challenge_Points DESC";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
