@@ -9,7 +9,7 @@
     if ($database == 'Guppy_ScoreBoard') {
         $database = 'Guppy_Leaderboard';
     } else if ($database == 'Shark_ScoreBoard') {
-        $database = 'Shark_LeaderBoard';
+        $database = 'Shark_Leaderboard';
     }
 
     $holder = [];
