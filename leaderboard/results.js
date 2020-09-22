@@ -13,7 +13,7 @@ function LoadChallenge() {
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
     } else if (Challenge == '1') {
-        $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Ataack');
+        $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Attack');
     } else if (Challenge == '2') {
         $("#Chname").text('REDACTED FOR SPOILERS');
     } else if (Challenge == '3') {
