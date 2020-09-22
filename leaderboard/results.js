@@ -115,7 +115,12 @@ $( document ).ready(function() {
         $holder.forEach(element => {
             $("#pc" + count + "name").text(element[0]);
             if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
-                $("#pc" + count + "score").text(element[1] + " ( " + element[2] + " )");
+                if(element[2].substring(1, 2)== '00'){
+                    $("#pc" + count + "score").text(element[1] + " ( " + element[2].substring(3) + " )");
+                } else {
+                    $("#pc" + count + "score").text(element[1] + " ( " + element[2] + " )");
+                }
+                
             } else{
                 $("#pc" + count + "score").text("");
             }
