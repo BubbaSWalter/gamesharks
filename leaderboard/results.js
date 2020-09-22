@@ -37,7 +37,7 @@ function LoadChallenge() {
     <td id='pc1score' class="tg-gri2"></td>
     <td id='pc1point' class="tg-gri2"></td> */
     count = 1;
-    while (count < 15) {
+    while (count < 17) {
         $("#pc" + count + "name").text("");
         $("#pc" + count + "score").text("");
         $("#pc" + count + "point").text("");
