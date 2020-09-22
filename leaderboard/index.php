@@ -21,7 +21,7 @@
 		
 			<select id="challenge" name="challenge">
   				<option value="1">Challenge 1: SNES - TMNT: Turtles in Time - Distance</option>
-				<option value="2">Challenge 2: SNES - Pac-Man 2: The New Adventures Score Ataack</option>
+				<option value="2">Challenge 2: SNES - Pac-Man 2: The New Adventures Score Attack</option>
 				<option value="3">Challenge 3:  &lt;REDACTED FOR SPOILERS&gt;</option>
 				<option value="4">Challenge 4:  &lt;REDACTED FOR SPOILERS&gt;</option>
 				<option value="5">Challenge 5:  &lt;REDACTED FOR SPOILERS&gt;</option>
