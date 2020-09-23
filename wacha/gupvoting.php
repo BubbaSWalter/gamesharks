@@ -40,7 +40,7 @@
     arsort($MainArray);
     $truearray = [];
     foreach ($MainArray as $key => $value) {
-        echo "<li>" .$key . " - " . $value . " Votes". "</li>" . nl2br("\r\n");
+        echo "<li>" .$key . " - " . $value . " Votes". "</li>";
     }
     
 ?>
