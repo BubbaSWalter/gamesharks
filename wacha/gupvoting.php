@@ -1,3 +1,5 @@
+<ol>
+
 <?php
 	$servername = "localhost";
 	$username = "u919436859_admin";
@@ -38,7 +40,9 @@
     arsort($MainArray);
     $truearray = [];
     foreach ($MainArray as $key => $value) {
-        echo $key . " - " . $value . " Votes".  nl2br("\r\n");
+        echo "<li>" .$key . " - " . $value . " Votes". "</li>" . nl2br("\r\n");
     }
     
 ?>
+
+</ol>
