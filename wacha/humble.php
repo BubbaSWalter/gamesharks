@@ -117,7 +117,7 @@ include '../meistercheck.php';
         </div>
 
 		<div id="clearing">
-			<form action="voting/full_wipe.php">
+			<form action="/wacha/voting/full_wipe.php">
                 Wiping all votes in which group<br>
                 <select name="wipe">
                     <option > --- </option>
@@ -128,7 +128,7 @@ include '../meistercheck.php';
             </form>
             <br>
 
-			<form action="voting/shark_wipe.php">
+			<form action="/wacha/voting/shark_wipe.php">
                 Shark Voting Single Person Wipe<br>
                 <select name="sharkpersonwipe">
                     <option > --- </option>
@@ -151,7 +151,7 @@ include '../meistercheck.php';
             </form>
 			<br>
 
-			<form action="voting/community_wipe.php">
+			<form action="/wacha/voting/community_wipe.php">
                 Community Voting Single Person Wipe<br>
                 <select name="sharkpersonwipe">
                     <option > --- </option>
@@ -174,7 +174,7 @@ include '../meistercheck.php';
             </form>
 			<br>
 
-			<form action="voting/voting_status.php">
+			<form action="/wacha/voting/voting_status.php">
 			    Voting Status<br>
                 <select name="status">
                     <option > --- </option>
