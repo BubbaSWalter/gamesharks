@@ -100,7 +100,7 @@ include '../meistercheck.php';
 		</div>
 			
 		<div id="winners">
-                <form action="voting/winners.php">
+                <form action="/wacha/voting/winners.php">
                     Winning Choices:<br>
 					<label for="first">First Place: </label>
                     <input type="text" name="first" value="<?php echo $winners['first'] ?>"><br>
