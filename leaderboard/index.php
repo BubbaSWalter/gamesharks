@@ -259,6 +259,7 @@
   				</tr>
 			</tbody>
 		</table>
+			<p>If your Score end in an "*" you either started you timer early or late and The Mesiter Team Adjusted your time accordingly</p> 
 		</div>
 		</div>
 
