@@ -21,7 +21,7 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                $score =''
+                $score ='';
                 if(strval($row['Challenge_Score_Sup']) == strval('')){
                   $score == $row['Challenge_Score'];
                 } else {
