@@ -4,10 +4,10 @@
     $password = "GjefadD~i63a";
     $dbname = "u919436859_shark";
 
-    $database = $_GET['db'];
-    #$database = 'Guppy_ScoreBoard';
-    $Challenge = $_GET['ch'];
-    #$Challenge = '1' ;
+    #$database = $_GET['db'];
+    $database = 'Guppy_ScoreBoard';
+    #$Challenge = $_GET['ch'];
+    $Challenge = '1' ;
     $holder = [];
     #print $database;
         $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -22,7 +22,7 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 $score ='';
-                if($row['Challenge_Score_Sup'] == NULL){
+                if($row['Challenge_Score_Sup'] != NULL){
                   $score == $row['Challenge_Score'];
                 } else {
                   $score = $row['Challenge_Score_Sup'];
