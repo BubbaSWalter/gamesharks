@@ -22,11 +22,12 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 $score ='';
-                echo strlen($row['Challenge_Score_Sup']);
-                if($row['Challenge_Score_Sup'] != NULL){
-                  $score == $row['Challenge_Score'];
-                } else {
+                echo );
+                if(strlen($row['Challenge_Score_Sup'] > 0){
                   $score = $row['Challenge_Score_Sup'];
+                  
+                } else {
+                  $score == $row['Challenge_Score'];
                 }
                 $dumb = [$row['User_Name'], $row['Challenge_Score'], $row['Challenge_TIme'], $row['Challenge_Points']];
                 array_push($holder, $dumb );
