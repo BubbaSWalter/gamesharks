@@ -22,7 +22,6 @@
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 $score ='';
-                echo;
                 if(strlen($row['Challenge_Score_Sup']) > 0){
                   $score = $row['Challenge_Score_Sup'];
                   
