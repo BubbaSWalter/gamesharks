@@ -26,9 +26,9 @@
                   $score = $row['Challenge_Score_Sup'];
                   
                 } else {
-                  $score == $row['Challenge_Score'];
+                  $score = $row['Challenge_Score'];
                 }
-                $dumb = [$row['User_Name'], $row['Challenge_Score'], $row['Challenge_TIme'], $row['Challenge_Points']];
+                $dumb = [$row['User_Name'], $score, $row['Challenge_TIme'], $row['Challenge_Points']];
                 array_push($holder, $dumb );
             }
             echo(json_encode($holder));
