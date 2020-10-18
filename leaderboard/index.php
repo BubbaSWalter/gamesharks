@@ -156,7 +156,25 @@
   					<td id='pc17name' class="tg-eyx6"></td>
   					<td id='pc17score' class="tg-eyx6"></td>
   					<td id='pc17point' class="tg-eyx6"></td>
-  				</tr>				
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">18</td>
+  					<td id='pc18name' class="tg-eyx6"></td>
+  					<td id='pc18score' class="tg-eyx6"></td>
+  					<td id='pc18point' class="tg-eyx6"></td>
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">19</td>
+  					<td id='pc19name' class="tg-eyx6"></td>
+  					<td id='pc19score' class="tg-eyx6"></td>
+  					<td id='pc19point' class="tg-eyx6"></td>
+  				</tr>
+				<tr>
+					<td class="tg-eyx6"">20</td>
+  					<td id='pc20name' class="tg-eyx6"></td>
+  					<td id='pc20score' class="tg-eyx6"></td>
+  					<td id='pc20point' class="tg-eyx6"></td>
+  				</tr>			
 			</tbody>
 		</table>
 		</div>
@@ -256,6 +274,21 @@
 					<td class="tg-eyx6"">17</td>
   					<td id='st17name' class="tg-eyx6"></td>
   					<td id='st17point' class="tg-eyx6"></td>
+  				</tr>
+				  <tr>
+					<td class="tg-eyx6"">18</td>
+  					<td id='st18name' class="tg-eyx6"></td>
+  					<td id='st18point' class="tg-eyx6"></td>
+  				</tr>
+				  <tr>
+					<td class="tg-eyx6"">19</td>
+  					<td id='st19name' class="tg-eyx6"></td>
+  					<td id='st19point' class="tg-eyx6"></td>
+  				</tr>
+				  <tr>
+					<td class="tg-eyx6"">20</td>
+  					<td id='st20name' class="tg-eyx6"></td>
+  					<td id='st20point' class="tg-eyx6"></td>
   				</tr>
 			</tbody>
 		</table>
