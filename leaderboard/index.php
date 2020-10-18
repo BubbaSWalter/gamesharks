@@ -165,15 +165,15 @@
   				</tr>
 				<tr>
 					<td class="tg-eyx6">19</td>
-  					<td id='pc19name' class="tg-e454"></td>
-  					<td id='pc19score' class="tg-e454"></td>
-  					<td id='pc19point' class="tg-e454"></td>
+  					<td id='pc19name' class="tg-eyx6"></td>
+  					<td id='pc19score' class="tg-eyx6"></td>
+  					<td id='pc19point' class="tg-eyx6"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6"">20</td>
-  					<td id='pc20name' class="tg-eyx6"></td>
-  					<td id='pc20score' class="tg-eyx6"></td>
-  					<td id='pc20point' class="tg-eyx6"></td>
+					<td class="tg-e454">20</td>
+  					<td id='pc20name' class="tg-e454"></td>
+  					<td id='pc20score' class="tg-e454"></td>
+  					<td id='pc20point' class="tg-e454"></td>
   				</tr>			
 			</tbody>
 		</table>
@@ -251,7 +251,7 @@
   					<td id='st12point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6"">13</td>
+					<td class="tg-eyx6">13</td>
   					<td id='st13name' class="tg-eyx6"></td>
   					<td id='st13point' class="tg-eyx6"></td>
   				</tr>
@@ -261,7 +261,7 @@
   					<td id='st14point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6"">15</td>
+					<td class="tg-eyx6">15</td>
   					<td id='st15name' class="tg-eyx6"></td>
   					<td id='st15point' class="tg-eyx6"></td>
   				</tr>
@@ -271,22 +271,22 @@
   					<td id='st16point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6"">17</td>
+					<td class="tg-eyx6">17</td>
   					<td id='st17name' class="tg-eyx6"></td>
   					<td id='st17point' class="tg-eyx6"></td>
   				</tr>
 				  <tr>
-					<td class="tg-eyx6"">18</td>
+					<td class="tg-e454">18</td>
   					<td id='st18name' class="tg-e454"></td>
   					<td id='st18point' class="tg-e454"></td>
   				</tr>
 				  <tr>
-					<td class="tg-eyx6"">19</td>
+					<td class="tg-eyx6">19</td>
   					<td id='st19name' class="tg-eyx6"></td>
   					<td id='st19point' class="tg-eyx6"></td>
   				</tr>
 				  <tr>
-					<td class="tg-eyx6"">20</td>
+					<td class="tg-e454">20</td>
   					<td id='st20name' class="tg-e454"></td>
   					<td id='st20point' class="tg-e454"></td>
   				</tr>
@@ -295,7 +295,7 @@
 			
 		</div>
 		</div>
-		<p>If your Score end in an "*" you either started you timer early or late and The Mesiter Team Adjusted your time accordingly</p> 
+		
 
 
 
