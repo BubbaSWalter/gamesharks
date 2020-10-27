@@ -101,7 +101,7 @@ $( document ).ready(function() {
     } else if (Challenge == '1') {
         $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Ataack');
     } else if (Challenge == '2') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('SNES - Super Metroid - Race');
     } else if (Challenge == '3') {
         $("#Chname").text('REDACTED FOR SPOILERS');
     } else if (Challenge == '4') {
