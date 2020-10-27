@@ -237,7 +237,9 @@ $( document ).ready(function() {
             }else{
                 if(lastscore != element[1]){
                     rank += 1;
+                    count2 = 1;
                 } 
+            }
             rankholder ='';
             if (rank == '1'){
                 rankholder = '1st';
