@@ -274,9 +274,25 @@ $( document ).ready(function() {
                 rankholder = '21st';
             }
             if(htmlclass.length != 0){
-                $("#st" + count + "rank").class(htmlclass);
-                $("#st" + count + "name").class(htmlclass);
-                $("#st" + count + "point").class(htmlclass);
+                $("#st" + count + "rank").removeClass('tg-hnm8');
+                $("#st" + count + "name").removeClass('tg-hnm8');
+                $("#st" + count + "point").removeClass('tg-hnm8');
+
+                $("#st" + count + "rank").removeClass('tg-4ffq');
+                $("#st" + count + "name").removeClass('tg-4ffq');
+                $("#st" + count + "point").removeClass('tg-4ffq');
+
+                $("#st" + count + "rank").removeClass('tg-e454');
+                $("#st" + count + "name").removeClass('tg-e454');
+                $("#st" + count + "point").removeClass('tg-e454');
+
+                $("#st" + count + "rank").removeClass('tg-eyx6');
+                $("#st" + count + "name").removeClass('tg-eyx6');
+                $("#st" + count + "point").removeClass('tg-eyx6');
+
+                $("#st" + count + "rank").addClass(htmlclass);
+                $("#st" + count + "name").addClass(htmlclass);
+                $("#st" + count + "point").addClass(htmlclass);
             }
             
             $("#st" + count + "rank").text(rankholder);
