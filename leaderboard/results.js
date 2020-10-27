@@ -98,7 +98,8 @@ function LoadChallenge() {
                     rank += count2;
                     count2 = 1;
                 } else {
-                    count2 += 1;
+                    count2++;
+                    console.log(count2);
                 }
             }
             if (rank == 1){
