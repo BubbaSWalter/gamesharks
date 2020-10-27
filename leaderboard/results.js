@@ -84,6 +84,7 @@ function LoadChallenge() {
         console.log($holder)
         count = 1;
         rank = 0;
+        htmlclass = '';
         count2 = 0;
         lastscore = '';
         $holder.forEach(element => {
@@ -100,13 +101,15 @@ function LoadChallenge() {
                     count2 += 1;
                 }
             }
-            rankholder ='';
             if (rank == 1){
                 rankholder = '1st';
+                htmlclass = 'tg-gri2';
             } else if (rank == 2){
                 rankholder = '2nd';
+                htmlclass = 'tg-hnm8';
             }else if (rank == 3){
-                rankholder = '3th';
+                rankholder = '3rd';
+                htmlclass = 'tg-4ffq';
             }else if (rank == 4){
                 rankholder = '4th';
             }else if (rank == 5){
@@ -144,6 +147,31 @@ function LoadChallenge() {
             }else if (rank == 21){
                 rankholder = '21st';
             }
+            if(htmlclass.length != 0){
+                $("#st" + count + "rank").removeClass('tg-hnm8');
+                $("#st" + count + "name").removeClass('tg-hnm8');
+                $("#st" + count + "point").removeClass('tg-hnm8');
+
+                $("#st" + count + "rank").removeClass('tg-4ffq');
+                $("#st" + count + "name").removeClass('tg-4ffq');
+                $("#st" + count + "point").removeClass('tg-4ffq');
+
+                $("#st" + count + "rank").removeClass('tg-e454');
+                $("#st" + count + "name").removeClass('tg-e454');
+                $("#st" + count + "point").removeClass('tg-e454');
+
+                $("#st" + count + "rank").removeClass('tg-eyx6');
+                $("#st" + count + "name").removeClass('tg-eyx6');
+                $("#st" + count + "point").removeClass('tg-eyx6');
+
+                $("#st" + count + "rank").addClass(htmlclass);
+                $("#st" + count + "name").addClass(htmlclass);
+                $("#st" + count + "point").addClass(htmlclass);
+            }
+            
+            $("#st" + count + "rank").text(rankholder);
+            $("#st" + count + "name").text(element[0]);
+            $("#st" + count + "point").text(element[1]);
             $("#st" + count + "rank").text(rankholder);
             $("#st" + count + "name").text(element[0]);
             $("#st" + count + "point").text(element[1]);
