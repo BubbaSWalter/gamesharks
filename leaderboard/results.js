@@ -99,7 +99,7 @@ function LoadChallenge() {
                     count2 = 1;
                 } else {
                     count2++;
-                    console.log(count2);
+                    console.log('rank increase' + count2);
                 }
             }
             if (rank == 1){
