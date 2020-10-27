@@ -152,6 +152,13 @@ function LoadChallenge() {
         });
 
       });
+
+    while (count < 20) {
+        $("#st" + count + "rank").text('');
+        $("#st" + count + "name").text('');
+        $("#st" + count + "point").text('');
+        count++;
+      }
 }
 
 $( document ).ready(function() {
