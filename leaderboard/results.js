@@ -235,7 +235,7 @@ $( document ).ready(function() {
                 rankholder = '2nd';
                 htmlclass = 'tg-hnm8';
             }else if (rank == '3'){
-                rankholder = '3th';
+                rankholder = '3rd';
                 htmlclass = 'tg-4ffq';
             }else if (rank == '4'){
                 rankholder = '4th';
