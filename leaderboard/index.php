@@ -16,7 +16,7 @@
 		<h1>GameSharks Season 5 Leaderboard</h1>
 	</div>
 	<article id="article">
-		<form action="index.php"">
+		<form action="index.php">
 			<label for="challenge">Challenge Lookup: </label>
 		
 			<select id="challenge" name="challenge">

@@ -86,15 +86,14 @@ function LoadChallenge() {
 $( document ).ready(function() {
 
     urlParams =  window.location.search;
-    console.log(urlParams)
-    var res = urlParams.match(/\?chnum\=(\d)/);
-    console.log(res);
-    const myParam = res[1];
-    console.log(myParam);
-    var Challenge = myParam;
-    if (myParam.length == 0 ){
+    if (urlParams.length != 0){
+        var res = urlParams.match(/\?chnum\=(\d)/);
+        const myParam = res[1];
+        var Challenge = myParam;
+    } else {
         Challenge = '1';
     }
+    
     var DataBase = 'Guppy_ScoreBoard';
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
