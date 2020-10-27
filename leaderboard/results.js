@@ -87,7 +87,7 @@ $( document ).ready(function() {
 
     urlParams =  window.location.search;
     console.log(urlParams)
-    var res = urlParams.match('\?chnum\=(\d)');
+    var res = urlParams.match(/\?chnum\=(\d)/);
     console.log(res);
     const myParam = '1';
     var Challenge = document.getElementById("challenge").value;
