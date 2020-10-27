@@ -220,6 +220,7 @@ $( document ).ready(function() {
         htmlclass = '';
         lastscore = '0';
         $holder.forEach(element => {
+            htmlclass = '';
             console.log(element[1] + ' ' +  lastscore);
             if(lastscore == '0'){
                 rank = 1;
