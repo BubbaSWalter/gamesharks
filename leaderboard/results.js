@@ -80,15 +80,19 @@ function LoadChallenge() {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
         console.log($holder)
-        count = 1
+        count = 1;
         rank = '1';
-        lastscore = '0';
+        count2 = 0;
+        lastscore = '';
         $holder.forEach(element => {
-            if(lastscore == '0'){
+            if(lastscore == ''){
                 rank = 1;
             }else{
                 if(lastscore != element[1]){
-                    rank += 1;
+                    rank += count2;
+                    count2 = 1;
+                } else {
+                    count2 += 1;
                 }
             }
             rankholder ='';
@@ -141,6 +145,14 @@ function LoadChallenge() {
             lastscore = element[1];
             count +=1;
         });
+
+        while (count < 20) {
+            $("#st" + count + "rank").text('');
+            $("#st" + count + "name").text(' ');
+            $("#st" + count + "point").text('');
+            count++;
+          }
+
       });
 }
 
@@ -216,16 +228,22 @@ $( document ).ready(function() {
         $holder = JSON.parse(data)
         console.log($holder)
         count = 1;
+        count2 = 0;
         rank = '1';
         htmlclass = '';
         lastscore = '0';
         $holder.forEach(element => {
             htmlclass = '';
             console.log(element[1] + ' ' +  lastscore);
-            if(lastscore == '0'){
+            if(lastscore == ''){
                 rank = 1;
-            }else if(lastscore != element[1]){
-                rank += 1;
+            }else{
+                if(lastscore != element[1]){
+                    rank += count2;
+                    count2 = 1;
+                } else {
+                    count2 += 1;
+                }
             }
             rankholder ='';
             if (rank == '1'){
@@ -303,5 +321,14 @@ $( document ).ready(function() {
             console.log(rank);
             count +=1;
         });
+
+        while (count < 20) {
+            $("#st" + count + "rank").text('');
+            $("#st" + count + "name").text(' ');
+            $("#st" + count + "point").text('');
+            count++;
+        }
+
+
       });
 });
