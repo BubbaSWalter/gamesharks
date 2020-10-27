@@ -219,12 +219,11 @@ $( document ).ready(function() {
         rank = '1';
         lastscore = '0';
         $holder.forEach(element => {
+            console.log(element[1] + ' ' +  lastscore);
             if(lastscore == '0'){
                 rank = 1;
-            }else{
-                if(lastscore != element[1]){
-                    rank += 1;
-                }
+            }else if(lastscore != element[1]){
+                rank += 1;
             }
             rankholder ='';
             if (rank == '1'){
