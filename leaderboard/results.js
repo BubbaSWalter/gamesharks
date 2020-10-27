@@ -98,12 +98,10 @@ $( document ).ready(function() {
     var DataBase = 'Guppy_ScoreBoard';
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
-    } else if (Challenge == '1') {
-        $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Ataack');
     } else if (Challenge == '2') {
-        $("#Chname").text('SNES - Super Metroid - Race');
+        $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Ataack');
     } else if (Challenge == '3') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('SNES - Super Metroid - Race');
     } else if (Challenge == '4') {
         $("#Chname").text('REDACTED FOR SPOILERS');
     } else if (Challenge == '5') {
