@@ -90,7 +90,8 @@ $( document ).ready(function() {
     var res = urlParams.match(/\?chnum\=(\d)/);
     console.log(res);
     const myParam = res[1];
-    var Challenge = document.getElementById("challenge").value;
+    console.log(myParam);
+    var Challenge = myParam;
     if (myParam.length == 0 ){
         Challenge = '1';
     }
