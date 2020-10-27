@@ -226,7 +226,7 @@ $( document ).ready(function() {
         $holder = JSON.parse(data)
         console.log($holder)
         count = 1;
-        rank = '1';
+        rank = 1;
         htmlclass = '';
         lastscore = '0';
         $holder.forEach(element => {
@@ -237,7 +237,6 @@ $( document ).ready(function() {
             }else{
                 if(lastscore != element[1]){
                     rank += 1;
-                    count2 = 1;
                 } 
             }
             rankholder ='';
