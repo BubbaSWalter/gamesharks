@@ -85,7 +85,7 @@ function LoadChallenge() {
 
 $( document ).ready(function() {
 
-    urlParams = new URLSearchParams(window.location.search);
+    urlParams =  window.location.search;
     console.log(urlParams)
     const myParam = urlParams.get('chnum');
     var Challenge = document.getElementById("challenge").value;
