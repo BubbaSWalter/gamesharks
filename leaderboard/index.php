@@ -305,5 +305,6 @@
 	
 <?php include 'include/footer.php'?>
 <script src="results.js"></script>
+<script src="results-load.js"></script>
 </body>
 </html>
