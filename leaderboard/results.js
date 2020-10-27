@@ -92,7 +92,7 @@ function LoadChallenge() {
                 console.log(element[0]);
                 rank = 1;
             }else{
-                console.log(element[0] + " " + element[0] + ' ' + lastscore);
+                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
                     console.log(count2);
                     rank += count2;
