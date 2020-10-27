@@ -121,6 +121,7 @@ $( document ).ready(function() {
     $.get( url , function( data ) {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
+        console.log($holder);
         count = 1
         $holder.forEach(element => {
             $("#pc" + count + "name").text(element[0]);
