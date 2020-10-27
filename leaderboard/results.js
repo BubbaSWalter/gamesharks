@@ -226,7 +226,7 @@ $( document ).ready(function() {
         $holder = JSON.parse(data)
         console.log($holder)
         count = 1;
-        rank = 1;
+        rank = 0;
         htmlclass = '';
         lastscore = '0';
         $holder.forEach(element => {
