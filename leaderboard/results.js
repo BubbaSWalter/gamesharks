@@ -283,16 +283,24 @@ $( document ).ready(function() {
         count = 1;
         rank = 0;
         htmlclass = '';
+        count2 = 0;
         lastscore = '0';
         $holder.forEach(element => {
             htmlclass = '';
-            console.log(element[1] + ' ' +  lastscore);
-            if(lastscore == ''){
+            if(rank == 0){
+                console.log(element[0]);
+                count2 = 1;
                 rank = 1;
             }else{
+                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
-                    rank += 1;
-                } 
+                    console.log(count2);
+                    rank += count2;
+                    count2 = 1;
+                } else {
+                    count2++;
+                    console.log('rank increase' + count2);
+                }
             }
             rankholder ='';
             if (rank == 1){
