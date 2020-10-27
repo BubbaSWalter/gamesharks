@@ -273,6 +273,7 @@ $( document ).ready(function() {
             $("#st" + count + "rank").text(rankholder);
             $("#st" + count + "name").text(element[0]);
             $("#st" + count + "point").text(element[1]);
+            console.log(rank);
             count +=1;
         });
       });
