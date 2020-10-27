@@ -83,11 +83,11 @@ function LoadChallenge() {
         $holder = JSON.parse(data)
         console.log($holder)
         count = 1;
-        rank = 1;
+        rank = 0;
         count2 = 0;
         lastscore = '';
         $holder.forEach(element => {
-            if(rank == 1){
+            if(rank == 0){
                 console.log(element[0]);
                 rank = 1;
             }else{
