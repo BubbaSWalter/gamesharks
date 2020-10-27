@@ -217,6 +217,7 @@ $( document ).ready(function() {
         console.log($holder)
         count = 1;
         rank = '1';
+        htmlclass = '';
         lastscore = '0';
         $holder.forEach(element => {
             console.log(element[1] + ' ' +  lastscore);
@@ -228,10 +229,13 @@ $( document ).ready(function() {
             rankholder ='';
             if (rank == '1'){
                 rankholder = '1st';
+                htmlclass = 'tg-gri2';
             } else if (rank == '2'){
                 rankholder = '2nd';
+                htmlclass = 'tg-hnm8';
             }else if (rank == '3'){
                 rankholder = '3th';
+                htmlclass = 'tg-4ffq';
             }else if (rank == '4'){
                 rankholder = '4th';
             }else if (rank == '5'){
@@ -269,6 +273,12 @@ $( document ).ready(function() {
             }else if (rank == '21'){
                 rankholder = '21st';
             }
+            if(htmlclass.length != 0){
+                $("#st" + count + "rank").class(htmlclass);
+                $("#st" + count + "name").class(htmlclass);
+                $("#st" + count + "point").class(htmlclass);
+            }
+            
             $("#st" + count + "rank").text(rankholder);
             $("#st" + count + "name").text(element[0]);
             $("#st" + count + "point").text(element[1]);
