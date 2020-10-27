@@ -53,7 +53,7 @@ function LoadChallenge() {
         $holder.forEach(element => {
             if(element[0] != ''){
                 $("#pc" + count + "name").text(element[0]);
-                if (element[1] == null && element[2].length > 2){
+                if (element[1] == null && element[2].length != NULL){
                     $("#pc" + count + "score").text(element[2].substring(3));
                 } else{
                     if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
