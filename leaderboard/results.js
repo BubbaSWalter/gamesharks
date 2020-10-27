@@ -151,13 +151,6 @@ function LoadChallenge() {
             count +=1;
         });
 
-        while (count < 20) {
-            $("#st" + count + "rank").text('');
-            $("#st" + count + "name").text(' ');
-            $("#st" + count + "point").text('');
-            count++;
-          }
-
       });
 }
 
@@ -326,15 +319,5 @@ $( document ).ready(function() {
             console.log(rank);
             count +=1;
         });
-
-        while (count < 20) {
-            $("#st" + count + "rank").text('');
-            $("#st" + count + "name").text(' ');
-            $("#st" + count + "point").text('');
-            count++;
-        }
-
-
       });
-      console.log('clear')
 });
