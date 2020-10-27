@@ -87,7 +87,7 @@ function LoadChallenge() {
         count2 = 0;
         lastscore = '';
         $holder.forEach(element => {
-            if(lastscore == ''){
+            if(rank == 1){
                 console.log(element[0]);
                 rank = 1;
             }else{
