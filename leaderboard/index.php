@@ -191,102 +191,102 @@
 			</thead>
 			<tbody>
   				<tr>
-		  			<td class="tg-gri2">1st</td>
+		  			<td id='st1rank' class="tg-gri2"></td>
     				<td id='st1name' class="tg-gri2"></td>
     				<td id='st1point' class="tg-gri2"></td>
   				</tr>
 				<tr>
-					<td class="tg-hnm8">2nd</td>
+					<td id='st2rank' class="tg-hnm8"></td>
 					<td id='st2name' class="tg-hnm8"></td>
 					<td id='st2point' class="tg-hnm8"></td>
   				</tr>
   				<tr>
-		  			<td class="tg-4ffq">3rd</td>
+		  			<td id='st3rank' class="tg-4ffq"></td>
 					<td id='st3name' class="tg-4ffq"></td>
 					<td id='st3point' class="tg-4ffq"></td>
   				</tr>
   				<tr>
-					<td class="tg-e454">4</td>
+					<td id='st4rank' class="tg-e454"></td>
   					<td id='st4name' class="tg-e454"></td>
   					<td id='st4point' class="tg-e454"></td>
   				</tr>
   				<tr>
-		  			<td class="tg-eyx6">5</td>
+		  			<td id='st5rank' class="tg-eyx6"></td>
   					<td id='st5name' class="tg-eyx6"></td>
   					<td id='st5point' class="tg-eyx6"></td>
   				</tr> 				
   				<tr>
-					<td class="tg-e454">6</td>
+					<td id='st6rank' class="tg-e454"></td>
   					<td id='st6name' class="tg-e454"></td>
   					<td id='st6point' class="tg-e454"></td>
   				</tr>
   				<tr>
-		  			<td class="tg-eyx6">7</td>
+		  			<td id='st7rank' class="tg-eyx6"></td>
   					<td id='st7name' class="tg-eyx6"></td>
   					<td id='st7point' class="tg-eyx6"></td>
   				</tr>			
   				<tr>
-					<td class="tg-e454">8</td>
+					<td id='st8rank' class="tg-e454"></td>
   					<td id='st8name' class="tg-e454"></td>
   					<td id='st8point' class="tg-e454"></td>
   				</tr>
   				<tr>
-		  			<td class="tg-eyx6">9</td>
+		  			<td id='st9rank' class="tg-eyx6"></td>
   					<td id='st9name' class="tg-eyx6"></td>
   					<td id='st9point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
-					<td class="tg-e454">10</td>
+					<td id='st10rank' class="tg-e454"></td>
   					<td id='st10name' class="tg-e454"></td>
   					<td id='st10point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6">11</td>
+					<td id='st11rank' class="tg-eyx6"></td>
   					<td id='st11name' class="tg-eyx6"></td>
   					<td id='st11point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
-					<td class="tg-e454">12</td>
+					<td id='st12rank' class="tg-e454"></td>
   					<td id='st12name' class="tg-e454"></td>
   					<td id='st12point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6">13</td>
+					<td id='st13rank' class="tg-eyx6"></td>
   					<td id='st13name' class="tg-eyx6"></td>
   					<td id='st13point' class="tg-eyx6"></td>
   				</tr>
   				<tr>
-					<td class="tg-e454">14</td>
+					<td id='st14rank' class="tg-e454"></td>
   					<td id='st14name' class="tg-e454"></td>
   					<td id='st14point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6">15</td>
+					<td id='st15rank' class="tg-eyx6"></td>
   					<td id='st15name' class="tg-eyx6"></td>
   					<td id='st15point' class="tg-eyx6"></td>
   				</tr>
 				<tr>
-					<td class="tg-e454">16</td>
+					<td id='st16rank' class="tg-e454"></td>
   					<td id='st16name' class="tg-e454"></td>
   					<td id='st16point' class="tg-e454"></td>
   				</tr>
 				<tr>
-					<td class="tg-eyx6">17</td>
+					<td id='st17rank' class="tg-eyx6"></td>
   					<td id='st17name' class="tg-eyx6"></td>
   					<td id='st17point' class="tg-eyx6"></td>
   				</tr>
 				  <tr>
-					<td class="tg-e454">18</td>
+					<td id='st18rank' class="tg-e454"></td>
   					<td id='st18name' class="tg-e454"></td>
   					<td id='st18point' class="tg-e454"></td>
   				</tr>
 				  <tr>
-					<td class="tg-eyx6">19</td>
+					<td id='st19rank' class="tg-eyx6"></td>
   					<td id='st19name' class="tg-eyx6"></td>
   					<td id='st19point' class="tg-eyx6"></td>
   				</tr>
 				  <tr>
-					<td class="tg-e454">20</td>
+					<td id='st20rank' class="tg-e454"></td>
   					<td id='st20name' class="tg-e454"></td>
   					<td id='st20point' class="tg-e454"></td>
   				</tr>
