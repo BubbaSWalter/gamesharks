@@ -114,40 +114,58 @@ function LoadChallenge() {
                 htmlclass = 'tg-4ffq';
             }else if (rank == 4){
                 rankholder = '4th';
+                htmlclass = 'tg-e454';
             }else if (rank == 5){
                 rankholder = '5th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 6){
                 rankholder = '6th';
+                htmlclass = 'tg-e454';
             }else if (rank == 7){
                 rankholder = '7th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 8){
                 rankholder = '8th';
+                htmlclass = 'tg-e454';
             }else if (rank == 9){
                 rankholder = '9th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 10){
                 rankholder = '10th';
+                htmlclass = 'tg-e454';
             }else if (rank == 11){
                 rankholder = '11th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 12){
                 rankholder = '12th';
+                htmlclass = 'tg-e454';
             }else if (rank == 13){
                 rankholder = '13th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 14){
                 rankholder = '14th';
+                htmlclass = 'tg-e454';
             }else if (rank == 15){
                 rankholder = '15th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 16){
                 rankholder = '16th';
+                htmlclass = 'tg-e454';
             }else if (rank == 17){
                 rankholder = '17th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 18){
                 rankholder = '18th';
+                htmlclass = 'tg-e454';
             }else if (rank == 19){
                 rankholder = '19th';
+                htmlclass = 'tg-eyx6';
             }else if (rank == 20){
                 rankholder = '20th';
+                htmlclass = 'tg-e454';
             }else if (rank == 21){
                 rankholder = '21st';
+                htmlclass = 'tg-eyx6';
             }
             if(htmlclass.length != 0){
                 $("#st" + count + "rank").removeClass('tg-hnm8');
@@ -262,19 +280,26 @@ $( document ).ready(function() {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
         console.log($holder)
-        count = 1;
+        ccount = 1;
         rank = 0;
         htmlclass = '';
-        lastscore = '0';
+        count2 = 0;
+        lastscore = '';
         $holder.forEach(element => {
-            htmlclass = '';
-            console.log(element[1] + ' ' +  lastscore);
-            if(lastscore == ''){
+            if(rank == 0){
+                console.log(element[0]);
+                count2 = 1;
                 rank = 1;
             }else{
+                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
-                    rank += 1;
-                } 
+                    console.log(count2);
+                    rank += count2;
+                    count2 = 1;
+                } else {
+                    count2++;
+                    console.log('rank increase' + count2);
+                }
             }
             rankholder ='';
             if (rank == 1){
