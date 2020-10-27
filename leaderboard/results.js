@@ -226,7 +226,6 @@ $( document ).ready(function() {
         $holder = JSON.parse(data)
         console.log($holder)
         count = 1;
-        count2 = 0;
         rank = '1';
         htmlclass = '';
         lastscore = '0';
@@ -237,12 +236,8 @@ $( document ).ready(function() {
                 rank = 1;
             }else{
                 if(lastscore != element[1]){
-                    rank += count2;
-                    count2 = 1;
-                } else {
-                    count2 += 1;
-                }
-            }
+                    rank += 1;
+                } 
             rankholder ='';
             if (rank == '1'){
                 rankholder = '1st';
