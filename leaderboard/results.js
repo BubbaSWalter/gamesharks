@@ -280,26 +280,19 @@ $( document ).ready(function() {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
         console.log($holder)
-        ccount = 1;
+        count = 1;
         rank = 0;
         htmlclass = '';
-        count2 = 0;
-        lastscore = '';
+        lastscore = '0';
         $holder.forEach(element => {
-            if(rank == 0){
-                console.log(element[0]);
-                count2 = 1;
+            htmlclass = '';
+            console.log(element[1] + ' ' +  lastscore);
+            if(lastscore == ''){
                 rank = 1;
             }else{
-                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
-                    console.log(count2);
-                    rank += count2;
-                    count2 = 1;
-                } else {
-                    count2++;
-                    console.log('rank increase' + count2);
-                }
+                    rank += 1;
+                } 
             }
             rankholder ='';
             if (rank == 1){
