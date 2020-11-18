@@ -17,9 +17,9 @@ function LoadChallenge() {
     } else if (Challenge == '3') {
         $("#Chname").text('SNES - Super Metroid - Race');
     } else if (Challenge == '4') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('Sega Genesis - Sonic 3 & Knuckles & Knuckles & Knuckles - Race');
     } else if (Challenge == '5') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('NES - Rockman 3 Endless! - Score Attack');
     } else if (Challenge == '6') {
         $("#Chname").text('REDACTED FOR SPOILERS');
     } else if (Challenge == '7') {
