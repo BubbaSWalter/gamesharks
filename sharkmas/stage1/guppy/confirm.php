@@ -102,7 +102,7 @@ $conn->close();
                 echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
             ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>We have you signed up as a <?php echo $choice;?>. Please let <span>BubbaSWalter</span> know if this is incorrect via either a ping or Direct Message.</p>
+		<p>We have you signed up as a <?php echo $class;?>. Please let <span>BubbaSWalter</span> know if this is incorrect via either a ping or Direct Message.</p>
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
