@@ -110,6 +110,7 @@
             
 			<form action="upload.php">
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">
+                <input type="hidden" name="uid" value="<?php echo $uid; ?>">
   				<input type="submit" value="Sign Up for Sharkmas">
 			</form>
 		
