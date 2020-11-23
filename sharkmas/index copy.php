@@ -73,7 +73,7 @@
                 echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
                 if($check == 'true'){
 						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
-                    if (in_array($uname, $shark_array)){
+                    if (in_array($uname, $shark_array) || in_array($uname, $meister_array)){
 				        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
                     } else {
                         echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;

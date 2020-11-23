@@ -16,6 +16,16 @@ $UserID = mysqli_real_escape_string($conn, $_GET['uid']);
 $Date = date("Y/m/d h:i:sa");
 $class = 'Guppy';
 
+require '../../../sharkcheck.php';
+require '../../../meistercheck.php';
+
+if (in_array($uname, $shark_array)){
+    $class = 'Shark/Meister';
+}
+if (in_array($uname, $meister_array)){
+    $class = 'Shark/Meister';
+}
+
 
 $sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
 VALUES ('$Date','$UserID', '$Username','$class') ON DUPLICATE KEY UPDATE    

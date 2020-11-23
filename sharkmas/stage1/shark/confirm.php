@@ -14,7 +14,18 @@ if ($conn->connect_error) {     // Check connection
 $Username = mysqli_real_escape_string($conn, $_GET['username']);
 $UserID = mysqli_real_escape_string($conn, $_GET['uid']);
 $Date = date("Y/m/d h:i:sa");
-$class = 'Shark';
+$class = 'Shark/Meister';
+
+
+require '../../../sharkcheck.php';
+require '../../../meistercheck.php';
+
+if (in_array($uname, $shark_array)){
+    $class = 'Shark/Meister';
+}
+if (in_array($uname, $meister_array)){
+    $class = 'Shark/Meister';
+}
 
 
 $sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
