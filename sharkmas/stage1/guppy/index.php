@@ -11,8 +11,8 @@
 <?php 
 	if(isset($_COOKIE["username"])) {
 		include '../uname.php';
-        require '../../sharkcheck.php';
-        require '../../meistercheck.php';
+        require '../../../sharkcheck.php';
+        require '../../../meistercheck.php';
 		$check = false;
 		
 		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
