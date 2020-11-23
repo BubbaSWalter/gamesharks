@@ -73,10 +73,12 @@
 		?>
 		<?php
 		    if(isset($_COOKIE["username"])) {
-		        echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
 		        if (in_array($uname, $Admin_array)){
 					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
-		        }
+				}
+				
 		    }
 		?>
 	    <p>Hello, <?php echo $uname;?>:</p>
@@ -85,6 +87,7 @@
 		<p>Sharks and Guppies are allowed one vote.  Challenge Meisters will not be voting.  We are the tiebreakers</p>
 		<?php
 		    if(isset($_COOKIE["username"])) {
+				
                 if($check == 'true'){
                     if (in_array($uname, $shark_array) or in_array($uname, $meister_array)){
 				        echo '<p><a href="https://gamesharks.wizardsrwe.com/shark/voting.php">Click to Vote</a></p>' ;
