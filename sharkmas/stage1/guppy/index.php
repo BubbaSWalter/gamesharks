@@ -10,7 +10,7 @@
 
 <?php 
 	if(isset($_COOKIE["username"])) {
-		include '../uname.php';
+		include '../../uname.php';
         require '../../../sharkcheck.php';
         require '../../../meistercheck.php';
 		$check = false;
