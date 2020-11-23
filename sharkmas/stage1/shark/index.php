@@ -104,7 +104,7 @@
                 
             </p>
             <p>
-                You are Signing up as a Guppy.
+                You are Signing up as a Shark/Meister.
             </p>
 		    
             
