@@ -3,37 +3,13 @@
     $username = "u919436859_admin";
     $password = "GjefadD~i63a";
     $dbname = "u919436859_shark";
-	include '../sharkcheck.php';
-    include '../meistercheck.php';
+    include '../uname.php'
+	include '../../sharkcheck.php';
+    include '../../meistercheck.php';
 
 ?>
 
-<?php 
-	if(isset($_COOKIE["username"])) {
-		include '../uname.php';
-        require '../../sharkcheck.php';
-        require '../../meistercheck.php';
-		$check = false;
-		
-		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-		if ($conn->connect_error) {     // Check connection
-			die("Connection failed: " . $conn->connect_error);
-		}
-		$sql = "SELECT * FROM settings WHERE setting = 'shark'";
-		$result = $conn->query($sql);
-		if ($result->num_rows > 0) {
-			while($row = $result->fetch_assoc()) {
-				$check = $row["value"];
-			}
-		}
-		$conn->close();
-		
-		//$shark_array = array("boodamedz","crazy_sunshine","dantheenigma","faronheights","heisanevilgenius","khead161","kuuribro","mastertimethief","myohel0", "megagwolf","nintendocaprisun","protonjon","smashtoons","tallmanstan","thejewker","bubbaswalter");
-		
-	} else {
-		header( 'Location: https://gamesharks.wizardsrwe.com/' );
-	}
-?>
+
 <!DOCTYPE html>
 <html>
 	<meta charset="UTF-8">
@@ -94,14 +70,8 @@
 		    <h1>Stage1 - Signup</h1>
 	    </div>
 	    <article id="article">
-            <?php
-            	echo 'Your UserName: ' . $uname . '</br>';
-                echo 'Your UserID: ' . $uid . '</br>';
-                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
-            ?>
             <p>
                 Person Signing up:<span id="username"><?php echo $uname; ?></span><br>
-                
             </p>
             <p>
                 You are Signing up as a Guppy.
@@ -110,6 +80,7 @@
             
 			<form action="upload.php">
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">
+                <input type="hidden" name="userid" value="<?php echo $uid; ?>">
   				<input type="submit" value="Sign Up for Sharkmas">
 			</form>
 		
