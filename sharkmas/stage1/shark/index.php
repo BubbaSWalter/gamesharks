@@ -10,8 +10,9 @@
 
 <?php 
 	if(isset($_COOKIE["username"])) {
-		include '../uname.php';
-		include '../sharkcheck.php';
+		include '../../uname.php';
+        require '../../../sharkcheck.php';
+        require '../../../meistercheck.php';
 		$check = false;
 		
 		$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
@@ -44,7 +45,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/sharkmas.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <body>
-    
 <div class="snow">
   <div class="snow__flake"></div>
   <div class="snow__flake"></div>
@@ -87,20 +87,30 @@
   <div class="snow__flake"></div>
   <div class="snow__flake"></div>
 </div>
+
         <div id="Sharky" class="center">
-		<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
+			<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		    <h1>GameSharks Sharkmas</h1>
 		    <h1>Stage1 - Signup</h1>
 	    </div>
 	    <article id="article">
+            <?php
+            	echo 'Your UserName: ' . $uname . '</br>';
+                echo 'Your UserID: ' . $uid . '</br>';
+                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
+            ?>
             <p>
                 Person Signing up:<span id="username"><?php echo $uname; ?></span><br>
+                
             </p>
             <p>
-                You are Signing up as a Shark.
+                You are Signing up as a Guppy.
             </p>
-			<form action="upload.php">
+		    
+            
+			<form action="confirm.php">
 				<input type="hidden" name="username" value="<?php echo $uname; ?>">
+                <input type="hidden" name="uid" value="<?php echo $uid; ?>">
   				<input type="submit" value="Sign Up for Sharkmas">
 			</form>
 		

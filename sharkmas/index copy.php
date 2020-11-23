@@ -66,7 +66,30 @@
 	<article id="article">
 	<p>Hello, <?php echo $uname;?>:</p>
 		<p>Welcome to the Game Sharks Sharkmas</p>
-		<p>Your a Bit Early</p>
+		<?php
+		    if(isset($_COOKIE["username"])) {
+				echo 'Your UserName: ' . $uname . '</br>';
+				echo 'Your UserID: ' . $uid . '</br>';
+                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
+                if($check == 'true'){
+						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
+                    if (in_array($uname, $shark_array)){
+				        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
+                    } else {
+                        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
+                    }
+				}
+                if($check == 'false'){
+					echo '<p>Stage 2 of Sharkmas - Creating your gift for Sharkmas</p>' ;
+					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to find out who  your target is for Sharkmas</a></p>' ;
+				} 
+				if($check == 'closed'){
+					echo '<p>Your a bit early.</p>';
+					echo '<p>Please wait for the Announcement.</p>' ;
+				}
+			
+		    }
+		?>
 
 		
 		<?php

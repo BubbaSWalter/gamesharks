@@ -1,29 +1,37 @@
 <?php
+date_default_timezone_set("America/Chicago");
+$error = '';
+$servername = "localhost";
+$username = "u919436859_admin";
+$password = "GjefadD~i63a";
+$dbname = "u919436859_shark";
+
+$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
+if ($conn->connect_error) {     // Check connection
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$Username = mysqli_real_escape_string($conn, $_GET['username']);
+$UserID = mysqli_real_escape_string($conn, $_GET['uid']);
+$Date = date("Y/m/d h:i:sa");
+$class = 'Shark';
+
+
+$sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
+VALUES ('$Date','$UserID', '$Username','$class') ON DUPLICATE KEY UPDATE    
+dt='$Date', username = '$Username',class='$class'";
+if ($conn->query($sql) === TRUE) {
+    //echo "Page saved!";
+} else {
+    $error = "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
+//header( 'Location: https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/confirm.php' );
+?>
+<?php
 	$choice = "No Choice Submitted";
 	$uname = "Guest";
-	if(isset($_COOKIE["username"])) {
-		include '../uname.php';
-		$servername = "localhost";
-		$username = "u919436859_admin";
-		$password = "GjefadD~i63a";
-		$dbname = "u919436859_shark";
-		
-        $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-		if ($conn->connect_error) {     // Check connection
-			die("Connection failed: " . $conn->connect_error);
-		}
-		
-		$sql = "SELECT * FROM sharkmas WHERE Username = '$uname'";
-        $result = $conn->query($sql);
-        
-        if ($result->num_rows > 0) {
-		    // output data of each row
-		    while($row = $result->fetch_assoc()) {
-			    $choice = $row["class"];
-		    }
-	    }
-	    $conn->close();
-	}
+	require '../../uname.php';
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +88,7 @@
   <div class="snow__flake"></div>
 </div>
 	<div id="Sharky" class="center">
-	<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
+		<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		<h1>GameSharks Sharkmas Signup Conformation Page</h1>
 	</div>
 	<article id="article">
@@ -89,8 +97,15 @@
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
 		    }
 		?>
+            <?php
+            	echo 'Your UserName: ' . $uname . '</br>';
+                echo 'Your UserID: ' . $uid . '</br>';
+                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
+            ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>We have you signed up as a <?php echo $choice;?>. Please let <span>BubbaSWalter</span> know if this is incorrect via either a ping or Direct Message.</p>
+		<p>We have you signed up as a <?php echo $class;?>. Please let <span>BubbaSWalter</span> know if this is incorrect via either a ping or Direct Message.</p>
+        <p><?php echo $error;?></p>
+
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
