@@ -95,9 +95,7 @@
 	    </div>
 	    <article id="article">
             <?php
-            	echo 'Your UserName: ' . $uname . '</br>';
-                echo 'Your UserID: ' . $uid . '</br>';
-                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
+                include '../../userid.php';
             ?>
             <p>
                 Person Signing up:<span id="username"><?php echo $uname; ?></span><br>

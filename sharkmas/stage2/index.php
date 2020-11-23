@@ -93,6 +93,10 @@
 		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
 		    }
 		?>
+
+        <?php
+                include '../userid.php';
+        ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>.  If you need help figuring out what your target wants you can always ask a challenge meister.</p>
 		
