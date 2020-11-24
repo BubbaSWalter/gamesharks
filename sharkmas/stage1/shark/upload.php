@@ -29,9 +29,10 @@ if (in_array($uname, $meister_array)){
     $class = 'Shark/Meister';
 }
 
-$sql = "INSERT INTO sharkmas (dt, userid , class) 
-VALUES ('$Date','$UserID', '$class') ON DUPLICATE KEY UPDATE    
-dt='$Date',class='$class'";
+$sql = "
+    INSERT INTO sharkmas (dt, userid , class) 
+    VALUES ('$Date','$UserID', '$class') 
+";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
