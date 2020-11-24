@@ -37,7 +37,6 @@ if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-    echo $error;
     
 }
 echo $sql;
