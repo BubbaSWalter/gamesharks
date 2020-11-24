@@ -37,5 +37,5 @@ if ($conn->query($sql) === TRUE) {
     $error = "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-header( 'Location: https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/confirm.php' );
+//header( 'Location: https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/confirm.php' );
 ?>
