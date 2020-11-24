@@ -34,8 +34,11 @@ dt='$Date', username = '$Username',class='$class'";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
-    $error = "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo $error;
+    
 }
+echo $sql;
 $conn->close();
 //header( 'Location: https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/confirm.php' );
 ?>
