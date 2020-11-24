@@ -13,7 +13,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-		$sql = "SELECT * FROM sharkmas WHERE Username = '$uname'";
+		$sql = "SELECT * FROM sharkmas WHERE userid = '$uid'";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
