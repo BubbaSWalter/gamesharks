@@ -24,7 +24,7 @@ if (in_array($uname, $shark_array)){
 if (in_array($uname, $meister_array)){
     $class = 'Shark-Meister';
 }
-$sql = "INSERT INTO `sharkmas`(`dt`, `userid`,  `class`, `target`) VALUES ('123','123','123','NULL')";
+$sql = "INSERT INTO `sharkmas`(`dt`, `userid`, `username`,  `class`, `target`) VALUES ('123','123','123','123','NULL')";
 //$sql = "INSERT INTO sharkmas (`dt`, `userid` , `username` , `class` , `target`)  VALUES ('$Date','$UserID', 'NULL', '$class', NULL) ";
 
 $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
