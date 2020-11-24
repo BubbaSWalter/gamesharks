@@ -35,8 +35,8 @@ VALUES ('$Date','$UserID', '" . $_GET['username'] ."','$class')";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-    echo $error;
+    echo "<br> Error: " . $sql . "<br>" . $conn->error;
+    
     
 }
 echo $sql;
