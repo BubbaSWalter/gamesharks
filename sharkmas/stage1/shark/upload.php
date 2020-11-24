@@ -6,11 +6,6 @@ $username = "u919436859_admin";
 $password = "GjefadD~i63a";
 $dbname = "u919436859_shark";
 
-
-
-$Username = $_GET['username'];
-echo $Username . '</br>';
-echo $_GET['username']. '</br>';
 $Date = date("Y/m/d h:i:sa");
 $class = 'Guppy';
 require '../../uname.php';
@@ -36,9 +31,8 @@ if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-    
+    $error = "Error: " . $sql . "<br>" . $conn->error;
 }
-echo $sql;
 $conn->close();
 //header( 'Location: https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/confirm.php' );
 ?>
