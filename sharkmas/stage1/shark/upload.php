@@ -21,18 +21,14 @@ $class = 'Shark/Meister';
 
 require '../../../sharkcheck.php';
 require '../../../meistercheck.php';
-echo ' check 1 '.$Username . " check 2 ".$_GET['username'];
 if (in_array($uname, $shark_array)){
     $class = 'Shark/Meister';
 }
 if (in_array($uname, $meister_array)){
     $class = 'Shark/Meister';
 }
-
-$sql = "
-    INSERT INTO sharkmas (dt, userid , username,class, target) 
-    VALUES ('$Date','$UserID', 'NULL', '$class', NULL) 
-";
+$sql = "INSERT INTO `sharkmas`(`dt`, `userid`, `username`, `class`, `target`) VALUES ('$Date','$UserID','$Username','$class',NULL) ON DUPLICATE KEY UPDATE `dt` = '$Date'"
+//$sql = "INSERT INTO sharkmas (`dt`, `userid` , `username` , `class` , `target`)  VALUES ('$Date','$UserID', 'NULL', '$class', NULL) ";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
