@@ -30,8 +30,8 @@ if (in_array($uname, $meister_array)){
 }
 
 $sql = "
-    INSERT INTO sharkmas (dt, userid , class) 
-    VALUES ('$Date','$UserID', '$class') 
+    INSERT INTO sharkmas (dt, userid , username,class, target) 
+    VALUES ('$Date','$UserID', 'NULL', '$class', NULL) 
 ";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
