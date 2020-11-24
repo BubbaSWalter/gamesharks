@@ -11,8 +11,8 @@ if ($conn->connect_error) {     // Check connection
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$Username = mysqli_real_escape_string($conn, $_GET['username']);
-$UserID = mysqli_real_escape_string($conn, $_GET['uid']);
+$Username = $_GET['username'];
+$UserID = $_GET['uid'];
 $Date = date("Y/m/d h:i:sa");
 $class = 'Shark/Meister';
 
