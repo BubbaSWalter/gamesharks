@@ -103,7 +103,7 @@
 						echo "</ul>";
 						echo "<h4>     Challenge Description </h4>";
 						echo "<ul>";
-
+						$description = $row["Description"];
 						echo "   <li>" . $description . "</li>". nl2br("\r\n");
 						echo "</ul>";
 						$cnum = str_replace("'", "&apos;", $row["ChallengeNum"]);
