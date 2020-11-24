@@ -15,7 +15,7 @@ $Username = mysqli_real_escape_string($conn, $_GET['username']);
 $UserID = mysqli_real_escape_string($conn, $_GET['uid']);
 $Date = date("Y/m/d h:i:sa");
 $class = 'Guppy';
-
+echo '$Username';
 require '../../../sharkcheck.php';
 require '../../../meistercheck.php';
 
