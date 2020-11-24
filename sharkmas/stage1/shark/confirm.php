@@ -32,7 +32,7 @@ $sql = "INSERT INTO sharkmas (dt, userid ,username, class)
 VALUES ('$Date','$UserID', '$Username','$class') ON DUPLICATE KEY UPDATE    
 dt='$Date', username = '$Username',class='$class'";
 if ($conn->query($sql) === TRUE) {
-    echo "Page saved!";
+    //echo "Page saved!";
 } else {
     $error = "Error: " . $sql . "<br>" . $conn->error;
 }
