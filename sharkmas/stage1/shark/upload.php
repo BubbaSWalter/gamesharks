@@ -28,7 +28,7 @@ if (in_array($uname, $shark_array)){
 if (in_array($uname, $meister_array)){
     $class = 'Shark/Meister';
 }
-
+$sql = 
 
 $sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
 VALUES ('$Date','$UserID', '" . $_GET['username'] ."','$class') ON DUPLICATE KEY UPDATE    
