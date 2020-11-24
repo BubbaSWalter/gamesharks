@@ -12,6 +12,8 @@ if ($conn->connect_error) {     // Check connection
 } 
 
 $Username = mysqli_real_escape_string($conn, $_GET['username']);
+echo $Username . '</br>';
+echo $_GET['username']. '</br>';
 $UserID = mysqli_real_escape_string($conn, $_GET['uid']);
 $Date = date("Y/m/d h:i:sa");
 $class = 'Shark/Meister';
@@ -30,7 +32,7 @@ if (in_array($uname, $meister_array)){
 
 $sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
 VALUES ('$Date','$UserID', '$Username','$class') ON DUPLICATE KEY UPDATE    
-dt='$Date', username = '$Username',class='$class'";
+dt='$Date',class='$class'";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
