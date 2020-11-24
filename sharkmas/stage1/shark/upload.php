@@ -31,12 +31,13 @@ if (in_array($uname, $meister_array)){
 
 
 $sql = "INSERT INTO sharkmas (dt, userid ,username, class) 
-VALUES ('$Date','$UserID', '" . $_GET['username'] ."','$class')";
+VALUES ('$Date',$UserID, '" . $_GET['username'] ."','$class') ON DUPLICATE KEY UPDATE    
+dt='$Date',class='$class'";
 if ($conn->query($sql) === TRUE) {
     echo "Page saved!";
 } else {
-    echo "<br> Error: " . $sql . "<br>" . $conn->error;
-    
+    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo $error;
     
 }
 echo $sql;
