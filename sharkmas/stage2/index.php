@@ -88,9 +88,14 @@
 		<h2>Sharkmas Target</h2>
 	</div>
 	<article id="article">
-		<?php
+        <?php
 		    if(isset($_COOKIE["username"])) {
-		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
+				echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
+		        if (in_array($uname, $Admin_array)){
+					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
+				}
+				
 		    }
 		?>
 

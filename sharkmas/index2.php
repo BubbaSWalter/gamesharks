@@ -64,6 +64,16 @@
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
+    <?php
+		    if(isset($_COOKIE["username"])) {
+				echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
+		        if (in_array($uname, $Admin_array)){
+					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
+				}
+				
+		    }
+		?>
 	<p>Hello, <?php echo $uname;?>:</p>
 		<p>Welcome to the Game Sharks Sharkmas</p>
 		<?php
@@ -97,16 +107,7 @@
 		        echo '<input type="submit" onclick="location.href=\'login.html\'" value="Login">';
 		    }
 		?>
-		<?php
-		    if(isset($_COOKIE["username"])) {
-				echo '<a href="/logout.html" class="myButton">Logout</a> ';
-				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
-		        if (in_array($uname, $Admin_array)){
-					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
-				}
-				
-		    }
-		?>
+		
 		<script type="text/javascript" src="/js/login.js"></script>
 	</article>
 	
