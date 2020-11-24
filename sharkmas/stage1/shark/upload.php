@@ -11,7 +11,7 @@ if ($conn->connect_error) {     // Check connection
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$Username = mysqli_real_escape_string($conn, $_GET['username']);
+$Username = $_GET['username'];
 echo $Username . '</br>';
 echo $_GET['username']. '</br>';
 $UserID = mysqli_real_escape_string($conn, $_GET['uid']);
