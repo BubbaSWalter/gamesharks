@@ -6,7 +6,7 @@
     } else {
         echo 'Your UserName:  GUEST </br>';
         echo 'Your UserID: 0 </br>';
-        echo 'If the above line says "GUEST" and "0" or is blank contact Bubba before proceeding.';
+        echo 'If the above line says "GUEST" and "0" or their are blank contact Bubba before proceeding.';
     }
 
 ?>

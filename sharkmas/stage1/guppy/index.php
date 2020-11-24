@@ -94,6 +94,16 @@
 		    <h1>Stage1 - Signup</h1>
 	    </div>
 	    <article id="article">
+        <?php
+		    if(isset($_COOKIE["username"])) {
+				echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
+		        if (in_array($uname, $Admin_array)){
+					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
+				}
+				
+		    }
+		?>
             <?php
                 include '../../userid.php';
             ?>

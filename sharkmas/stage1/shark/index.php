@@ -87,7 +87,16 @@
   <div class="snow__flake"></div>
   <div class="snow__flake"></div>
 </div>
-
+        <?php
+		    if(isset($_COOKIE["username"])) {
+				echo '<a href="/logout.html" class="myButton">Logout</a> ';
+				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
+		        if (in_array($uname, $Admin_array)){
+					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
+				}
+				
+		    }
+		?>
         <div id="Sharky" class="center">
 			<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
 		    <h1>GameSharks Sharkmas</h1>
