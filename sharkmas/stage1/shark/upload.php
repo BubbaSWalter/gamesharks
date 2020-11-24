@@ -22,10 +22,10 @@ $class = 'Shark/Meister';
 require '../../../sharkcheck.php';
 require '../../../meistercheck.php';
 if (in_array($uname, $shark_array)){
-    $class = 'Shark/Meister';
+    $class = 'Shark-Meister';
 }
 if (in_array($uname, $meister_array)){
-    $class = 'Shark/Meister';
+    $class = 'Shark-Meister';
 }
 $sql = "INSERT INTO `sharkmas`(`dt`, `userid`,  `class`, `target`) VALUES ('$Date','$UserID','$class','NULL')";
 //$sql = "INSERT INTO sharkmas (`dt`, `userid` , `username` , `class` , `target`)  VALUES ('$Date','$UserID', 'NULL', '$class', NULL) ";
