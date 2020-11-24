@@ -11,10 +11,9 @@ $dbname = "u919436859_shark";
 $Username = $_GET['username'];
 echo $Username . '</br>';
 echo $_GET['username']. '</br>';
-$UserID = mysqli_real_escape_string($conn, $_GET['uid']);
 $Date = date("Y/m/d h:i:sa");
 $class = 'Shark-Meister';
-
+require '../../uname.php';
 
 require '../../../sharkcheck.php';
 require '../../../meistercheck.php';
@@ -24,7 +23,7 @@ if (in_array($uname, $shark_array)){
 if (in_array($uname, $meister_array)){
     $class = 'Shark-Meister';
 }
-$sql = "INSERT INTO `sharkmas`(`dt`, `userid`, `username`,  `class`, `target`) VALUES ('123','$UserID','123','123','NULL')";
+$sql = "INSERT INTO `sharkmas`(`dt`, `userid`, `username`,  `class`, `target`) VALUES ('123','$uid','123','123','NULL')";
 //$sql = "INSERT INTO sharkmas (`dt`, `userid` , `username` , `class` , `target`)  VALUES ('$Date','$UserID', 'NULL', '$class', NULL) ";
 
 $conn = new mysqli($servername, $username, $password, $dbname); // Create connection
