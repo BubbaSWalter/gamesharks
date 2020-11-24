@@ -87,6 +87,13 @@
   <div class="snow__flake"></div>
   <div class="snow__flake"></div>
 </div>
+
+        <div id="Sharky" class="center">
+			<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
+		    <h1>GameSharks Sharkmas</h1>
+		    <h1>Stage1 - Signup</h1>
+	    </div>
+	    <article id="article">
         <?php
 		    if(isset($_COOKIE["username"])) {
 				echo '<a href="/logout.html" class="myButton">Logout</a> ';
@@ -97,12 +104,6 @@
 				
 		    }
 		?>
-        <div id="Sharky" class="center">
-			<img src="/img/GameSharks_Sharkmas_logo.png" alt="GameSharks" height="300" class="center" style="object-fit: cover;">
-		    <h1>GameSharks Sharkmas</h1>
-		    <h1>Stage1 - Signup</h1>
-	    </div>
-	    <article id="article">
             <?php
                 include '../../userid.php';
             ?>
