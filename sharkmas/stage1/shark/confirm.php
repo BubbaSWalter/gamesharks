@@ -19,7 +19,7 @@ $class = 'Shark/Meister';
 
 require '../../../sharkcheck.php';
 require '../../../meistercheck.php';
-echo $Username;
+echo ' check 1 '.$Username . " check 2 ".$_GET['username'];
 if (in_array($uname, $shark_array)){
     $class = 'Shark/Meister';
 }
