@@ -34,7 +34,7 @@ if ($conn->query($sql) === TRUE) {
     $error = "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-
+?>
 <!DOCTYPE html>
 <html>
 	<meta charset="UTF-8">
