@@ -78,9 +78,7 @@
 		<p>Welcome to the Game Sharks Sharkmas</p>
 		<?php
 		    if(isset($_COOKIE["username"])) {
-				echo 'Your UserName: ' . $uname . '</br>';
-				echo 'Your UserID: ' . $uid . '</br>';
-                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
+                require 'userid.php';
                 if($check == 'true'){
 						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
                     if (in_array($uname, $shark_array) || in_array($uname, $meister_array)){
