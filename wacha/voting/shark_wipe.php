@@ -20,4 +20,5 @@
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
     header("Location: https://gamesharks.wizardsrwe.com/wacha/humble.php");
+    
 ?>
