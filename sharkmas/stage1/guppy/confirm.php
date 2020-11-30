@@ -108,7 +108,6 @@ $conn->close();
             ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>We have you signed up as a <?php echo $class;?>.</p>
-        <p>If there is ANY text in the red area. please let BubbaSWalter know via DM/Pings on discord.</p>
         <?php 
             if(strlen($error) > 10){
                 echo "<p id='errorlist'>";
