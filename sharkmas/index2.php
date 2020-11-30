@@ -64,42 +64,9 @@
 		<h1>GameSharks Validation Area</h1>
 	</div>
 	<article id="article">
-    <?php
-		    if(isset($_COOKIE["username"])) {
-				echo '<a href="/logout.html" class="myButton">Logout</a> ';
-				echo '<a href="https://gamesharks.wizardsrwe.com/sharkmas/" class="SharkmasButton">Sharkmas Portal</a>';
-		        if (in_array($uname, $Admin_array)){
-					echo '<a href="/wacha/humble.php\" class="adminButton">Admin Menu</a>';
-				}
-				
-		    }
-		?>
 	<p>Hello, <?php echo $uname;?>:</p>
 		<p>Welcome to the Game Sharks Sharkmas</p>
-		<?php
-		    if(isset($_COOKIE["username"])) {
-				echo 'Your UserName: ' . $uname . '</br>';
-				echo 'Your UserID: ' . $uid . '</br>';
-                echo 'If the above line says "GUEST" and "0" contact Bubba before proceeding.';
-                if($check == 'true'){
-						echo '<p>Stage 1 of Sharkmas - Signing Up for Sharkmas</p>' ;
-                    if (in_array($uname, $shark_array) || in_array($uname, $meister_array)){
-				        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/shark/">Click to Signup for Sharkmas</a></p>' ;
-                    } else {
-                        echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage1/guppy/">Click to Signup for Sharkmas</a></p>' ;
-                    }
-				}
-                if($check == 'false'){
-					echo '<p>Stage 2 of Sharkmas - Creating your gift for Sharkmas</p>' ;
-					echo '<p><a href="https://gamesharks.wizardsrwe.com/sharkmas/stage2/">Click to find out who  your target is for Sharkmas</a></p>' ;
-				} 
-				if($check == 'closed'){
-					echo '<p>Your a bit early.</p>';
-					echo '<p>Please wait for the Announcement.</p>' ;
-				}
-			
-		    }
-		?>
+		<p>Your a Bit Early</p>
 
 		
 		<?php
@@ -107,7 +74,14 @@
 		        echo '<input type="submit" onclick="location.href=\'login.html\'" value="Login">';
 		    }
 		?>
-		
+		<?php
+		    if(isset($_COOKIE["username"])) {
+		        echo '<input type="submit" onclick="location.href=\'logout.html\'" value="Logout">';
+		        if (in_array($uname, $Admin_array)){
+		            echo '<input type="submit" onclick="location.href=\'/wacha/humble.php\'" value="Admin Access">';
+		        }
+		    }
+		?>
 		<script type="text/javascript" src="/js/login.js"></script>
 	</article>
 	
