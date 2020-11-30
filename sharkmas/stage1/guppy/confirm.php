@@ -108,10 +108,14 @@ $conn->close();
             ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>We have you signed up as a <?php echo $class;?>.</p>
-        <p>If there is ANY text in the pink area. please let BubbaSWalter know via DM/Pings on discord.</p>
-        <p id='errorlist'>
-            <?php echo $error;?>
-        </p>
+        <p>If there is ANY text in the red area (Pink Area will only show when an Error Occurs). please let BubbaSWalter know via DM/Pings on discord.</p>
+        <?php 
+            if(strlen($error) > 10){
+                echo "<p id='errorlist'>";
+                echo $error;
+                echo "</p>";
+            }
+        ?>
 
 		
 	</article>
