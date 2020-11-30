@@ -115,7 +115,7 @@ $conn->close();
             ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
 		<p>We have you signed up as a <?php echo $class;?>. Please let <span>BubbaSWalter</span> know if there is an error code right below via either a ping or Direct Message.</p>
-        <p class='error'>
+        <p class='errorlist'>
             <?php echo $error;?>
         </p>
 
