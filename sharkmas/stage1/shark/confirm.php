@@ -114,8 +114,9 @@ $conn->close();
                 include '../../userid.php';
             ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>We have you signed up as a <?php echo $class;?>. Please let <span>BubbaSWalter</span> know if there is an error code right below via either a ping or Direct Message.</p>
-        <p class='errorlist'>
+		<p>We have you signed up as a <?php echo $class;?>.</p>
+        <p>If there is ANY text in the pink area. please let BubbaSWalter know via DM/Pings on discord.</p>
+        <p id='errorlist'>
             <?php echo $error;?>
         </p>
 
