@@ -29,7 +29,7 @@ if ($conn->connect_error) {     // Check connection
 
 
 if ($conn->query($sql) === TRUE) {
-    echo $error = 'No Errors Detected';
+    $error = 'No Errors Detected';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     $error = "Error: " . $sql . "<br>" . $conn->error;
