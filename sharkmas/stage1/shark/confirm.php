@@ -29,7 +29,7 @@ if ($conn->connect_error) {     // Check connection
 
 
 if ($conn->query($sql) === TRUE) {
-    echo "Page saved!";
+    echo $error = 'No Errors Detected';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     $error = "Error: " . $sql . "<br>" . $conn->error;
