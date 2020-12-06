@@ -5,7 +5,7 @@
 
 <?php
 	include 'uname.php';
-	$check = 'true';
+	$check = 'false';
 ?>
 <!DOCTYPE html>
 <html>
