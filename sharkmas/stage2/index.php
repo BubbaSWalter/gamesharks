@@ -103,7 +103,7 @@
                 include '../userid.php';
         ?>
 		<p>Hello <span id="username"><?php echo $uname; ?></span>:</p>
-		<p>Your Target for Sharkmas 2019 is <?php echo $choice;?>.  If you need help figuring out what your target wants you can always ask a challenge meister.</p>
+		<p>Your Target for Sharkmas 2020 is <?php echo $choice;?>.  If you need help figuring out what your target wants you can always ask a challenge meister.</p>
 		
 	</article>
 	<script type="text/javascript" src="js/confirm.js"></script>
