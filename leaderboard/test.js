@@ -1,6 +1,6 @@
 $.post( "chlist.php", function( data ) {
-    var $challenge_list = JSON.stringify(data);
-    console.log($challenge_list);
+    var obj = JSON.parse(data);
+    console.log(obj);
     
 
 
