@@ -18,18 +18,30 @@
 	<article id="article">
 		<form action="index.php">
 			<label for="challenge">Challenge Lookup: </label>
-		
+		<!-- 
+
+			        $("#Chname").text('Sega Genesis - Rocket Knight Adventures - Race');
+    } else if (Challenge == '7') {
+        $("#Chname").text('GBA -  Pokemon Emerald - Score Attack');
+    } else if (Challenge == '8') {
+        $("#Chname").text('GBA - Kuru Kuru Kururin - Distance');
+    } else if (Challenge == '9') {
+        $("#Chname").text('SNES - Super Mario All Stars + Super Mario World - Race');
+    } else if (Challenge == '10') {
+        $("#Chname").text("Sega Genesis - Dr Robotnik's Mean Bean Machine - Score Attack");
+    }
+	-->
 			<select id="challenge" name="challenge">
   				<option value="1">Challenge 1: SNES - TMNT: Turtles in Time - Distance</option>
 				<option value="2">Challenge 2: SNES - Pac-Man 2: The New Adventures - Score Attack</option>
 				<option value="3">Challenge 3: SNES - Super Metroid - Race</option>
 				<option value="4">Challenge 4: Sega Genesis - Sonic 3 & Knuckles & Knuckles & Knuckles - Race </option>
 				<option value="5">Challenge 5: NES - Rockman 3 Endless! - Score Attack</option>
-				<option value="6">Challenge 6:  &lt;REDACTED FOR SPOILERS&gt;</option>
-				<option value="7">Challenge 7:  &lt;REDACTED FOR SPOILERS&gt;</option>
-				<option value="8">Challenge 8:  &lt;REDACTED FOR SPOILERS&gt;</option>
-				<option value="9">Challenge 9:  &lt;REDACTED FOR SPOILERS&gt;</option>
-				<option value="10">Challenge 10:  &lt;REDACTED FOR SPOILERS&gt;</option>
+				<option value="6">Challenge 6:  Sega Genesis - Rocket Knight Adventures - Race</option>
+				<option value="7">Challenge 7:  GBA -  Pokemon Emerald - Score Attack</option>
+				<option value="8">Challenge 8:  GBA - Kuru Kuru Kururin - Distance</option>
+				<option value="9">Challenge 9:  SNES - Super Mario All Stars + Super Mario World - Race</option>
+				<option value="10">Challenge 10:  Sega Genesis - Dr Robotnik's Mean Bean Machine - Score Attack</option>
 			</select>
 			<br/>
 			<label for="Group">Challenge Group: </label>
