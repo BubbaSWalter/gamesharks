@@ -224,23 +224,23 @@ $( document ).ready(function() {
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
     } else if (Challenge == '2') {
-        $("#Chname").text('SNES - Pac-Man 2: The New Adventures Score Ataack');
+        $("#Chname").text('SNES - Pac-Man 2: The New Adventures - Score Attack');
     } else if (Challenge == '3') {
         $("#Chname").text('SNES - Super Metroid - Race');
     } else if (Challenge == '4') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('Sega Genesis - Sonic 3 & Knuckles & Knuckles & Knuckles - Race');
     } else if (Challenge == '5') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('NES - Rockman 3 Endless! - Score Attack');
     } else if (Challenge == '6') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('Sega Genesis - Rocket Knight Adventures - Race');
     } else if (Challenge == '7') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('GBA -  Pokemon Emerald - Score Attack');
     } else if (Challenge == '8') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('GBA - Kuru Kuru Kururin - Distance');
     } else if (Challenge == '9') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text('SNES - Super Mario All Stars + Super Mario World - Race');
     } else if (Challenge == '10') {
-        $("#Chname").text('REDACTED FOR SPOILERS');
+        $("#Chname").text("Sega Genesis - Dr Robotnik's Mean Bean Machine - Score Attack");
     }
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     $.get( url , function( data ) {
