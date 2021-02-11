@@ -1,3 +1,6 @@
 $.post( "chlist.php", function( data ) {
-    console.log(data);
+    console.log(Array.from(data));
+    
+
+
   });
