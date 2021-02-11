@@ -293,6 +293,6 @@
 	
 <?php include 'include/footer.php'?>
 <script src="results.js"></script>
-<script src="test.js"></script>
+<script src="challengelist.js"></script>
 </body>
 </html>

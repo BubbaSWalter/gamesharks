@@ -8,7 +8,7 @@ function LoadChallenge() {
     } else{
         DataBase = 'Shark_ScoreBoard';
     }
-
+    
     
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
