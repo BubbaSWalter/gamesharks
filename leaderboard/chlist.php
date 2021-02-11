@@ -23,7 +23,6 @@
                 array_push($challenge_list, $dumb );
             }
             echo(json_encode($challenge_list));
-            echo count($challenge_list);
           } else {
             echo "0 results";
           }
