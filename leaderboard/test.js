@@ -6,11 +6,12 @@ $.post( "chlist.php", function( data ) {
     {
         holder = obj[i];
         console.log(holder)
-        console.log('Challenge '& holder[0] & ' : ' &holder[1]&' - '& holder[2]&' - ' & holder[3]);
+        holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
+        console.log(holding);
         var select = document.getElementById('challenge');
         var opt = document.createElement('option');
         opt.value = holder[0];
-        opt.text = 'Challenge '& holder[0] & ' : ' &holder[1]&' - '& holder[2]&' - ' & holder[3];
+        opt.text = holding;
         select.appendChild(opt);
 
     }
