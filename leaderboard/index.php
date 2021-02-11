@@ -18,9 +18,7 @@
 	<article id="article">
 		<form action="index.php">
 			<label for="challenge">Challenge Lookup: </label>
-			<select id="challenge" name="challenge">
-
-			</select>
+			<select id="challenge" name="challenge"></select>
 			<br/>
 			<label for="Group">Challenge Group: </label>
 		

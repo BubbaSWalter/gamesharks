@@ -17,8 +17,6 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-
-
                 $dumb = [$row['Challenge_Number'], $row['Challenge_Console'], $row['Challenge_Game'],$row['Challenge_Type']];
                 array_push($challenge_list, $dumb );
             }
