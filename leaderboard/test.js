@@ -1,5 +1,6 @@
 $.post( "chlist.php", function( data ) {
-    console.log(Array.from(data));
+    $challenge_array = data; 
+    console.log(Array.from($challenge_array));
     
 
 
