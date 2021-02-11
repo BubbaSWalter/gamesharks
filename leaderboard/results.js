@@ -8,7 +8,21 @@ function LoadChallenge() {
     } else{
         DataBase = 'Shark_ScoreBoard';
     }
+    $.post( "chlist.php", function( data ) {
+        var obj = JSON.parse(data);
+        console.log(obj);
+        var i;
+        for (i = 0; i < obj.length; i++) 
+        {
+            holder = obj[i];
+            console.log(holder)
+            holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
+            if (Challenge == '1') {
+                $("#Chname").text(holding);
+            }
     
+        }
+      });
     
     if (Challenge == '1') {
         $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
@@ -221,27 +235,22 @@ $( document ).ready(function() {
     }
 
     var DataBase = 'Guppy_ScoreBoard';
-    if (Challenge == '1') {
-        $("#Chname").text('SNES - TMNT: Turtles in Time - Distance');
-    } else if (Challenge == '2') {
-        $("#Chname").text('SNES - Pac-Man 2: The New Adventures - Score Attack');
-    } else if (Challenge == '3') {
-        $("#Chname").text('SNES - Super Metroid - Race');
-    } else if (Challenge == '4') {
-        $("#Chname").text('Sega Genesis - Sonic 3 & Knuckles & Knuckles & Knuckles - Race');
-    } else if (Challenge == '5') {
-        $("#Chname").text('NES - Rockman 3 Endless! - Score Attack');
-    } else if (Challenge == '6') {
-        $("#Chname").text('Sega Genesis - Rocket Knight Adventures - Race');
-    } else if (Challenge == '7') {
-        $("#Chname").text('GBA -  Pokemon Emerald - Score Attack');
-    } else if (Challenge == '8') {
-        $("#Chname").text('GBA - Kuru Kuru Kururin - Distance');
-    } else if (Challenge == '9') {
-        $("#Chname").text('SNES - Super Mario All Stars + Super Mario World - Race');
-    } else if (Challenge == '10') {
-        $("#Chname").text("Sega Genesis - Dr Robotnik's Mean Bean Machine - Score Attack");
-    }
+    $.post( "chlist.php", function( data ) {
+        var obj = JSON.parse(data);
+        console.log(obj);
+        var i;
+        for (i = 0; i < obj.length; i++) 
+        {
+            holder = obj[i];
+            console.log(holder)
+            holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
+            if (Challenge == '1') {
+                $("#Chname").text(holding);
+            }
+    
+        }
+      });
+      
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     $.get( url , function( data ) {
         $( ".result" ).html( data );
