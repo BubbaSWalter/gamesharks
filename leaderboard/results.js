@@ -17,7 +17,7 @@ function LoadChallenge() {
             holder = obj[i];
             console.log(holder)
             holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
-            if (Challenge == '1') {
+            if (Challenge == holder[0]) {
                 $("#Chname").text(holding);
             }
     
@@ -244,13 +244,13 @@ $( document ).ready(function() {
             holder = obj[i];
             console.log(holder)
             holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
-            if (Challenge == '1') {
+            if (Challenge == holder[0]) {
                 $("#Chname").text(holding);
             }
     
         }
       });
-      
+
     url = "pcgetresults.php?db=" + DataBase + "&ch=" + Challenge;
     $.get( url , function( data ) {
         $( ".result" ).html( data );
