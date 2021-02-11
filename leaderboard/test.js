@@ -1,5 +1,5 @@
 $.post( "chlist.php", function( data ) {
-    $challenge_array = data; 
+    var $challenge_list = JSON.stringify(data);
     console.log(Array.from($challenge_array));
     
 
