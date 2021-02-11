@@ -19,7 +19,7 @@
             while($row = $result->fetch_assoc()) {
 
 
-                $dumb = [$row['Challenge_Number'], $row['Challenge_Console'], $row['Challenge_Game'],];
+                $dumb = [$row['Challenge_Number'], $row['Challenge_Console'], $row['Challenge_Game'],$row['Challenge_Type']];
                 array_push($challenge_list, $dumb );
             }
             echo(json_encode($challenge_list));
