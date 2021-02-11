@@ -2,8 +2,10 @@ $.post( "chlist.php", function( data ) {
     var obj = JSON.parse(data);
     console.log(obj);
     var i;
-    for (i = 0; i < obj.length; i++) {
-        console.log(obj[0])
-        $("#challenge").append('<option value=' & obj[0] &'>Challenge '& obj[0] & obj[1]&' - '& obj[2]&' - ' & obj[3]& '</option>');
+    for (i = 0; i < obj.length; i++) 
+    {
+        holder = obj[1];
+        console.log(holder)
+        $("#challenge").append('<option value=' & holder[0] &'>Challenge '& holder[0] & holder[1]&' - '& holder[2]&' - ' & holder[3]& '</option>');
     }
   });
