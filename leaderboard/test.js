@@ -4,8 +4,13 @@ $.post( "chlist.php", function( data ) {
     var i;
     for (i = 0; i < obj.length; i++) 
     {
-        holder = obj[1];
+        holder = obj[i];
         console.log(holder)
-        $("#challenge").append('<option value=' & holder[0] &'>Challenge '& holder[0] & holder[1]&' - '& holder[2]&' - ' & holder[3]& '</option>');
+        holding = '>Challenge '& holder[0] & holder[1]&' - '& holder[2]&' - ' & holder[3]
+        var x = document.getElementById("mySelect");
+        var option = document.createElement("option");
+        option.text = holding ;
+        opt.value = holder[0];
+        x.add(option);
     }
   });
