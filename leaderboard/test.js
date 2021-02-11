@@ -10,7 +10,7 @@ $.post( "chlist.php", function( data ) {
         var select = document.getElementById('challenge');
         var opt = document.createElement('option');
         opt.value = holder[0];
-        opt.innerHTML = holding;
+        opt.text = holding;
         select.appendChild(opt);
 
     }
