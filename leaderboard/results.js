@@ -10,12 +10,10 @@ function LoadChallenge() {
     }
     $.post( "chlist.php", function( data ) {
         var obj = JSON.parse(data);
-        console.log(obj);
         var i;
         for (i = 0; i < obj.length; i++) 
         {
             holder = obj[i];
-            console.log(holder)
             holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
             if (Challenge == holder[0]) {
                 $("#Chname").text(holding);
@@ -71,7 +69,7 @@ function LoadChallenge() {
                     $("#pc" + count + "score").text(element[2].substring(3));
                 } else{
                     if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
-                        console.log(element[2].substring(0, 2));
+
                         if(element[2].substring(0, 2)== '00'){
                             $("#pc" + count + "score").text(element[1] + " ( " + element[2].substring(3) + " )");
                         } else {
@@ -95,7 +93,6 @@ function LoadChallenge() {
       $.get( url , function( data ) {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
-        console.log($holder)
         count = 1;
         rank = 0;
         htmlclass = '';
@@ -103,18 +100,14 @@ function LoadChallenge() {
         lastscore = '';
         $holder.forEach(element => {
             if(rank == 0){
-                console.log(element[0]);
                 count2 = 1;
                 rank = 1;
             }else{
-                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
-                    console.log(count2);
                     rank += count2;
                     count2 = 1;
                 } else {
                     count2++;
-                    console.log('rank increase' + count2);
                 }
             }
             if (rank == 1){
@@ -237,12 +230,10 @@ $( document ).ready(function() {
     var DataBase = 'Guppy_ScoreBoard';
     $.post( "chlist.php", function( data ) {
         var obj = JSON.parse(data);
-        console.log(obj);
         var i;
         for (i = 0; i < obj.length; i++) 
         {
             holder = obj[i];
-            console.log(holder)
             holding = 'Challenge ' + holder[0] + ' : ' + holder[1] + ' - ' + holder[2] + ' - ' + holder[3];
             if (Challenge == holder[0]) {
                 $("#Chname").text(holding);
@@ -255,7 +246,6 @@ $( document ).ready(function() {
     $.get( url , function( data ) {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
-        console.log($holder);
         count = 1
         $holder.forEach(element => {
             $("#pc" + count + "name").text(element[0]);
@@ -263,7 +253,6 @@ $( document ).ready(function() {
                 $("#pc" + count + "score").text(element[2].substring(3));
             } else{
                 if (element[1] + " ( " + element[2] + " )" != "null ( null )"){
-                    console.log(element[2].substring(0, 2));
                     if(element[2].substring(0, 2)== '00'){
                         $("#pc" + count + "score").text(element[1] + " ( " + element[2].substring(3) + " )");
                     } else {
@@ -288,7 +277,6 @@ $( document ).ready(function() {
       $.get( url , function( data ) {
         $( ".result" ).html( data );
         $holder = JSON.parse(data)
-        console.log($holder)
         count = 1;
         rank = 0;
         htmlclass = '';
@@ -297,18 +285,14 @@ $( document ).ready(function() {
         $holder.forEach(element => {
             htmlclass = '';
             if(rank == 0){
-                console.log(element[0]);
                 count2 = 1;
                 rank = 1;
             }else{
-                console.log(element[0] + " " + element[1] + ' ' + lastscore);
                 if(lastscore != element[1]){
-                    console.log(count2);
                     rank += count2;
                     count2 = 1;
                 } else {
                     count2++;
-                    console.log('rank increase' + count2);
                 }
             }
             rankholder ='';
@@ -384,7 +368,6 @@ $( document ).ready(function() {
             $("#st" + count + "name").text(element[0]);
             $("#st" + count + "point").text(element[1]);
             lastscore = element[1];
-            console.log(rank);
             count +=1;
         });
       });
