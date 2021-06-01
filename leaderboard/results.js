@@ -220,11 +220,11 @@ $( document ).ready(function() {
 
     urlParams =  window.location.search;
     if (urlParams.length != 0){
-        var res = urlParams.match(/\?chnum\=(\d)/);
+        var res = urlParams.match(/\?chnum\=(\d*)/);
         const myParam = res[1];
         var Challenge = myParam;
     } else {
-        Challenge = '10';
+        Challenge = '1';
     }
 
     var DataBase = 'Guppy_ScoreBoard';
