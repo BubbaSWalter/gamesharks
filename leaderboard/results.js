@@ -231,7 +231,7 @@ $( document ).ready(function() {
         const myParam = res[1];
         var Challenge = myParam;
     } else {
-        Challenge = '1';
+        Challenge = '10';
     }
 
     var DataBase = 'Guppy_ScoreBoard';
